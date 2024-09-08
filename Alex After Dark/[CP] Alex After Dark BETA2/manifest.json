@@ -1,0 +1,10 @@
+{
+    "Name": "Alex After Dark - Beta #2",
+    "Author": "loshionbottle",
+    "Description": "Adds three cute lil events :3",
+    "Version": "1.0.0",
+    "UniqueID": "loshionbottle.alexafterdarkBETA2",
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

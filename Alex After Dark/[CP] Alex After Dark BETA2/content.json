@@ -1,0 +1,62 @@
+// Config Schema & Includes 
+
+{
+    "Format": "2.0.0",
+
+    // Config 
+    "ConfigSchema": {
+      // Pet Name
+      "Player Pet Name": {
+        "Default": "Babe",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Pet Name",
+        "Description": "Sets the player's desired pet name."
+      },
+
+      // What the player prefers to be called
+      "Descriptive Word": {
+        "Default": "Cute",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Pet Name",
+        "Description": "Would typically be \"Pretty\", \"Cute\", \"Handsome\", etc."
+      }
+
+    },
+    
+    // Dynamic Tokens
+    "DynamicTokens": [
+      {
+        "Name": "PetName",
+        "Value": "{{Player Pet Name}}"
+      },
+      {
+        "Name": "LPetName",
+        "Value": "{{Lowercase: {{Player Pet Name}}}}"
+      },
+      {
+        "Name": "Descript",
+        "Value": "{{Descriptive Word}}"
+      },
+      {
+        "Name": "LDescript",
+        "Value": "{{Lowercase: {{Descriptive Word}}}}"
+      }
+    ],
+
+    // Include files
+    "Changes": [
+      // Event Files
+      {
+        "LogName": "Vanilla Rewrites",
+        "Action": "Include",
+        "FromFile": "Events/VanillaRewrite.json"
+      },
+      {
+        "LogName": "New Events",
+        "Action": "Include",
+        "FromFile": "Events/NewEvents.json"
+      }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "Name": "Alex After Dark - $2.99 Beta",
+    "Author": "loshionbottle",
+    "Description": "Teases the new Alex After Dark pack by adding in a cute lil event~",
+    "Version": "1.0.0",
+    "UniqueID": "loshionbottle.alexafterdarkBETA",
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Depdendencies": [
+      {
+        "UniqueID": "loshionbottle.samafterdark299",
+        "IsRequired": true
+      }
+    ]
+}

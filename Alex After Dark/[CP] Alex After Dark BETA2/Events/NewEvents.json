@@ -1,0 +1,23 @@
+// New Events
+{
+    "Changes": [
+        {
+            "LogName": "Alex's New 1 Heart",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "SpicyAlexIntro/f Alex 250/z winter/w sunny": "playful/-100 -100/farmer 53 24 2 Alex 45 14 2/skippable/viewport 53 24 true/pause 2000/move Alex 0 10 2/pause 200/faceDirection Alex 1/pause 100/emote Alex 12/pause 250/speak Alex \"{{i18n:Events.Alex.1Heart.1}}\"/pause 50/emote farmer 16/pause 50/faceDirection farmer 3/pause 50/speed Alex 3/move Alex 6 0 1/speak Alex \"{{i18n:Events.Alex.1Heart.2}}\"/pause 400/emote Alex 40/pause 350/speak Alex \"{{i18n:Events.Alex.1Heart.3}}\"/pause 350/speak Alex \"{{i18n:Events.Alex.1Heart.4}}\"/pause 500/emote Alex 40/pause 350/speak Alex \"{{i18n:Events.Alex.1Heart.5}}\"/pause 200/emote farmer 8/pause 350/speak Alex \"{{i18n:Events.Alex.1Heart.6}}\"/pause 200/emote farmer 12/pause 350/quickQuestion #{{i18n:Events.Alex.1Heart.7}}#{{i18n:Events.Alex.1Heart.8}}(break)emote Alex 40\\pause 400\\speak Alex \"{{i18n:Events.Alex.1Heart.9}}\"(break)speak Alex \"{{i18n:Events.Alex.1Heart.10}}\"/pause 200/emote Alex 12/pause 350/speak Alex \"{{i18n:Events.Alex.1Heart.11}}\"/pause 150/faceDirection Alex 3/move Alex -20 0 3 true/pause 200/emote farmer 28/pause 350/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        // thanks twig for "how are you dear" i was honestly stuck on that for an embarassing amount of time
+        {
+            "LogName": "Alex's New 3 Heart",
+            "Action": "EditData",
+            "Target": "Data/Events/JoshHouse",
+            "Entries": {
+                "AlexPumpinIt/f Alex 750/p Alex": "jaunty/-100 -100/farmer -1000 -1000 0 George 5 20 3 Evelyn 3 19 2 Alex 15 6 2/skippable/viewport 13 16 true/pause 2000/playSound doorClose/warp farmer 9 24/pause 200/move farmer 0 -4 0/faceDirection Evelyn 1/textAboveHead Evelyn \"{{i18n:Events.Alex.3Heart.1}}\"/pause 200/faceDirection farmer 3/pause 200/emote farmer 32/pause 350/message \"{{i18n:Events.Alex.3Heart.2}}\"/pause 200/emote farmer 8/pause 300/faceDirection farmer 0/pause 100/move farmer 0 -2 0/speak Alex \"{{i18n:Events.Alex.3Heart.3}}\"/pause 100/emote farmer 16/pause 200/showFrame Alex 28/animate Alex false true 100 28 29 30 31 32 32 31 30 29 28/speed farmer 4/move farmer 0 -4 1 true/viewport move 0 -2 4500/move farmer 1 0 0/move farmer 0 -2 0/doAction 10 9/move farmer 0 -5 1 true/emote Alex 16/pause 350/stopAnimation Alex/showFrame Alex 34 true/pause 200/move farmer 5 0 0/pause 300/speak Alex \"{{i18n:Events.Alex.3Heart.4}}\"/quickQuestion #{{i18n:Events.Alex.3Heart.5}}#{{i18n:Events.Alex.3Heart.6}}(break)speak Alex \"{{i18n:Events.Alex.3Heart.7}}\"\\pause 200\\emote farmer 40\\pause 350\\speak Alex \"{{i18n:Events.Alex.3Heart.8}}\"(break)speak Alex \"{{i18n:Events.Alex.3Heart.9}}\"/pause 200/emote farmer 32/pause 350/speak Alex \"{{i18n:Events.Alex.3Heart.10}}\"/quickQuestion #{{i18n:Events.Alex.3Heart.11}}#{{i18n:Events.Alex.3Heart.12}}(break)speak Alex \"{{i18n:Events.Alex.3Heart.13}}\"(break)speak Alex \"{{i18n:Events.Alex.3Heart.14}}\"/pause 200/message \"{{i18n:Events.Alex.3Heart.15}}\"/pause 200/speak Alex \"{{i18n:Events.Alex.3Heart.16 |LPetName={{LPetName}}}}\"/pause 200/emote farmer 32/pause 350/globalFade/viewport 13 16 true/pause 500/pause 200/message \"{{i18n:Events.Alex.3Heart.2}}\"/pause 400/textAboveHead Evelyn \"{{i18n:Events.Alex.3Heart.17}}\"/pause 1000/emote George 12/pause 800/textAboveHead George \"{{i18n:Events.Alex.3Heart.18}}\"/pause 2000/globalFade/viewport -100 -100/end"
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,14 @@
+// (No Longer) Vanilla Events
+{
+    "Changes": [
+        {
+            "LogName": "Alex's 2 Heart Rewrite",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "20/f Alex 500/z winter/p Alex/w sunny": "playful/-100 -100/farmer 27 7 2 Alex 25 17 2/showFrame Alex 23/skippable/animate Alex false true 125 16 17 18 19 20 21 22 23 23 23 23 23 23 23 23 23 23 23 23/viewport 28 14 true/move farmer 0 10 2/stopAnimation Alex/pause 200/showFrame Alex 24/pause 600/emote Alex 40/pause 350/showFrame Alex 23/pause 200/speak Alex \"{{i18n:Events.Alex.2Heart.1}}\"/pause 300/emote farmer 12/pause 350/faceDirection farmer 1/move farmer 2 0 1/pause 50/showFrame Alex 24/pause 50/speak Alex \"{{i18n:Events.Alex.2Heart.2}}\"/pause 200/faceDirection farmer 3/pause 400/question fork1 \"#{{i18n:Events.Alex.2Heart.3}}#{{i18n:Events.Alex.2Heart.4}}\"/fork arrogantJosh/pause 400/emote Alex 40/pause 350/speak Alex \"{{i18n:Events.Alex.2Heart.5}}\"/pause 200/faceDirection farmer 1/speak Alex \"{{i18n:Events.Alex.2Heart.6}}\"/pause 200/faceDirection farmer 3/pause 50/emote farmer 12/pause 350/speak Alex \"{{i18n:Events.Alex.2Heart.7}}\"/pause 200/emote farmer 32/pause 350/move farmer -2 0 3/pause 200/faceDirection farmer 2/showFrame Alex 23/pause 200/speak Alex \"{{i18n:Events.Alex.2Heart.8}}\"/pause 100/emote farmer 16/pause 350/faceDirection farmer 3/pause 200/speak Alex \"{{i18n:Events.Alex.2Heart.9}}\"/pause 100/emote farmer 8/pause 400/globalFade/viewport -1000 -1000/end dialogue Alex \"{{i18n:Events.Alex.2Heart.10}}\"",
+                "arrogantJosh": "pause 400/speak Alex \"{{i18n:Events.Alex.2Heart.11}}\"/pause 200/quickQuestion #{{i18n:Events.Alex.2Heart.12}}#{{i18n:Events.Alex.2Heart.13}}(break)speak Alex \"{{i18n:Events.Alex.2Heart.14}}\"(break)speak Alex \"{{i18n:Events.Alex.2Heart.15}}\"/pause 500/showFrame Alex 4/animate Alex false false 80 24 25 25 26 4/pause 240/playSound throw/animate farmer true true 100 30/specificTemporarySprite joshFootball/null/pause 500/stopAnimation farmer/pause 700/speak Alex \"{{i18n:Events.Alex.2Heart.16 |LDescript={{LDescript}} |LPetName={{LPetName}}}}\"/pause 200/message \"{{i18n:Events.Alex.2Heart.17 |PetName={{PetName}}}}\"/pause 200/speak Alex \"{{i18n:Events.Alex.2Heart.18}}\"/pause 200/message \"{{i18n:Events.Alex.2Heart.19}}\"/pause 200/move farmer -2 0 2/pause 100/emote Alex 32/pause 200/globalFade/viewport -1000 -1000/end dialogue Alex \"{{i18n:Events.Alex.2Heart.20}}\""
+            }
+        }
+    ]
+}
