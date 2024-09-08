@@ -1,0 +1,27 @@
+// Festival Dialogue 
+
+{
+    "Changes": [
+       {
+            "LogName": "Sam's Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/winter8, Data/Festivals/winter28",
+            "Entries": {
+                "Sam": "{{i18n:Festival.Sam.{{TargetWithoutPath}}.{{Relationship:Sam |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                "Sam_y2": "{{i18n:Festival.Sam.{{TargetWithoutPath}}.{{Relationship:Sam |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                "Sam_spouse": "{{i18n:Festival.Sam.{{TargetWithoutPath}}.{{Relationship:Sam |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                "Sam_spouse_y2": "{{i18n:Festival.Sam.{{TargetWithoutPath}}.{{Relationship:Sam |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}"
+            }
+       },
+       {
+            "LogName": "Sam's Desert Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/1_6_Strings",
+            "Entries": {
+                "DesertFestival_Sam": "{{i18n:Festival.Sam.Desert}}",
+                "DesertFestival_Sam_marriage": "{{i18n:Festival.Sam.Desert.Married}}",
+                "Shop_Sam": "{{i18n:Festival.Sam.Desert.Shop |LPetName={{LPetName}}}}"
+            }
+       }
+    ]
+}

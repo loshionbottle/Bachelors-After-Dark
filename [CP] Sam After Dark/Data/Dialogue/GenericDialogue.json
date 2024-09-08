@@ -1,0 +1,206 @@
+// {{i18n:}}
+// |PetName={{PetName}} 
+// |GoodName={{GoodName}} 
+// |Underwear={{Underwear}}
+{
+    "Changes": [
+        {
+            "LogName": "Sam's Rando Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                // Intro 
+                "Introduction": "{{i18n:Core.Sam.Introduction}}",
+                // Specific Dates
+                "10": "{{i18n:Core.Sam.10}}",
+                "14": "{{i18n:Core.Sam.14}}",
+                "spring_12": "{{i18n:Core.Sam.Spring12}}",
+                "spring_21": "{{i18n:Core.Sam.Spring21}}",
+                "spring_23": "{{i18n:Core.Sam.Spring23}}",
+                "spring4_23": "{{i18n:Core.Sam.Spring23.4H}}",
+                "summer_10": "{{i18n:Core.Sam.Summer10}}",
+                "fall_9": "{{i18n:Core.Sam.Fall9}}",
+                "fall_14": "{{i18n:Core.Sam.Fall14}}",
+                "fall_16": "{{i18n:Core.Sam.Fall16}}",
+                "fall_23": "{{i18n:Core.Sam.Fall23}}",
+                "fall_26": "{{i18n:Core.Sam.Fall26}}",
+                "winter_7": "{{i18n:Core.Sam.Winter7}}",
+                "winter_24": "{{i18n:Core.Sam.Winter24}}",
+                // Jealousy Lines
+                "married_Abigail": "{{i18n:Core.Sam.Jealous.Abigail}}",
+                "dating_Sebastian": "{{i18n:Core.Sam.Jealous.Dating.Sebastian}}",
+                "married_Sebastian": "{{i18n:Core.Sam.Jealous.Married.Sebastian}}",
+                "dating_Shane": "{{i18n:Core.Sam.Jealous.Dating.Shane |LPetName={{LPetName}}}}",
+                "married_Shane": "{{i18n:Core.Sam.Jealous.Married.Shane}}",
+                "dating_Harvey": "{{i18n:Core.Sam.Jealous.Dating.Harvey |LPetName={{LPetName}}}}",
+                "married_Harvey": "{{i18n:Core.Sam.Jealous.Married.Harvey}}",
+                "dating_Elliott": "{{i18n:Core.Sam.Jealous.Dating.Elliott |LGoodName={{LGoodName}}}}",
+                "married_Elliott": "{{i18n:Core.Sam.Jealous.Married.Elliott}}",
+                "dating_Alex": "{{i18n:Core.Sam.Jealous.Dating.Alex |LPetName={{LPetName}}}}",
+                "married_Alex": "{{i18n:Core.Sam.Jealous.Married.Alex}}",
+                // Location-Based
+                "Saloon": "{{i18n:Core.Sam.Saloon.{{Random:{{Range: 1, 3}}}}}}",
+                "Saloon4": "{{i18n:Core.Sam.Saloon.{{Random:{{Range: 3, 5}}}}}}",
+                // Flower Dance
+                "FlowerDance_Accept": "{{i18n:Festival.Sam.DanceAccept}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Festival.Sam.DanceAccept.Spouse |LPetName={{LPetName}}}}",
+                "FlowerDance_Decline": "{{i18n:Festival.Sam.DanceDeny}}",
+                "danceRejection": "{{i18n:Festival.Sam.DanceDeny}}",
+                // Romance
+                "AcceptBouquet": "{{i18n:Core.Sam.AcceptBouquet}}",
+                "give_pendant": "{{i18n:Core.Sam.GivePendant}}",
+                "SpouseStardrop": "{{i18n:Core.Sam.StarDrop |LPetName={{LPetName}}}}",
+                "dating_Sam": "{{i18n:Core.Sam.Dating}}",
+                // Git Rejected Binch
+                "RejectBouquet_Divorced": "{{i18n:Core.Sam.RejectBouquet.Divorced}}",
+                "RejectBouquet_NpcAlreadyMarried": "{{i18n:Core.Sam.RejectBouquet.NPCMarried}}",
+                "RejectBouquet_VeryLowHearts": "{{i18n:Core.Sam.RejectBouquet.VeryLowHearts}}",
+                "RejectBouquet_LowHearts": "{{i18n:Core.Sam.RejectBouquet.LowHearts}}",
+                "RejectBouquet": "{{i18n:Core.Sam.RejectBouquet |LPetName={{LPetName}}}}",
+                "RejectMermaidPendant_Divorced": "{{i18n:Core.Sam.RejectPendant.Divorced}}",
+                "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Core.Sam.RejectPendant.HouseUpgrade |PetName={{PetName}}}}",
+                "RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Core.Sam.RejectPendant.NPCWSomeone |LPetName={{LPetName}}}}",
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Core.Sam.RejectPendant.PlayerWSomeone}}",
+                "RejectMermaidPendant_Under8Hearts": "{{i18n:Core.Sam.RejectPendant.Under8 |LPetName={{LPetName}}}}",
+                "RejectMermaidPendant_Under10Hearts": "{{i18n:Core.Sam.RejectPendant.Under10}}",
+                "RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Core.Sam.RejectPendant.Under10.Again |LPetName={{LPetName}}}}",
+                "RejectMermaidPendant": "{{i18n:Core.Sam.RejectPendant}}",
+                "RejectGift_Divorced": "{{i18n:Core.Sam.RejectGift.Divorced}}",
+                "divorced": "{{i18n:Core.Sam.Divorced}}",
+                "breakUp": "{{i18n:Core.Sam.BreakUp}}",
+                "dumped_Guys": "{{i18n:Core.Sam.DumpedGuys}}",
+                "secondChance_Guys": "{{i18n:Core.Sam.SecondChanceGuys}}",
+                // Rando Lines
+                "HitBySlingshot": "{{i18n:Core.Sam.Slingshot}}",
+                "firstVisit_Sewer": "{{i18n:Core.Sam.Sewer.FirstVisit}}",
+                "GreenRain": "{{i18n:Core.Sam.GreenRain}}",
+                "GreenRainFinished": "{{i18n:Core.Sam.GreenRainFinished |LPetName={{LPetName}}}}",
+                "GreenRain_2": "{{i18n:Core.Sam.GreenRain2 |LPetName={{LPetName}}}}",
+                // Resort
+                "Resort_Entering": "{{i18n:Core.Sam.Resort.Entering}}",
+                "Resort": "{{i18n:Core.Sam.Resort}}",
+                "Resort_Leaving": "{{i18n:Core.Sam.Resort.Leaving}}",
+                "Resort_Shore": "{{i18n:Core.Sam.Resort.Shore}}",
+                "Resort_Towel": "{{i18n:Core.Sam.Resort.Towel.1}}",
+                "Resort_Towel_2": "{{i18n:Core.Sam.Resort.Towel.2}}",
+                "Resort_Bar": "{{i18n:Core.Sam.Resort.bar}}"
+            }
+        },
+        {
+            "LogName": "Sam Core Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                // Song Question
+                "Wed": "{{i18n:Core.Sam.Wed.Question}}",
+                "Wed_old": "{{i18n:Core.Sam.Wed.Old}}",
+                "Wed_19": "{{i18n:Core.Sam.Wed.Answer.Neg}}",
+                "Wed_20": "{{i18n:Core.Sam.Wed.Answer.Pos}}",
+                // Early Hearts
+                "{{WeekDay}}": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                "{{WeekDay}}2": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                "{{season}}_{{WeekDay}}": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                "{{season}}_{{WeekDay}}2": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                "Thu_2": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                "Thu2_2": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                "winter_Thu_2": "{{i18n:Core.Sam.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}}}}",
+                // Mid Hearts
+                "{{WeekDay}}4": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "{{WeekDay}}6": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "{{season}}_{{WeekDay}}4": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "{{season}}_{{WeekDay}}6": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "Thu_3": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "Thu6_1": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "Thu6_2": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "summer_Thu6_2": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "fall_Thu6_1": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "winter_Thu6_1": "{{i18n:Core.Sam.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                // Late Hearts
+                "{{WeekDay}}8": "{{i18n:Core.Sam.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LGoodName={{LGoodName}}}}",
+                "{{WeekDay}}10": "{{i18n:Core.Sam.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LGoodName={{LGoodName}}}}",
+                "{{season}}_{{WeekDay}}8": "{{i18n:Core.Sam.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LGoodName={{LGoodName}}}}",
+                "{{season}}_{{WeekDay}}10": "{{i18n:Core.Sam.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LGoodName={{LGoodName}}}}",
+                // Birthday
+                "summer_17": "{{i18n:Core.Sam.Birthday.0}}",
+                "summer4_17": "{{i18n:Core.Sam.Birthday.4}}",
+                "summer6_17": "{{i18n:Core.Sam.Birthday.4}}",
+                "summer8_17": "{{i18n:Core.Sam.Birthday.8 |LPetName={{LPetName}}}}",
+                "summer10_17": "{{i18n:Core.Sam.Birthday.10 |LPetName={{LPetName}}}}"
+            }
+        },
+        {
+            "LogName": "Sam's Summit Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_Sam": "{{i18n:Extra.Sam.Summit |LPetName={{LPetName}}}}"
+            }
+        },
+        {
+            "LogName": "Sam's Movie Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/MovieReactions",
+            "Entries": {
+                "Sam_summer_movie_1_BeforeMovie": "{{i18n:Movie.Sam.BeforeMovie.Wumbus |LPetName={{LPetName}}}}",
+                "Sam_summer_movie_1_DuringMovie": "{{i18n:Movie.Sam.DuringMovie.Wumbus.0}}",
+                "Sam_summer_movie_1_DuringMovie_2": "{{i18n:Movie.Sam.DuringMovie.Wumbus.1}}",
+                "Sam_summer_movie_1_AfterMovie": "{{i18n:Movie.Sam.AfterMovie.Wumbus}}",
+                "Sam_horror_BeforeMovie": "{{i18n:Movie.Sam.BeforeMovie.Horror}}",
+                "Sam_horror_AfterMovie": "{{i18n:Movie.Sam.AfterMovie.Horror}}",
+                "Sam_like_BeforeMovie": "{{i18n:Movie.Sam.BeforeMovie.Like}}",
+                "Sam_like_AfterMovie": "{{i18n:Movie.Sam.AfterMovie.Like}}",
+                "Sam_dislike_BeforeMovie": "{{i18n:Movie.Sam.BeforeMovie.Dislike}}",
+                "Sam_dislike_DuringMovie": "{{i18n:Movie.Sam.DuringMovie.Dislike.0}}",
+                "Sam_dislike_DuringMovie_2": "{{i18n:Movie.Sam.DuringMovie.Dislike.1}}",
+                "Sam_dislike_AfterMovie": "{{i18n:Movie.Sam.AfterMovie.Dislike}}"
+            }
+        },
+        {
+            "LogName": "Cute Little String Edits",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "SamHouse.5": "{{i18n:Strings.Sam.SamHouse.5}}",
+                "SamHouse.6": "{{i18n:Strings.Sam.SamHouse.6 |LUnderwear={{LUnderwear}}}}",
+                "SamHouse.7": "{{i18n:Strings.Sam.SamHouse.7}}",
+                "SamHouse.8": "{{i18n:Strings.Sam.SamHouse.8}}",
+                "SamHouse.11": "{{i18n:Strings.Sam.SamHouse.11}}"
+            }
+        },
+        {
+            "LogName": "Sam Animation Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "sam_guitar": "{{i18n:Strings.Sam.Guitar.{{Random: {{Range: 1, 3}}}}}}",
+                "sam_gameboy": "{{i18n:Strings.Sam.Gameboy.{{Random: {{Range: 1, 3}}}} |LPetName={{LPetName}}}}",
+                "sam_skateboarding": "{{i18n:Strings.Sam.Skateboarding.{{Random: {{Range: 1, 3}}}}}}",
+                "sam_pool": "{{i18n:Strings.Sam.Pool.{{Random: {{Range: 1, 3}}}}}}",
+                "sam_work": "{{i18n:Strings.Sam.Work.{{Random: {{Range: 1, 3}}}}}}"
+            }
+        },
+        {
+            "LogName": "Sam Phone Calls",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "Phone_Ring_Cursed": "{{i18n:Strings.Phonecalls.Cursed}}",
+                "Phone_Ring_Foreign": "{{i18n:Strings.Phonecalls.Foreign}}",
+                "Phone_Ring_RoboCaller": "{{i18n:Strings.Phonecalls.RoboCaller |LPetName={{LPetName}}}}"
+            }
+        },
+        {
+            "LogName": "Other Random Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "winter_17.000": "{{i18n:Strings.Sam.winter17.000}}",
+                "marriage_Mon.000": "{{i18n:Strings.Sam.Marriage.Mon.000 |LPetName={{LPetName}}}}",
+                "marriage_Mon.001": "{{i18n:Strings.Sam.Marriage.Mon.001}}",
+                "marriage_Fri.000": "{{i18n:Strings.Sam.Marriage.Fri.000}}",
+                "marriage_Fri.001": "{{i18n:Strings.Sam.Marriage.Fri.001 |LPetName={{LPetName}}}}",
+                "rain2.000": "{{i18n:Strings.Sam.Rainy.000}}"
+            }
+        }
+    ]
+}
