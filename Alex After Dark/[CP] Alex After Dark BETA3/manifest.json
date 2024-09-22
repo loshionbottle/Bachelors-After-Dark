@@ -1,0 +1,10 @@
+{
+    "Name": "Alex After Dark Dialogue Beta (3)",
+    "Author": "loshionbottle",
+    "Description": "Adds over 500 lines of cute dialogue and 3 events for Alex.",
+    "Version": "1.0.0",
+    "UniqueID": "loshionbottle.alexafterdarkdialoguebeta",
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

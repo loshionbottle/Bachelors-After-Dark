@@ -1,0 +1,719 @@
+{
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ████   ███  █   █ ████   ███  █   █     ████  █████  ███  █      ███   ████ █   █ █████ 
+    █   █ █   █ ██  █ █   █ █   █ ██ ██     █   █   █   █   █ █     █   █ █     █   █ █     
+    ████  █████ █ █ █ █   █ █   █ █ █ █     █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █ █  ██ █   █ █   █ █   █     █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █ █   █ █   █ ████   ███  █   █     ████  █████ █   █ █████  ███   ███  █████ █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Thank you:
+    - MuseLaSora
+    - Pixie
+    - Denny
+    For helping with some of these lines :3 */        
+
+    // Introduction
+    "Core.Alex.Introduction": "How disappointing. I would've thought the new farmer would be more...$9#$b#{{LDescript}}.$2#$e#Nice to meet you, by the way.",
+
+    // Extra Random 
+    "Core.Alex.Rain": "Doesn't rain mean you don't have much to do? Why are you still running around outside?$9#$b#You should stay here or go back home so you don't get too sick.$a",
+    "Core.Alex.cc.Bridge": "Have you been up by the lake recently? I was on a run late last night, and I noticed that the old bridge was repaired...#$b#You didn't have anything to do with it, did you?",
+    "Core.Alex.fishCaught.159": "I heard you caught some kind of rare fish?#$b#I'm impressed. Your arms must be stronger than they look.$h",
+    "Core.Alex.Chicken": "I overheard someone saying that you got your first chicken the other day.#$b#Maybe I'll just have to check out the progress on your little farm one of these days.$h",
+    "Core.Alex.fishCaught.139": "How was that salmon you caught recently?#$e#What? No, I'm not stalking your movements.$a#$b#I just so happened to be there...$s",
+    "Core.Alex.FirstVisit.Bathhouse": "How was your last bathhouse visit? Anything fun happen?#$e#Uh, wait... you didn't go poking around in my locker, did you?$9",
+    "Core.Alex.Slingshot": "Would you stop?$a#$b#I know you're trying to get me back for teasing you, but damn.$9",
+    "Core.Alex.GreenRain": "I nearly tripped on one of those weird plants while out on my run this morning.$9#$b#Are you alright?",
+    "Core.Alex.GreenRainFinished": "That green rain was pretty weird, huh?#$b#It almost reminded me of the bathhouse showers, so I'm kinda used to it already.$h",
+    "Core.Alex.GreenRain2": "My grandparents are freaking out about the rain.$s#$b#I don't see what the problem is, I was fine when I went out this morning.",
+
+    // Specific Dates/Questions
+    "Core.Alex.Wed.Question": "Days like today make me really wish I had someone to play catch with.$u#$b#I'd ask you, but I wouldn't want to hurt you.$e#$q 5/6 Wed_01_old#How about one of these days I give you some private lessons on how to throw a gridball properly?#$r 6 0 Wed_01_02#I already know how to throw one.#$r 5 15 Wed_01_01#I'd rather just watch you throw it from a distance.#$r 5 0 Wed_01_03#Who says I'd even play catch with you?",
+    "Core.Alex.Wed.01.old": "Thought about those private lessons yet, {{LPetName}}?$h",
+    "Core.Alex.Wed.01.01": "Yeah, nice try. With arms like those, I bet it wouldn't even go far.#$b#Just think about it, yeah?$h",
+    "Core.Alex.Wed.01.02": "Already prepared to be a fan, huh {{LPetName}}?#$b#Obedience looks good on you.$h",
+    "Core.Alex.Wed.01.03": "I don't know.#$b#Something tells me you have plenty of experience throwing balls around.$h",
+
+    "Core.Alex.Summer.1": "Summer's definitely my favorite season by far. Hey, how about we go to the beach sometime?#$b#Now that I think about it, I'd love to see you in a tiny little bathing suit.$l",
+
+    "Core.Alex.Summer.Wed.Question": "Hey @, let me ask you a question real quick.#$b#$q 52/53 summer_Wed_01_old#Do you think I'm good enough to go pro?#$r 52 30 summer_Wed_01_01#I think so, yeah.#$r 52 0 summer_Wed_01_02#I haven't really seen you play...#$r 53 -50 summer_Wed_01_03#In your dreams.",
+    "Core.Alex.Summer.Wed.01.old": "$p 52#Now that I think about it, having you walk around in one of my old jerseys would be pretty hot.$h|Willing to reconsider? Maybe if you apologize right now I'll even sign a jersey for you.",
+    "Core.Alex.Summer.Wed.01.01": "You really think so?#$b#Or are you just saying that to see me in my uniform again?$h",
+    "Core.Alex.Summer.Wed.01.02": "Hm, I guess you really haven't seen me play much, huh?$9#$b#Maybe you could come watch me practice one of these days.",
+    "Core.Alex.Summer.Wed.01.03": "Aww, where's all this hate coming from, {{LPetName}}?$h#$b#C'mon, if I do go pro, I'll maybe consider letting you be my first fan.",
+
+    "Core.Alex.Fall.1": "Ugh, I hate that it's getting colder.$9#$b#At least this means gridball season's officially started again.",
+
+    "Core.Alex.Fall.Wed.Question": "...$a#$e#$q 54/55 fall_Wed_01_old#Why do you always have to show up here and bother me?#$r 54 30 fall_Wed_01_01#You didn't think I was bothering you last night.#$r 55 -30 fall_Wed_01_02#Fine, I'll be on my way then.",
+    "Core.Alex.Fall.Wed.01.old": "You're fun when you fight back, you know that?$h",
+    "Core.Alex.Fall.Wed.01.01": "...$7#$b#Shut up...$9",
+    "Core.Alex.Fall.Wed.01.02": "Aww, not gonna put up a fight today, {{LPetName}}?$h#$b#You're no fun when you're so submissive...",
+
+    "Core.Alex.Winter.1": "Winter's so lame, there's never really anything to do.$s#$b#Actually...$l",
+
+    // Jealousy 
+    "Core.Alex.Jealous.Married.Sebastian": "Does Sebastian make you happy?$s#$b#What does he have that I don't...$9",
+    "Core.Alex.Jealous.Married.Shane": "Are you happy with Shane?$s#$b#I swear to Yoba, if he ever does anything...$a",
+    "Core.Alex.Jealous.Married.Harvey": "Harvey? Don't you know he-$s#$b#You know what, if he makes you happy, that's all I need.$9",
+    "Core.Alex.Jealous.Married.Elliott": "You married Elliot?$s#$b#I could write you more love letters if it'd mean you'd come back to me, {{LPetName}}.$s",
+    "Core.Alex.Jealous.Married.Sam": "...$s#$b#I just hope Sam treats you better than I think he will...$9",
+    "Core.Alex.Jealous.Inlaw.Haley": "Are you happy with her? Haley, I mean.$s",
+    "Core.Alex.Jealous.Inlaw4.Haley": "I'll admit, I was a little jealous when you and Haley got married. But, hey...#$b#Atleast now I have a chance to learn something new about myself.",
+
+    // Pos Romantic Shit
+    "Marriage.Alex.Engagement.0": "I'm excited for our wedding, have you chosen something to wear yet?#$e#Yoba, you've made me so happy, {{LPetName}}.$l",
+    "Marriage.Alex.Engagement.1": "You think I'd look good in overalls?#$b#I'm really trying to embrace the whole 'Farmer' thing now.$h",
+    "Core.Alex.AcceptBouquet": "Oh, these flowers are nice, thanks {{LPetName}}.$h#$e#Oh, you're asking me out??$7#$b#I thought we were already dating...$l",
+    "Core.Alex.StarDrop": "I just wanted to say I really appreciate you sticking around despite all the teasing and fighting.$l#$b#You made me realize I'm capable of love so, when I saw this, I thought it was the perfect gift for someone like you.$h",
+    "Core.Alex.Dating": "Will you let me kiss you now, {{LPetName}}?$l",
+    "Core.Alex.Dating.Memory": "Y'know, I think I'll always enjoy %season a little more from now on.",
+
+    // Neg Romantic Shit
+    "Core.Alex.RejectBouquet": "%Alex looks sad as you wave the flowers in front of his face.#$b#You know I want to accept, but not yet, {{LPetName}}.$s",
+    "Core.Alex.RejectMermaidPendant": "I'mma have to decline for now, {{LPetName}}.$9#$b#Ask me again when you're actually ready to fully become mine.",
+    "Core.Alex.RejectGift.Divorced": "Are you really trying to make amends after you divorced me?$a#$b#Please, just leave me alone.$s",
+    "Core.Alex.Divorced": "%Alex looks at you longingly, but refuses to say anything.",
+    "Core.Alex.BreakUp": "Why are they wilt- Oh.$7#$b#{{PetName}}, I-$s#$b#What did I do wrong?$s",
+    // on 9/14/2024 7:33pm CST, user density120 made an nsfw edit of alex & sam fucking with me, a pure, angelic, did I mention *pure*?, lotion bottle covering their dicks and I haven't been the same since. I was working on the following line.
+    "Core.Alex.DumpedGuys": "How could you, @?$s",
+    "Core.Alex.SecondChanceGuys": "I don't think I could ever stay mad at you for too long, {{LPetName}}.$9#$b#I'm just glad you've realized I'm the better man for you.",
+
+    // Resort
+    "Core.Alex.Resort.Entering": "Finally, we're here!$h",
+    "Core.Alex.Resort.Leaving": "Aw... I guess it can't last forever.$s#$b#How about just you and me come back here sometime?",
+    "Core.Alex.Resort.Wander": "I guess I should've brought a frisbee, I can barely sit still.",
+    "Core.Alex.Resort.Wander.2": "Hmm, would you be down to play some volleyball with me?#$b#Don't worry, I'll go easy on you.$h",
+    "Core.Alex.Resort.Shore": "I wonder how far I could swim out and still make it back.#$e#How about you and I have a little competition, huh?$h",
+    "Core.Alex.Resort.Chair": "Aren't you hot in that outfit?$s#$b#I bet you'd be a lot more comfortable wearing noth- I mean, a swimsuit or something.",
+    "Core.Alex.Resort.Towel": "Hey, wanna join me in sunbathing for a bit?$h",
+    "Core.Alex.Resort.Towel.2": "Phew, it feels good to finally get these abs a little sunlight.#$b#Kind of a shame to have them hidden away all the time back home.$s",
+    "Core.Alex.Resort.Towel.3": "When I go pro, I'll vacation on islands all around the world.#$b#Wouldn't that be fun? Getting to join me on vacation like that?$h",
+    "Core.Alex.Resort.ResortBar": "I'm ordering a banana shake with two scoops of protein powder, do you want something?",
+    "Core.Alex.Resort.Resort": "Ugh, it feels so good out here.#$b#I'm glad you're here with me though.$h",
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████ █████ █   █ █████ ████  █████  ████       ████  █████  ███  █      ███   ████ █   █ █████ 
+    █     █     ██  █ █     █   █   █   █           █   █   █   █   █ █     █   █ █     █   █ █     
+    █  ██ ████  █ █ █ ████  ████    █   █           █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █     █  ██ █     █   █   █   █           █   █   █   █   █ █     █   █ █   █ █   █ █     
+     ███  █████ █   █ █████ █   █ █████  ████       ████  █████ █   █ █████  ███   ███  █████ █████ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Thank you:
+    - MuseLaSora
+    - Pixie
+    - Denny
+    For helping with a lot of these lines :3 */ 
+
+    // Generic 0 Heart Lines
+    "Core.Alex.0Heart.1": "Listen, {{LPetName}}, you don't have to keep talking to me. You're not even my type.$9#$b#You need to be more...$9#$b#Nevermind.",  
+    "Core.Alex.0Heart.2": "Huh? Were you talking to me?$9#$b#Eh, don't bother repeating. I wouldn't have listened anyway.", 
+    "Core.Alex.0Heart.3": "Uh, hold on.$9#$b#I see a pile of leaves over there that's more interesting to talk to.", 
+    "Core.Alex.0Heart.4": "Would you stop bothering me already?$9#$b#I don't want whatever products you're selling.$a", 
+    "Core.Alex.0Heart.5": "%Alex is pretending like you don't exist.", 
+    "Core.Alex.0Heart.6": "As much as I find farm work SUPER interesting, I have things to get back to.$9#$b#Like ignoring you, for example.", 
+    "Core.Alex.0Heart.7": "How's the weather treating you?#$b#Uh- Actually, I don't really care.$9", 
+    "Core.Alex.0Heart.8": "...$9#$e#What? Why are you still here?$a", 
+    "Core.Alex.0Heart.9": "What was your name again? %name? No, %firstnameletter%name?$9#$b#Eh, doesn't matter anyway.",
+    "Core.Alex.0Heart.10": "You again? Don't you have some important farmwork to do or something?$9",
+    "Core.Alex.0Heart.11": "Look, you seem nice, but I think I'd rather make conversation with a gridball right now.$9",
+    "Core.Alex.0Heart.12": "If you're looking for some seriously interesting conversation, try someone else.$9#$b#I'm really not interested in being friends with you.$9",
+    "Core.Alex.0Heart.13": "Hey, my name's Alex.#$e#Oh, did we already meet? I guess you're just not that memorable.$s",
+    "Core.Alex.0Heart.14": "What do you need?$9#$b#Come on, make it quick. I don't have all day.$9",
+
+    // SPRING
+    "Core.Alex.Spring.EarlyHeart.1": "Don't you get tired of coming around here all the time?$9#$b#Am I that interesting to talk to?$h",
+    "Core.Alex.Spring.EarlyHeart.2": "How many other guys do you talk to?$9#$b#Actually, don't answer that. I feel like I'd be hurting my own feelings there.$s",
+    "Core.Alex.Spring.EarlyHeart.3": "%You catch Alex staring at you with a serious expression. Looks like he's actually thinking for once.",
+    "Core.Alex.Spring.EarlyHeart.4": "Have I ever told you how big your forehead is?$h#$b#$y 'Yeah, I could land a plane on there. C'mon, don't look at me like that..._You're one to talk._I'll have you know, my forehead is AVERAGE size, thank you very much._Don't respond._Aww, did my way with words make you speechless? How cute.$h'",
+    "Core.Alex.Spring.EarlyHeart.5": "Hmm... Maybe it's the hair.$9#$b#$y 'Yeah, it's definitely the hair..._What about my hair?_Huh? Who says I was talking to you?$9_Yeah, your hair is pretty bad._I was actually talking about yours. It looks different. I WAS gonna say good, but...$a",
+    "Core.Alex.Spring.EarlyHeart.6": "You look halfway decent today, {{LPetName}}.#$e#What? That eager for another compliment from me?$h",
+    "Core.Alex.Spring.EarlyHeart.7": "Ugh, look who it is!$9#$b#Don't you have another pretty man to bother?$a#$b#Or am I the only one?$h",
+    "Core.Alex.Spring.EarlyHeart.8": "Look, if you keep bothering me like this I'll have to assume you're in love with me or something.#$e#Well, are you?$h",
+    "Core.Alex.Spring.EarlyHeart.9": "Ugh, could you at least shower before you come here?$a#$b#I can still smell farm all over you.$9",
+    "Core.Alex.Spring.EarlyHeart.10": "%Alex rolls his eyes as soon as he sees you walking up. Doesn't look like he wants to talk to you today.",
+
+    "Core.Alex.Spring.MidHeart.1": "Hey, how's farm-life treating you?$h#$e#%You overhear him swearing under his breath, saying something similar to 'So stupid... 'How's farm-life'? Seriously?'",
+    "Core.Alex.Spring.MidHeart.2": "%You catch Alex staring at you, this time blushing and turning away.#$b#You uh, you look good today, @.$l",
+    "Core.Alex.Spring.MidHeart.3": "{{Petname}}, {{LPetName}}, {{LPetName}}. Has it gotten annoying yet?$h#$e#Oh, don't tell me you actually like it...$s",
+    "Core.Alex.Spring.MidHeart.4": "Hey, I got you something.#$b#I know it's a bit out of season, but, I don't know...[421]#$b#It kind of reminds me of your smile, almost.$h",
+    "Core.Alex.Spring.MidHeart.5": "{{LDescript}}? Is that really the word you'd use to describe yourself, @?$s#$e#Well, maybe now that I take a better look at you...$l",
+    "Core.Alex.Spring.MidHeart.6": "I think you're finally starting to wear me down on the whole talking-my-ear-off thing.#$b#I don't want to walk away nearly as much when I see you coming over now.$h",
+    "Core.Alex.Spring.MidHeart.7": "You know, if you ever get bored, you could always hang out in my room if you'd like.#$b#I think I'm starting to get used to having you around and it's not as bad as I once thought...$l",
+    "Core.Alex.Spring.MidHeart.8": "$y 'Hey, do you have any bees on your farm yet?_Yeah, why?_Oh, well uh- you should probably bee careful around them. If I was one, I'd mistake you for a pretty flower.$h_No._Oh, never mind then.$s'",
+    "Core.Alex.Spring.MidHeart.9": "...$l#$b#You actually look pretty cute with mud on your face, {{LPetName}}.$h",
+    "Core.Alex.Spring.MidHeart.10": "My mom used to take me on picnics on days like this.#$e#Hey, how about I take you out on one?#$b#Yeah, you could even bring a few of those veggies I know you're growing on that little farm of yours.$h",
+    "Core.Alex.Spring.MidHeart.11": "Granny uh- She forced me to help bake cookies with her earlier.#$b#I thought maybe you'd like a few.[223]$l",
+    "Core.Alex.Spring.MidHeart.12": "Here.[591]$9",
+    
+    "Core.Alex.Spring.LateHeart.1": "I can't get you out of my fucking head, @.$9#$e#What are you doing to me?$s",
+    "Core.Alex.Spring.LateHeart.2": "I hope someday you'll feel the same way about me as I do you, {{LPetName}}.$l#$e#'What did you just say'? Uh- don't worry about it.$7#$b#You should've listened the first time, dummy.$h",
+    "Core.Alex.Spring.LateHeart.3": "$y 'Do you think 'soulmates' exist, @?_Yes, why?_Oh, uh... No reason.$l_No, they're stupid._Oh- uhm, yeah me too...$s",
+    "Core.Alex.Spring.LateHeart.4": "...$l#$b#I think Spring might be my new favorite season if I get to see you looking like this all the time.$h",
+    "Core.Alex.Spring.LateHeart.5": "I never really knew what I was missing with you, {{LPetName}}.$l#$b#I'm sorry if I was rude before.",
+    "Core.Alex.Spring.LateHeart.6": "So, @...$l#$b#When do I get to finally call you my {{LDescript}} little spouse?$l#$b#I'm growing impatient.$s",
+    "Core.Alex.Spring.LateHeart.7": "{{PetName}}, please, you know how much I- Actually...$s#$b#You've never been great with listening to my words, so maybe this'll get through to you.#$b#%Alex places his hands on either side of your face, drawing you in for a deep kiss.",
+    "Core.Alex.Spring.LateHeart.8": "Hey, I've been seeing you go into the mines a lot lately, please be careful, {{LPetName}}.$9#$b#I don't know if I could stand watching Harvey tou-$a#$b#I mean, I don't think I could stand seeing you get hurt again.$s",
+    // 9 & 10 aren't too neutral but they were too fucking funny to not put in. You can rewrite them if you don't like it.
+    // Though, don't completely delete or else you'll run the risk of "no translation" errors when you talk to him.
+    "Core.Alex.Spring.LateHeart.9": "Your petals look beautiful this time of year, {{LPetName}}.$l#$e#Huh? Yeah, I meant the flowers you planted. What else did you think I meant?$h",
+    "Core.Alex.Spring.LateHeart.10": "I saw you, earlier, reading that book about flowering buds. You're really into gardening, huh?#$b#Hey, actually. I think Granny has a similar book on flowers, do you want me to ask for you?$h",
+    "Core.Alex.Spring.LateHeart.11": "I can't wait for Summer to finally roll around.#$e#Hm? Why? Oh, so we can go on more beach dates, duh.$h#$b#You know I love seeing you in that little bathing suit of yours.$l",
+    "Core.Alex.Spring.LateHeart.12": "Have I ever told you how good you look?$l#$b#I could stare at you all day, {{LPetName}}.$h",
+
+
+    // SUMMER
+    "Core.Alex.Summer.EarlyHeart.1": "Yoba, {{LPetName}}, why do you keep bothering me so much?$a#$b#$y 'Can't you see I don't want you here?_I like annoying you._You're impossible, you know that?$l_If I'm so much of a bother, I'll leave._Wait, no- I didn't mean it like that...$7",
+    "Core.Alex.Summer.EarlyHeart.2": "%Alex is ignoring you. Better try again tomorrow.",
+    "Core.Alex.Summer.EarlyHeart.3": "Ugh, great. First I have to deal with the heat, now I gotta deal with you too?$9#$b#Can this season get any worse?$a",
+    "Core.Alex.Summer.EarlyHeart.4": "The air feels so good today.#$b#Though, it'd feel even better if you weren't here bothering me.$9",
+    "Core.Alex.Summer.EarlyHeart.5": "Ugh, listen, as much as I'd 'love' to hear about your farm or whatever, I have better things to do right now.$9#$b#You know, like risking a sunburn or dropping a weight on my foot just to be in Harvey's clinic and not here talking to you.$9",
+    "Core.Alex.Summer.EarlyHeart.6": "Do you ever do farmwork or do you just try to spend your entire day bothering me?$9",
+    "Core.Alex.Summer.EarlyHeart.7": "Every time you come to talk to me, you have some sort of dirt on your face.$9#$b#Do you know how to bathe or do you need m- er, someone to teach you?$a",
+    "Core.Alex.Summer.EarlyHeart.8": "Look, {{LPetName}}, I know I'm extremely good-looking, but you gotta realize, I'm not interested.#$e#%Alex is ignoring you now.",
+    "Core.Alex.Summer.EarlyHeart.9": "{{PetName}}, I don't want to have to keep wiping dirt from your face each time I see you. You're such a mess.$9",
+    "Core.Alex.Summer.EarlyHeart.10": "Summer's such a great season, isn't it, @?#$b#You know what'd make it even better?#$b#Not talking to you.$9",
+
+    "Core.Alex.Summer.MidHeart.1": "...$l#$b#The Summer tan you got going on suits you. I like it.",
+    "Core.Alex.Summer.MidHeart.2": "%You catch Alex staring at you.#$b#Huh? What? Why would I ever stare at you? There's mu- uh, there's not much to even look at...$9",
+    "Core.Alex.Summer.MidHeart.3": "Uh, I got you this.[402]#$b#I had this whole speech on how you were as sweet at this flower but, eh, it sounded better in my head.$s",
+    "Core.Alex.Summer.MidHeart.4": "Harvey gave me one of these drinks the other day, but I don't really put stuff like this in my body.$s#$b#Here, I thought maybe you could use it.[351]",
+    "Core.Alex.Summer.MidHeart.5": "Did you do something different with your look?#$b#Not that it looks horrible or anything!$7#$b#It just uh, it looks nice.$l",
+    "Core.Alex.Summer.MidHeart.6": "I've been trying to build a better playlist to workout to, do you think you could help me?#$b#I'm sure you have great taste.$l",
+    "Core.Alex.Summer.MidHeart.7": "%Alex sighs, running his hands through his hair.#$b#Why do you keep coming around here? You're just so...$9#$b#I don't know, but you're confusing and it's pissing me off.$a",
+    "Core.Alex.Summer.MidHeart.8": "Do you even like talking to me or do you just so happen to come by each time I so happen to be hot and sweaty?$9#$b#Look, honestly, either way I'll take it. I think I'm starting to like having you around more often.",
+    "Core.Alex.Summer.MidHeart.9": "Ugh, I haven't been able to find any weights heavy enough for what I need...$s#$b#Actually, if you have some time to spare, do you think you could come over and sit on my back while I do some pushups?",
+    "Core.Alex.Summer.MidHeart.10": "How are the mosquitos treating you? Are they eating you up like I-#$b#Shit, wait, ignore me. That came out wrong.$s",   
+    "Core.Alex.Summer.MidHeart.11": "You should come swing by the ice cream stand sometime.#$b#I'd love to see just how well you'd lick me cle-$l#$b#Shit, sorry, I meant I'd love to see which flavor you'd choose.#$e#Ugh, don't even start. Can we forget about this, please?$s",
+    "Core.Alex.Summer.MidHeart.12": "Sometimes I think I'm missing out a lot by not hanging out at the saloon with everyone else.$s#$b#It's okay though, I'm beginning to really enjoy just hanging out with you and Dusty.$h",
+
+    "Core.Alex.Summer.LateHeart.1": "I'll never get tired of seeing you run up to talk to me everyday, {{LPetName}}.$l#$b#It's so desperate it's almost cute.$h",
+    "Core.Alex.Summer.LateHeart.2": "Do you ever get hot farming in those clothes?#$e#I'd really love to see you in a tiny little outfit moving your watering can around.$l",
+    "Core.Alex.Summer.LateHeart.3": "Have you noticed how Dusty's started to get really excited when you come over?#$b#This means you have to come over more often, you know that, right?$h",
+    "Core.Alex.Summer.LateHeart.4": "I found this the other day while around your ho-I mean, Granny found it while she was gardening.#$b#I thought it'd look good on you.[191]$l",
+    "Core.Alex.Summer.LateHeart.5": "Are you trying to impress someone?$9#$b#$y 'Who?_Why are you asking this?_You just uh, you look nicer than usual is all...$l_None of your business._Damn, no need to get so defensive, {{LPetName}}. You just look better than normal is all.$h",
+    "Core.Alex.Summer.LateHeart.6": "You're always coming over to my place to hang out, when will you invite me over to yours?#$b#I'm sure it'd be a lot more intimate to have you all alone with no where to run.$l",
+    "Core.Alex.Summer.LateHeart.7": "Ugh, I know it's hot out here but it's not really fair seeing you dressed like this.$s#$b#I just-I can't help myself here. You really want me wrapped around that {{LDescript}} little finger, don't you?$l",
+    "Core.Alex.Summer.LateHeart.8": "Hey, Gran needs some help planting some flowers by the house, wanna come with?#$b#It'll give you a chance to see what I look like on my knees.$h",
+    "Core.Alex.Summer.LateHeart.9": "%You hear Alex sigh.#$b#It's kind of boring having to work the ice cream stall the entire Summer.$s#$b#Maybe you should come keep me company more often, {{LPetName}}.$h",
+    "Core.Alex.Summer.LateHeart.10": "The ice cream stall's been pretty busy this year.#$b#Maybe I'll make enough to buy you something pretty, would you like that, {{LPetName}}?$h",
+    "Core.Alex.Summer.LateHeart.11": "%Alex leans in close, whispering in your ear.#$b#You look tense from all that farmwork, how about you and I...$l#$b#Hm, actually, never mind...$h",
+    "Core.Alex.Summer.LateHeart.12": "Did you know swimming in the ocean is the best way to cool off during the Summer?#$b#Plus, I know a secluded spot so no one would know what we'd be up to...$l",
+
+
+    // BIRTHDAY
+    "Core.Alex.Birthday.0": "Hm, oh I guess it is my birthday, huh?#$b#Thanks for remembering, {{LPetName}}.$h",
+    "Core.Alex.Birthday.4": "You look so {{LDescript}} when you run up to me all flustered like that.$l#$b#Thanks for the birthday wish though.",
+    "Core.Alex.Birthday.8": "Wishing me a happy birthday looking like that?$s#$b#Come on, {{LPetName}}, you know the only way I'll accept one is if those clothes come off with it.$l",
+
+
+    // FALL
+    "Core.Alex.Fall.EarlyHeart.1": "Looks like all that farm work is really wearing you down, huh, @?$9#$b#Maybe you should head up to the bathhouse and recover a little. Your whole aura is... depressing.$s",
+    "Core.Alex.Fall.EarlyHeart.2": "You look worn out.$9#$b#$y 'Is that normal for a farmer?_Yeah, so what?_Hm... No reason.$h_No, I was busy with your mom last night._You know she's dead, right?$s'",
+    "Core.Alex.Fall.EarlyHeart.3": "For someone who's supposedly SOOO productive on their farm, you seem to love spending all day here talking my ear off.$9#$b#Don't you have some dying crops or something to take care of?",
+    "Core.Alex.Fall.EarlyHeart.4": "Ugh, maybe if words don't work, this will.$a#$b#%Alex places his hands on your shoulders, spinning you around and giving you a little push away from him.",
+    "Core.Alex.Fall.EarlyHeart.5": "What?$9#$b#Huh?#$b#Sorry, the wind's just so loud I can't talk to you today.",
+    "Core.Alex.Fall.EarlyHeart.6": "Doesn't Fall mean harvest season for farmers? Why are you still here talking to me?$9#$b#Huh, actually, does this mean your crops are doing so poorly that you have a lot of time to kill?",
+    "Core.Alex.Fall.EarlyHeart.7": "%You notice new headphones on Alex. Looks like he'd rather listen to music than talk to you.",
+    "Core.Alex.Fall.EarlyHeart.8": "Look, I have some plans with Haley today and I don't wanna be bothered by you.$9#$b#So, how about you make like a leaf and dip or something.#$e#Go on, I don't know why you're still here.$9",
+    "Core.Alex.Fall.EarlyHeart.9": "Ugh, look, you know it's gridball season, right?$9#$b#I can't be spending all my time doting on you whenever you want to talk to me right now.",
+    "Core.Alex.Fall.EarlyHeart.10": "You know what I've been thinking about lately, @?$l#$b#Not you.$9",
+
+    "Core.Alex.Fall.MidHeart.1": "You have a few leaves stuck in your hair, you should get them out.#$e#Ugh, you're so useless... Here, let me get them for you.$9",
+    "Core.Alex.Fall.MidHeart.2": "Hm, I don't think I've ever asked you what kind of music you're into.#$b#I bet you're into that country stuff, huh?$h",
+    "Core.Alex.Fall.MidHeart.3": "Hey, uh...$9#$b#Let me know if you need any help once the big harvest comes around.#$b#I gotta use all this training for something useful, you know?$h",
+    "Core.Alex.Fall.MidHeart.4": "The cooler air makes me really want to hit the bathhouse more often.#$b#Would you wanna join me there sometime?",
+    "Core.Alex.Fall.MidHeart.5": "I used to uh- I used to just see you as an annoyance, @, but lately...$l#$b#I guess I really just enjoy seeing you nowadays.#$e#Ugh, this Fall air's making me sappy as hell...$s",
+    "Core.Alex.Fall.MidHeart.6": "Oh, finally. I've been waiting for you all d-$h#$b#Ah, uh... nevermind. What do you want?$9",
+    "Core.Alex.Fall.MidHeart.7": "I used to associate the start of fall with gridball season but...#$b#$y 'Lately, I don't know, it feels different._Do you miss it?_Sometimes, but, I think now I have better things to look forward to._I can help take your mind off it._I might just end up taking you up on that offer, {{LPetName}}.$l'",
+    "Core.Alex.Fall.MidHeart.8": "You know, you're tougher than you look, @.#$b#Yeah, I didn't think a frail thing like you would last too long working on a farm all year.$h#$e#I guess I got pretty lucky that you stuck around.$l",
+    "Core.Alex.Fall.MidHeart.9": "Are you enjoying the weather?#$b#I bet Fall's a lot nicer to work in than Summer, huh?$h",
+    "Core.Alex.Fall.MidHeart.10": "Did you eat something this morning? You look sick.$s#$b#Here, take this. I was gonna eat it myself, but...[201]#$e#Shut up. Don't try to give it back to me. It's yours now.$9",
+    "Core.Alex.Fall.MidHeart.11": "Gran's been trying to get her hands on apples this year... Something about making some sort of pie, I think?$s#$b#Hey, you wouldn't happen to grow any, would you?#$e#Well, if you do, you should give them to her yourself. I know she'd love to see you.$h",
+    "Core.Alex.Fall.MidHeart.12": "...$9#$b#Here. It reminded me of you.[421]$9#$e#Shut up, just don't mention it.$9",
+
+    "Core.Alex.Fall.LateHeart.1": "Fall's such a great time to get married in, don't you think, {{LPetName}}?#h#$e#What? Did I say something wrong?$s",
+    "Core.Alex.Fall.LateHeart.2": "I can't believe how much of a jerk I was to you when we first met...$s#$b#I promise, you won't regret giving me a chance, {{LPetName}}.$l",
+    "Core.Alex.Fall.LateHeart.3": "I'm really gonna miss Dusty when I move onto your farm, but at least I'll be able to give %pet plenty of love.#$e#What? I mean, we are getting married, right?$s",
+    "Core.Alex.Fall.LateHeart.4": "%Alex places his hand on your chin, lifting your head up slightly.#$b#What'd you do to get this scratch here?$9#$b#I wish you'd be more careful, {{LPetName}}.$s",
+    "Core.Alex.Fall.LateHeart.5": "Oh, hey {{LPetName}}.$h#$b#I'm actually missing a game that's on right now, but did you wanna keep talking?",
+    "Core.Alex.Fall.LateHeart.6": "You better not be working too hard on that farm of yours.$9#$b#You know you can always swing by for a free massage if you need it, right?",
+    "Core.Alex.Fall.LateHeart.7": "...$l#$e#What? Is staring at you illegal now, @?$h",
+    "Core.Alex.Fall.LateHeart.8": "Fall air feels great when working out. You should join me sometime.#$b#I'm not sure you could keep up, but it'd be cute to see you try.$l",
+    "Core.Alex.Fall.LateHeart.9": "Hey, I got you something.#$b#I thought you might like it.[595]$l",
+    "Core.Alex.Fall.LateHeart.10": "I don't know how you do it, but you keep managing to get leaves in your hair.$9#$b#You're so useless, you know that, @?$l",
+    "Core.Alex.Fall.LateHeart.11": "I think I might buy a motorcycle. Seb's been making me jealous lately.#$b#Plus, I'm already used to wearing helmets and I think it'd be nice to have a {{LDescript}} little thing like you wrapped around me.$h",
+    "Core.Alex.Fall.LateHeart.12": "Hmm... I was wanting to take you out for apple picking this week as a cute date but...$s#$b#Ugh, I guess that's like work for you, isn't it?$9",
+
+
+    // WINTER
+    "Core.Alex.Winter.EarlyHeart.1": "Huh? You're talking to me now?$9#$b#And how long have you been ignoring me for, @?$a",
+    "Core.Alex.Winter.EarlyHeart.2": "Kind of a pity we've gone this long without getting to know each other but, oh well.$9",
+    "Core.Alex.Winter.EarlyHeart.3": "It's cold out today, huh?#$e#What, are you expecting a longer conversation? {{LPetName}}, I barely know you.$s",
+    "Core.Alex.Winter.EarlyHeart.4": "You know what I could really go for right now, @?#$b#A nice, hot plate of Salmon Dinner. You know, one of my favorite dishes.#$e#Maybe that'll help you get to know me more.$9",
+    "Core.Alex.Winter.EarlyHeart.5": "%Alex looks a bit more focused on keeping warm than sparking a conversation with you.",
+    "Core.Alex.Winter.EarlyHeart.6": "Oh? Trying to raise your friendship with me this late in the year?$9#$b#And what if I just said 'no' to all your advances, hm?$a",
+    "Core.Alex.Winter.EarlyHeart.7": "Winter clothes look good on you.#$b#And by that, I mean there's less of you to even see. Just how I like it.$h",
+    "Core.Alex.Winter.EarlyHeart.8": "$y 'Ugh, what I wouldn't give to be infront a fire right now._You can get infront my fire._What does that even mean??$s_That's nice._You could at least try to care, {{LPetName}}.$9'",
+    "Core.Alex.Winter.EarlyHeart.9": "What are you looking at?$9#$b#You've spent the entire year just staring at me and NOW'S when you spark conversation?$a",
+    "Core.Alex.Winter.EarlyHeart.10": "Huh, now that it's Winter, you must have a lot more time to yap my ear off...$9#$b#%You notice Alex pulling out some earplugs.",
+
+    "Core.Alex.Winter.MidHeart.1": "Aren't you cold wearing that?$s#$b#Do you want my- er, why don't you go buy a better jacket?$9",
+    "Core.Alex.Winter.MidHeart.2": "%You catch Alex smiling at you.#$b#You look stupid with all that snow in your hair. Do you want me to clean it off you?$h",
+    "Core.Alex.Winter.MidHeart.3": "Hm... That sweater looks pretty good on you- oh, you have a little string hanging out.#$b#Uh, you'd better get this one, if I did it, I'd probably unravel you until nothing's left.$l",
+    "Core.Alex.Winter.MidHeart.4": "The tip of your nose is red.#$b#It looks cute on you, rudolph.$l",
+    "Core.Alex.Winter.MidHeart.5": "What do you even do in Winter now that there's barely any crops to tend to?#$b#Huh, I guess that's why I've been seeing you a lot more recently.$h#$b#Not that I mind though.$l",
+    "Core.Alex.Winter.MidHeart.6": "Ugh, it's too cold to go to the beach anymore.$9#$b#Hey, how about you come with me to the bathhouse sometime?#$b#You get to warm up and I get to see what you look like when you're wet.$l",
+    "Core.Alex.Winter.MidHeart.7": "I hope Winter doesn't mean you're gonna be spending more time in the mines.$s#$b#You should stick to fishing or... maybe growing some weeds!#$b#At least that way I can keep an eye on you.",
+    "Core.Alex.Winter.MidHeart.8": "This weather makes me want to stay in all day and play video games.$9#$b#Ugh, what am I saying? Who am I... Sebastian?$s",
+    "Core.Alex.Winter.MidHeart.9": "Did you walk all the way over here through the snow just for me?#$b#Wow, you must really think I'm special, huh?$h",
+    "Core.Alex.Winter.MidHeart.10": "You're driving me crazy, {{LPetName}}.$s#$b#Go back home, it's too cold for you to be running about everywhere.$9",
+    "Core.Alex.Winter.MidHeart.11": "Weren't you boasting before about how you needed one of these?[74]#$b#I don't know what'd you do with a useless rock, but...$s",
+    "Core.Alex.Winter.MidHeart.12": "I think Dusty gets bored around this time of year, he can't stop digging stuff up and bringing it to me.$9#$b#Here, have this one. I can't keep hoarding them.[105 114 119 580]",
+   
+    "Core.Alex.Winter.LateHeart.1": "Have you ever thought about having a wedding in Winter, {{LPetName}}?#$b#I think the snow would match your outfit perfectly.$l",
+    "Core.Alex.Winter.LateHeart.2": "Since this town doesn't have a skating rink, how about you let me take you to this one in Zuzu City?#$b#It can be a little competition: see who ends up falling into the other's arms first.$h",
+    "Core.Alex.Winter.LateHeart.3": "You look cold, {{LPetName}}.$s#$b#How about I walk you back home and put you in front of your little fireplace, hm?#$e#Come on, take me up on my offer, I don't want you getting sick.",
+    "Core.Alex.Winter.LateHeart.4": "You know, if you keep wandering around here in the cold you'll get sick.$9#$b#Go home and warm up.$9#$e#Unless, of course, you'd rather go to my room and warm up a bit?$l",
+    "Core.Alex.Winter.LateHeart.5": "Oh, you have a little bit of snow on your cheek, here, let me get it for you.#$b#%Alex leans in close, licking the cool frost off your face, smiling as he leans back.#$b#There, got it.$h",
+    "Core.Alex.Winter.LateHeart.6": "Ugh, your fingers are practically freezing off, {{LPetName}}. Here, let me hold them for you.#$e#I could always ask Gran if you need an extra pair of mittens.#$b#I don't wanna have to keep worrying about you like this.$s",
+    "Core.Alex.Winter.LateHeart.7": "I was thinking of learning some proper first aid from Harvey since I keep hurting myself.#$b#Plus, this means you'd be able to come to me, instead of him from now on, right?$l",
+    "Core.Alex.Winter.LateHeart.8": "Ugh, Winter SUCKS. I feel like I'm going stir crazy being stuck at home with Gran all day.$s#$b#I do feel better when you come around though, {{LPetName}}.$l",
+    "Core.Alex.Winter.LateHeart.9": "Hey, did you know crocuses are part of the iris family?[418]#$e#What? Don't give me that look. I may or may not've recently picked up a book...$h#$b#And it may or may not have been inspired by you...$l",
+    "Core.Alex.Winter.LateHeart.10": "I hope we don't lose any power during the snowstorms this year.$s#$b#Although... being in a candle lit room with you doesn't sound like the worst time, {{LPetName}}.$l",
+    "Core.Alex.Winter.LateHeart.11": "Gran made some of this stuff earlier, saying how she was so lucky to have all of us in her life...#$b#Anyways, I thought you might like some.[204]",
+    "Core.Alex.Winter.LateHeart.12": "Ugh, I got snow stuck in my shoe again.$s#$b#You'd think Lewis would invest in clearing the paths around here, but I have to do it so Gran doesn't end up falling over.$9",
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  ████  ████  █████  ███   ████ █████     ████  █████  ███  █      ███   ████ █   █ █████ 
+    ██ ██ █   █ █   █ █   █   █   █   █ █     █         █   █   █   █   █ █     █   █ █     █   █ █     
+    █ █ █ █████ ████  ████    █   █████ █  ██ ████      █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █ █   █ █   █   █   █   █ █   █ █         █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █ █   █ █   █ █   █ █████ █   █  ███  █████     ████  █████ █   █ █████  ███   ███  █████ █████ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    /* Thank you:
+    - MuseLaSora
+    - Pixie
+    For helping with some of these lines :3 */
+
+    // Patio
+    "Marriage.Alex.Patio.1": "Morning, {{LPetName}}, I was just getting a quick workout in while the weather's still nice.$6#$b#Maybe for this next rep, I can lift you up a few times.$6",
+    "Marriage.Alex.Patio.2": "1... 2... mph...#$e#Oh, hey @. Wanna join me for a few reps? Or maybe I could help you out with some farm work.#$b#Either one is fine with me, since I'll get to see you sweaty no matter what.$l",
+    "Marriage.Alex.Patio.3": "%You hear Alex grunt a few times while working out.#$e#Are you just gonna stand there gawking at me while I workout?$6#$b#I think I should start making you pay to keep watching this show, {{LPetName}}.$6",
+
+    // SpouseRoom
+    "Marriage.Alex.SpouseRoom.1": "Good morning, {{LPetName}}.[201]#$e#What?#$b#I told you I'd be the one to make you breakfast one of these days.$l",
+    "Marriage.Alex.SpouseRoom.2": "Hey {{LPetName}}, brewed some coffee for you.[253]#$b#I thought you might need a little pick me up after what we did last night.$l#$e#Hm? Do you wanna go again or something?#$b#At least let me get some breakfast in first, {{LPetName}}...$h",
+    "Marriage.Alex.SpouseRoom.3": "You look {{LDescript}} this morning, {{LPetName}}.$l#$e#Ah, sorry- I mean you look {{LDescript}} every morning, @.$h",
+
+    // FunLeave & Return
+    "Marriage.Alex.funLeave": "Hey {{LPetName}}. I'm going out today, do you want me to bring you back anything?",
+    "Marriage.Alex.funReturn.1": "I wasn't sure what to bring you back, so I got you this.[593 595 421]#$b#I would've gotten you 11 more to make a bouquet, but I had a hard time finding more than one.$s#$b#I guess it makes sense though, since you're the only one for me.$l",
+    "Marriage.Alex.funReturn.2": "Granny wouldn't stop boasting about how much you loved the last one she made, so she had me bring you back some.[237 239 608]",
+    "Marriage.Alex.funReturn.3": "I stopped by Harvey's on my way home to pick up a bottle of this stuff.[349]#$b#Thought you might need it for later.$l",
+
+    // Special Dates - Spring
+    "Marriage.Alex.Spring": "Let me know if you need any help clearing any remaining debris from Winter.#$b#You know I'm always willing to lend you a hand, {{LPetName}}.$l",
+    "Marriage.Alex.Spring1": "I can't wait to start jogging again now that there's no more snow on the ground.$h#$b#You should've seen me try last week, I nearly fell straight on my ass.$s",
+    "Marriage.Alex.Spring6": "I was finally able to get my hands on Gran's famous flower-shaped cookies.#$b#How about you and I stay home today and cook a few batches?$l",
+    "Marriage.Alex.Spring8": "Granny gave me a whole bunch of these earlier, saying how she planted too many.#$b#I thought we could put a few in the kitchen or something.[591]",
+    "Marriage.Alex.Spring12": "Hey {{LPetName}} excited for the egg festival tomorrow?#$b#You know, I'm always down to bribe the kids if you ever need a sure-fire way to win.$h",
+    "Marriage.Alex.Spring23": "Do you think my old flower dance suit still fits me?$s#$b#Actually, why am I asking you? You'd just enjoy seeing me in tight clothes for an entire day.$h",
+
+    // Special Dates - Summer
+    "Marriage.Alex.Summer": "Ugh, I just love Summer.$h#$b#It always reminds me of the practice games we used to run before gridball season officially started.#$b#I guess Summer now means crops and working with you, huh?$l",
+    "Marriage.Alex.Summer1": "Now that Summer's back, we should go the beach like we used to.#$b#Maybe even throw the gridball around like we did that one time...$l",
+    "Marriage.Alex.Summer8": "What do you think about me putting a grill out back? I've been thinking of getting into BBQ lately.#$b#Yeah, just think about it. I could put on a little apron and cook for you while you sit and look {{LDescript}} on one of our lawn chairs.$h",
+    "Marriage.Alex.Summer10": "I almost forgot that the Luau was tomorrow.$h#$b#Are you gonna put on that one skimpy little bathing suit I know you have in the back of our closet?$l",
+    "Marriage.Alex.Summer15": "The middle of Summer is always the hottest, but it's perfect for sweating everything out.#$b#I actually know a few excerses to help with that if you wanna join me...$l",
+    "Marriage.Alex.Summer27": "I always love going to watch the moonlight jellies every summer.#$b#I used to go with my mom, so it makes me happier knowing I can go with you now.$l",
+
+    // Special Dates - Fall
+    "Marriage.Alex.Fall": "Now that it's fall, you think Granny's down to make us some spooky treats?#$b#She makes some killer ghost-looking cookies, I'll have to bring them back one of these days.$h",
+    "Marriage.Alex.Fall1": "I can't wait to start watching more gridball games now that the season's officially started back up again.#$b#You should join me this week, maybe you can wear one of my old jerseys while we watch together.$l",
+    "Marriage.Alex.Fall8": "Whew, I'm so not looking forward to cleaning the gutters later.$s#$b#How about you give me a little reward for being such a good little house-husband, hm?$l",
+    "Marriage.Alex.Fall15": "Don't stress too much about tomorrow's fair, {{LPetName}}.#$b#I've been warming up all week to make sure I win you enough tickets.$h",
+    "Marriage.Alex.Fall20": "%You hear Alex sigh.#$b#Fall's almost over and we've yet to carve a pumpkin together...$s#$b#You are growing an extra one just for us, right, {{LPetName}}?",
+    "Marriage.Alex.Fall26": "I still haven't decided on what I wanna be for Spirit's Eve this year... Cowboy, Knight?$s#$b#Why don't we just go as a matching couple instead? That'd be so much easier.$l",
+
+    // Special Dates - Winter
+    "Marriage.Alex.Winter": "I used to love making snow angels as a kid.#$b#Do you think ours will too?$l",
+    "Marriage.Alex.Winter1": "Hmm... Now that Winter's finally here, I can start decorating for the Winter Feast.$h#$b#Where do you want to put the tree this year, {{LPetName}}?",
+    "Marriage.Alex.Winter7": "Don't forget to bring a jacket for the Festival of Ice tomorrow.#$b#I don't want you to get too cold when you're absolutely crushing the competition.$h",
+    "Marriage.Alex.Winter9": "I can't wait to build snow forts with our kids when they're older.#$b#There's just so much open space out here, it's really nice.$h",
+    "Marriage.Alex.Winter17": "Hey, did you get everything you needed at the market yet?#$b#Don't forget to pick up an extra cup of that coffee for me, we'll need it for tonight.$l",
+    "Marriage.Alex.Winter24": "It'll be nice to see the entire town tomorrow at the feast.#$b#Though, I'm more excited to give you this huge present I've had saved after the festival...$l#$e#Actually, if you wanna unwrap it now, I wouldn't mind.$l",
+    "Marriage.Alex.Winter28": "As much as I enjoy Spring, I'm a little sad Winter's ending.$s#$b#We won't be able to cuddle by the fireplace the same...$s",
+
+    // Generic - Rainy Days
+    "Marriage.Alex.Rainy.Day.Alex": "Don't spend too long outside today, {{LPetName}}. I don't want the rain making you too sick.$s#$b#Though, you know I'll always be here to take care of you if you do.$l",
+    "Marriage.Alex.Rainy.Day.0": "Since you don't have to water the crops today, I was thinking we could spend a little quality time inside instead.#$b#What do you think, {{LPetName}}?$l",
+    "Marriage.Alex.Rainy.Day.1": "It's pouring pretty hard out there, you sure you don't want to just stay inside with me all day?#$b#Maybe we can even try out one of Gran's recipes that she gave me recently.$h",
+    "Marriage.Alex.Rainy.Day.2": "I hate when it rains like this, I couldn't even go on my morning run.$s#$b#Good news for you, though. I was able to go all out with your breakfast.[201]$h",
+    "Marriage.Alex.Rainy.Day.3": "I feel like I get all jittery when it rains and I can't go work outside.$s#$b#Why don't you stay home with me so I can get all this energy out in another way.$l",
+    "Marriage.Alex.Rainy.Day.4": "Hmm...#$b#If you don't go out and get soaking wet from the rain, maybe I can get you that way instead.$l",
+    "Marriage.Alex.Rainy.Day.5": "I hope you don't get sick from running around in the rain all day, @.$s#$b#Though, I would love to nurse you back to health.$l",
+    "Marriage.Alex.Rainy.Night.Alex": "{{PetName}}, you know I love it when you're all nice and wet for me, but why don't you go dry off.$s#$b#I just mopped.$9",
+    "Marriage.Alex.Rainy.Night.0": "Glad you're back, {{LPetName}}. You didn't stay too long in the rain, did you?$h",
+    "Marriage.Alex.Rainy.Night.1": "Look at you, {{LPetName}}. You're practically shivering from all the rain.$s#$b#How about I go run you a nice hot bath and maybe I'll join you.$l",
+    "Marriage.Alex.Rainy.Night.2": "I already started the fireplace before you came home, do you wanna cuddle in front of it before we go to bed, {{LPetName}}?$l",
+    "Marriage.Alex.Rainy.Night.3": "I hope Dusty's not suffering too much with the rain.$s#$b#Weather like today makes me wish we could bring him here sometimes.$s",
+    "Marriage.Alex.Rainy.Night.4": "%You notice Alex eyeing you up and down.#$b#You look good when your clothes are all wet.#$b#Though, I think they'll look better when they're off completely. Don't worry, I'll do that step for you...$l",
+    "Marriage.Alex.Rainy.Night.5": "Welcome home, {{LPetName}}.#$b#I bet you're just exhausted from running around in the rain all day.$s#$b#How about we end the night by taking a nice hot shower and cuddling to the sound of rain, hm?$l",
+
+    // Generic - Indoor/Outdoor
+    "Marriage.Alex.Indoor.Day.Alex": "Hey, I made this for you this morning.[204]#$b#Get it? Cause I got pretty lucky with you.$h",
+    "Marriage.Alex.Indoor.Day.0": "How about you stay inside with me today, {{LPetName}}.#$b#I got a whole new workout routine I've been dying to try out on you.$l",
+    "Marriage.Alex.Indoor.Day.1": "Morning {{LPetName}}, going out already?#$b#Aww, how about you stay home just a little longer...$s#$b#I promise, I'll make it worth your while.$l",
+    "Marriage.Alex.Indoor.Day.2": "How do you always look so {{LDescript}} first thing in the morning?$l#$b#Let's go back to bed for a little, the farm can wait.$l",
+    "Marriage.Alex.Indoor.Day.3": "It's pretty boring without you here all day, are you sure the farm can't go just one day without you?$s#$b#I'll even take the day off from working out just to spend more time cuddling with you instead.$l",
+    "Marriage.Alex.Indoor.Day.4": "Morning {{LPetName}}.$l#$b#I was on my morning run earlier and couldn't stop thinking about you, so I ran back early to make you breakfast.[201]$h",
+    "Marriage.Alex.Indoor.Night.Alex": "You're finally home!$h#$b#What do you say we do a few... workouts before heading to sleep, {{LPetName}}?$l",
+    "Marriage.Alex.Indoor.Night.0": "Hey, {{LPetName}}. How was your day?#$b#Why don't you let me give you a nice, deep massage with my co-$l#$b#I mean, a deep massage for your back while you tell me all about it.",
+    "Marriage.Alex.Indoor.Night.1": "I wasn't sure when you'd be home today, but I made you dinner anyway.#$b#I tried a new recipe for this one, hope you like it, {{LPetName}}.[198 209 214 237]$h",
+    "Marriage.Alex.Indoor.Night.2": "Hey, {{LPetName}}. I cleaned a few things around the house today while you were busy.#$b#I know some people find chores boring, but I don't mind doing them for us.$h",
+    "Marriage.Alex.Indoor.Night.3": "Y'know, even though I love that whole hot and sweaty thing you got going on, how about for tonight you let me wash you off.$h#$b#Don't worry, I'll be sure to be EXTRA thorough.$l",
+    "Marriage.Alex.Indoor.Night.4": "%You hear Alex sigh.#$b#I really miss you when you're out working all day, {{LPetName}}.$s#$b#At least this means I have time to think of all the things I'll do to you once you're home.$l",
+    "Marriage.Alex.Outdoor.Alex": "$y 'Hey, I was just about to go out for a run, wanna join?_Sure._Great. Now, how about you go put on something a little more skimpy so I can happily watch you run from behind.$l_No thanks._Aww, and here I was excited to see you all hot and bothered after running a few miles.$s'",
+    "Marriage.Alex.Outdoor.0": "Hm?#$b#What am I doing today?#$b#Uhh, I was thinking about just going for a run or lifting a few weights.#$b#Or, if you want, we could stay home together all day and workout in a different way.$l",
+    "Marriage.Alex.Outdoor.1": "Y'know, I learned a thing or two about keeping plants alive from Gran.#$b#Maybe I can help you out today by doing more than just being some nice eye candy out here.$h",
+    "Marriage.Alex.Outdoor.2": "It's so nice being all the way out here.#$b#Actually, I was thinking of bringing Dusty out here so he can run around. I bet he'd just love all the open space.$h",
+    "Marriage.Alex.Outdoor.3": "The farm looks great, {{LPetName}}. Though, maybe you should take the day off.$l#$b#Yeah, we could go back inside right now and spend our time today doing much better things...$l",
+    "Marriage.Alex.Outdoor.4": "The air out here feels so good!$h#$b#Have I ever told you how much I love you for bringing me out here? I don't regret it one bit.$l",
+
+    // Generic - Kids
+    "Marriage.Alex.OneKid.0": "It makes me so happy that we can give %kid1 a family like the one I missed out on.#$b#Do you think it'll be like this if we have another?$h",
+    "Marriage.Alex.OneKid.1": "Do you think %kid1 will grow up to play gridball like I did?#$b#No, you're right. I'll support them no matter what they decide to do.$h",
+    "Marriage.Alex.OneKid.2": "I took %kid1 out on a run with me this morning and they really enjoyed it.$h#$b#You should join us one of these days, I know I'd love having you there.$l",
+    "Marriage.Alex.OneKid.3": "Hey {{LPetName}}, I'm gonna go take %kid1 out to the park later on.#$b#I just wish they had a sibling to play with...$h",
+    "Marriage.Alex.TwoKids.0": "I can't wait to watch %kid1 and %kid2 grow up.#$b#Maybe I can even coach their future sports teams.$h",
+    "Marriage.Alex.TwoKids.1": "Funny enough, even though %kid1 and %kid2 bicker all the time, I can't help but feel jealous since I never had siblings.$h#$b#Though, it does make me feel better that at least they'll have each other in case something ever happens to us.",
+    "Marriage.Alex.TwoKids.2": "Do you think %kid1 and %kid2 would enjoy playing with Dusty?#$b#Maybe we can move his doghouse over here one of these days...",
+    "Marriage.Alex.TwoKids.3": "Whew, the chores have been racking up ever since %kid2 was born...#$b#Don't worry about me though, {{LPetName}}. You focus on the farm and looking {{LDescript}}.$l",
+
+    // Affection 
+    "Marriage.Alex.Good.0": "Yoba, you look so fucking good today, {{LPetName}}.#$b#You know how you could look better, though?$9#$b#If you strip down to the little black {{LUnderwear}} that I know you're wearing right now.$4",
+    "Marriage.Alex.Good.1": "Hey {{LDescript}} thing, where are you headed off to looking that good?$9#$b#That's your normal getup? I don't believe you...$s",
+    "Marriage.Alex.Good.2": "How'd I get so lucky marrying a {{LDescript}} little thing like you...#$b#I'm almost starting to feel like a hot trophy husband with you doing all the work around the farm.$1",
+    "Marriage.Alex.Good.3": "Do you think we'll grow old together, {{LPetName}}?$9#$b#I think you'd look so {{LDescript}} with a little grey in your hair.",
+    "Marriage.Alex.Good.4": "We haven't been to the bathhouse together in a while, maybe we can go after dark sometime.#$b#Come on, the water'll make you feel better and I'll feel better getting to look at your half-naked body all soaking wet.$1",
+    "Marriage.Alex.Good.5": "I couldn't stop thinking about you all morning {{LPetName}}, I could barely get anything done.#$b#Oh! I guess I did wash the sheets though... for no particular reason.$4",
+    "Marriage.Alex.Good.6": "...$l#$b#Sorry- Just, sometimes, I can't believe that you gave me my dream family life, @.#$b#I love you.$4",
+    "Marriage.Alex.Good.7": "I never thought I'd be able to find someone who loves me quite like I love them back...$2#$b#And then you moved to town, flipping my whole world upsidedown.$1#$b#I couldn't be more happy with you, @.$4",
+    "Marriage.Alex.Good.8": "I bought you a new pair of that one {{LUnderwear}} you like so much.#$b#It's laying on the bed for you, why don't you go try it on and show me how they fit, hm?$4",
+    "Marriage.Alex.Good.9": "Have I ever told you how {{LDescript}} you are?$4#$b#Sometimes I find myself struggling to look away.$1",
+
+    "Marriage.Alex.Neutral.0": "Have I ever shown you how to properly tackle?#$b#I haven't?#$b#Oh, don't worry, {{LPetName}}, I'll be sure to put our mattress to good use teaching you how...$4",
+    "Marriage.Alex.Neutral.1": "You think I'd make a good wrestler, {{LPetName}}?#$b#I was thinking of picking it up just so I'd get the chance to use some of the moves on you, {{LPetName}}.$1",
+    "Marriage.Alex.Neutral.2": "%You catch Alex staring at you.#$b#Sorry, I can't help myself.#$b#You just look so good today...$4",
+    "Marriage.Alex.Neutral.3": "Gran's been boasting about you a lot lately, @. I think she's really proud of who I married.#$b#I mean, I can't say that I'm not either.$4",
+    "Marriage.Alex.Neutral.4": "I'm really happy you decided to marry me, @.$1#$b#I know we used to bicker a lot but, I'm glad you looked through it.#$b#I'm really happy here with you.$4",
+    "Marriage.Alex.Neutral.5": "I guess Gran was right about us, we really were meant to be together.$1#$b#I love you, {{LPetName}}.$4",
+    "Marriage.Alex.Neutral.6": "Did you do something different with your hair today, {{LPetName}}?#$b#I don't know... there's just something different about you today. It looks good.$1",
+    "Marriage.Alex.Neutral.7": "You ever think about what it'd be like if you never moved down?$9#$b#Ugh, nevermind, I don't like that thought.$2#$b#I don't think I'd be able to live without you anymore.$4",
+    "Marriage.Alex.Neutral.8": "You should come over to Gran's house for dinner next time I go.$1#$b#She's been asking for you non-stop, it'd seriously make her week if you did.",
+    "Marriage.Alex.Neutral.9": "I'm always the one cooking for us, {{LPetName}}.#$b#I mean, it's not that I mind it, I just think you should be the one naked under the apron once in a while.",
+
+    "Marriage.Alex.Bad.0": "Please, {{LPetName}}, I don't know why you've been ignoring me but please, I need something. Anything.$2#$b#Do I need to get on my knees and beg for you to love me again?$2",
+    "Marriage.Alex.Bad.1": "What happened, {{LPetName}}? I thought we were doing good.$2#$b#Do I need to start cooking naked for you to pay attention to me again?",
+    "Marriage.Alex.Bad.2": "I know I kinda let myself go after the wedding but, I didn't think it was that bad...$2#$b#Please, I just need something, anything, {{LPetName}}.$2",
+    "Marriage.Alex.Bad.3": "What can I do for you to stop ignoring me, {{LPetName}}?$9#$b#Please @, I'll be as pathetic as you need... I'd even worship the ground you walk on just to get you to talk to me again...$2",
+    "Marriage.Alex.Bad.4": "Please @, {{LPetName}}. I'll do anything for you to talk to me like we used to...$2",
+    "Marriage.Alex.Bad.5": "Maybe we shouldn't have gotten together...$2#$b#Afterall, we did fight a lot in the beginning.$2",
+    "Marriage.Alex.Bad.6": "I know we used to fight a lot in the beginning but please, {{LPetName}}, I need you.$2#$b#I'm tired of fighting, please, just talk to me again.$2",
+    "Marriage.Alex.Bad.7": "I won't be the one to break our marriage up, {{LPetName}}.$2#$b#Even if you decide to leave me, I'll still be yours forever. Don't forget that.$5",
+    "Marriage.Alex.Bad.8": "%Alex looks at you longingly. Maybe it's time to repair your marriage before it's too late.",
+    "Marriage.Alex.Bad.9": "I guess Granny was wrong when she said we'd push through all the bickering...$2#$b#Maybe we're just not meant to be like they were.$2",
+  
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████ █████ █████ █████     ████  █████  ███  █      ███   ████ █   █ █████ 
+    █       █   █       █       █   █   █   █   █ █     █   █ █     █   █ █     
+    █  ██   █   ████    █       █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █   █   █       █       █   █   █   █   █ █     █   █ █   █ █   █ █     
+     ███  █████ █       █       ████  █████ █   █ █████  ███   ███  █████ █████ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    /* Thank you:
+    - Monstarmews
+    - MuseLaSora
+    - Pixie
+    - nekosneko
+    - ChatDisabled
+    - oWitchieso
+    For helping with some of these lines :3 */
+
+    // BIRTHDAYS
+    "Gift.Alex.GiftReaction.Positive.Birthday": "Oh, I'm surprised you remembered!$1#$b#I guess this means I need to get you something for your birthday, huh?",
+    "Gift.Alex.GiftReaction.Positive.Married.Birthday": "Thanks, {{LPetName}}, but there's actually something else I'd rather get on my birthday...$4",
+    "Gift.Alex.GiftReaction.Negative.Birthday": "Uhh... thanks I guess? I don't even like this...$2",
+    "Gift.Alex.GiftReaction.Negative.Married.Birthday": "We've been married for how long and you think this is what I want for my birthday?$2#$b#Do you even know me?$2",
+
+    // UNIVERSALS
+    "Gift.Alex.GiftReaction.RabbitsFoot": "Is this your bad attempt at flirting with me?#$b#Telling me I need a little more luck?",
+    "Gift.Alex.GiftReaction.Married.RabbitsFoot": "Thanks, {{LPetName}}, but the only luck I need is with you tonight.$4",
+    "Gift.Alex.GiftReaction.PrismaticShard": "This is a pretty cool rock, thanks @.$1",
+    "Gift.Alex.GiftReaction.Married.PrismaticShard": "Huh, I'm not too sure what I'd do with this.$9#$b#But boy do I love when you think about me, {{LPetName}}.$1", 
+    "Gift.Alex.GiftReaction.StarDropTea": "Oh shit, where'd you get this stuff?$1#$b#Hell, I remember my mom giving me a little taste of when I was younger...",
+    "Gift.Alex.GiftReaction.Married.StarDropTea": "This stuff always reminds me of home.#$b#I guess that's with you now, huh {{LPetName}}?$4",
+
+    // SPECIFIC LOVES
+    "Gift.Alex.GiftReaction.DefenseBook.0": "This is probably the first book that looks interesting to me. Thanks, @.$1",
+    "Gift.Alex.GiftReaction.DefenseBook.1": "Hmm, some workouts in this book look a little hard to do by myself.$9#$b#Maybe you can help me out one of these days.#$b#Y'know, by holding up the book for me or something.",
+    "Gift.Alex.GiftReaction.Married.DefenseBook.0": "Why don't you sit on my lap and read through this edition with me, {{LPetName}}?#$b#Maybe we can take some of the positions and use them in a different way...$4",
+    "Gift.Alex.GiftReaction.Married.DefenseBook.1": "Do you wanna read this one with me?#$b#Maybe some of the workouts can make you more flexible...$4",
+
+    "Gift.Alex.GiftReaction.CompleteBreakfast.0": "Huh, I guess this means my day is more... complete now.$1#$b#Thanks, {{LPetName}}.",
+    "Gift.Alex.GiftReaction.CompleteBreakfast.1": "Oh, thanks, @. I really needed one of these to get through the day.",
+    "Gift.Alex.GiftReaction.Married.CompleteBreakfast.0": "Thanks @, but how about next time I make you breakfast, hm?$1",
+    "Gift.Alex.GiftReaction.Married.CompleteBreakfast.1": "Hmm, I don't really think this is a 'Complete Breakfast'.#$b#Afterall, you're not on this plate.$4",
+
+    "Gift.Alex.GiftReaction.RadishSalad": "My mom used to make sandwiches similar to this.#$b#You're gonna have to share the recipe, you got it pretty close.$1",
+
+    "Gift.Alex.GiftReaction.SalmonDinner.0": "Did you catch and cook this yourself?#$b#Huh, I'm almost impressed. Thanks, @.$1",
+    "Gift.Alex.GiftReaction.SalmonDinner.1": "When'd you grow the muscles to reel in such a big fish?$h#$b#Anyways, thanks, {{LPetName}}.$1",
+    "Gift.Alex.GiftReaction.Married.SalmonDinner.0": "Damn, you're getting pretty good at cooking my favorite meals.$1#$b#You're almost better than Granny; you'll have to teach me one of these days.",
+    "Gift.Alex.GiftReaction.Married.SalmonDinner.1": "Mmmm... the smell of this almost reminds me of-#$b#Actually, nevermind. Thanks {{LPetName}}.$1",
+
+    // SPECIFIC LIKES
+    "Gift.Alex.GiftReaction.FieldSnack": "Oh, thanks @.#$b#You didn't get this one from a trashcan, did you?$2",
+    "Gift.Alex.GiftReaction.Married.FieldSnack": "Don't you just love quick, easy ways to boost your stamina?#$b#I'll be sure to keep this one on-hand for when you finally decide to let me go all night long.$1",
+
+    // EGGS
+    "Gift.Alex.GiftReaction.FrogEgg": "I saw Seb raise one of these as if it was his child.... I think he'd be pretty upset if he saw me do this.#$b#*slurrrp*",
+    "Gift.Alex.GiftReaction.Married.FrogEgg": "Ugh, these never look appealing.$2#$b#How about I come slurp you up instead, {{LPetName}}?",
+    "Gift.Alex.GiftReaction.ParrotEgg": "Oh, thanks!$1#$b#Hmm, I wonder if a parrot could catch a gridball...",
+    "Gift.Alex.GiftReaction.Married.ParrotEgg": "Ooh, what do you think about raising one of these with me, {{LPetName}}?#$b#Personally, I think I'd make a great parrot dad. I'd even teach it to compliment you everyday.$1",
+    "Gift.Alex.GiftReaction.GoldenEgg": "Whoa, how much does one of these even go for?$7#$b#Thanks, {{LPetName}}, I really appreciate it.$1", 
+    "Gift.Alex.GiftReaction.Married.GoldenEgg": "Shit, aren't these worth a lot?$7#$b#You didn't have to do all that for me, {{LPetName}}.",
+    "Gift.Alex.GiftReaction.DinoEgg": "Holy shit, this is huge!$7#$b#Hah, wait, that's what she said.$1",
+    "Gift.Alex.GiftReaction.Married.DinoEgg": "Hmm, do you think one of these would fit u-#$b#Ah, nevermind....$1",
+    "Gift.Alex.GiftReaction.OstrichEgg": "Huh, you wanna know what's bigger than an Ostrich egg? My d-#$b#Erm, my dumbells, teehee.$1",
+    "Gift.Alex.GiftReaction.Married.OstrichEgg": "Yoba, these are fucking huge!$7#$b#I wonder if I can use it as practice for our kids...",
+    "Gift.Alex.GiftReaction.DuckEgg": "This looks pretty small, are you sure it has enough protein?#9#$b#Well, thanks anyway.",
+    "Gift.Alex.GiftReaction.Married.DuckEgg": "I found out there's actually 9 grams of protein in one of these.#$b#Hmm, I wonder how much I'd get with you...$4",
+
+    // CATEGORIES
+    "Gift.Alex.GiftReaction.Category.Egg.0": "Oh, thanks. Did you know yolks are pretty good for protein?#$b#I've gotten pretty good at swallowing them.",
+    "Gift.Alex.GiftReaction.Category.Egg.1": "Oh, I love these!$1#$b#Funny thing about eggs though, they're actually the chicken's period.#$b#Anyways... *slurp*.",
+    "Gift.Alex.GiftReaction.Married.Category.Egg.0": "The protein in these are really good for the body but, you know what's better?#$b#You.$4",
+    "Gift.Alex.GiftReaction.Married.Category.Egg.1": "Y'know, slurping on these eggs has made me really good with catching things on my tongue — wanna see?$1",
+
+    "Gift.Alex.GiftReaction.Cooking.0": "I didn't take you as the cooking type, @.#$b#You did cook this yourself, right?",
+    "Gift.Alex.GiftReaction.Cooking.1": "Hmm... I'm not sure this is better than what my Gran makes, but thanks anyway.",
+    "Gift.Alex.GiftReaction.Married.Cooking.0": "$y 'Did you cook this for me, {{LPetName}}?_Yes._Mmmm.... do you think I could get a little sugar to go along with it?$1_No, I bought it._Aww, I would've killed to see you cooking in a little apron...$2",
+    "Gift.Alex.GiftReaction.Married.Cooking.1": "There's always something so homey about the meals you bring me, thanks {{LPetName}}.$1",
+
+    // DISLIKES
+    "Gift.Alex.GiftReaction.VoidEgg": "Oh... I know I said I liked eggs but this one's kinda questionable, @.$2",
+    "Gift.Alex.GiftReaction.Married.VoidEgg": "For the last time, {{LPetName}}, I don't like these.$5#$b#There's something... questionable about the after taste.$2",
+    "Gift.Alex.GiftReaction.Category.Books": "Are you trying to tease me with one of these?$2#$b#The only way I'm reading this is if you do it for me.",
+    "Gift.Alex.GiftReaction.Married.Category.Books": "C'mon, {{LPetName}}, you know me better than this.$2#$b#The only way you'll get me to read one of these is if I get to hear your {{LDescript}} voice spelling it out for me.",
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  █   █ █████ █████       ████  █████  ███  █      ███   ████ █   █ █████ 
+    ██ ██ █   █ █   █   █   █           █   █   █   █   █ █     █   █ █     █   █ █     
+    █ █ █ █   █  █ █    █   ████        █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █  █ █    █   █           █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █  ███    █   █████ █████       ████  █████ █   █ █████  ███   ███  █████ █████  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    // Strings/MovieReactions
+    // 1 LPetName, 1 LDescript
+    "Movie.Alex.summer.movie.1.BeforeMovie": "This one's supposed to be really funny, but I think I'm more interested in being alone in a dark room with you.",
+    "Movie.Alex.summer.movie.1.AfterMovie": "I really liked it, though I didn't really pay much attention...$4#$e#What? I was more interested in looking at you.",
+    "Movie.Alex.love.BeforeMovie": "This one's poster looked interesting! Thanks for inviting me, {{LPetName}}.$1",
+    "Movie.Alex.love.AfterMovie": "That was great! My d- ah, my legs are still tingling with the excitement.$1",
+    "Movie.Alex.like.BeforeMovie": "Hmm... One of those snacks looks pretty good.#$b#Don't worry, I'll get you one too. Just go find our seats and look {{LDescript}}.$1",
+    "Movie.Alex.like.AfterMovie": "Hey, that was pretty fun. We should come back again sometime.$1#$e#Hm? I mean, if you wanna continue the night, all you have to do is say so...$4",
+    "Movie.Alex.dislike.BeforeMovie": "This movie seems kind of nerdy, but for you, I'll give it a shot.",
+    "Movie.Alex.dislike.AfterMovie": "I can't tell if that was boring, or if I'm just not smart enough to understand it.$s#$b#How about we go back to that little farmhouse so I can get rid of this 'bored' feeling...",
+
+    "Movie.Alex.Invite.Spouse": "Oh, I've been wanting to go out with you lately.$1#$b#Although, this time, would you be alright with me making things more interesting?$4#$b#Just choose a seat in the back and I'll handle the rest.$1",
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ █████ █████ █████ █   █  ███  █         ████  █████  ███  █      ███   ████ █   █ █████ 
+    █     █     █       █     █   █   █ █   █ █         █   █   █   █   █ █     █   █ █     █   █ █     
+    ████  ████  █████   █     █    █ █  █████ █         █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █     █         █   █     █    █ █  █   █ █         █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █     █████ █████   █   █████   █   █   █ █████     ████  █████ █   █ █████  ███   ███  █████ █████ 
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Thank you:
+    - Aoi 
+    - Denny
+    - Pixie
+    - Tobabear
+    - Twig
+    For helping with some of these lines :3 */
+
+    // Egg Festival
+    // 2 LPetName
+    "Festival.Alex.spring13.false.1": "$y 'Are you joining the egg hunt this year?_Yes._Are you trying to win the straw hat? That's a little on the nose, don't you think?$h_What's it to you?_Whoa, no need to get aggressive. Good luck out there, {{LPetName}}.$h'",
+    "Festival.Alex.spring13.false.2": "Not that I care if you win or anything but, if you want a hint, check around my house.#$e#What?#$b#I saw Lewis placing down some and thought you could use the leg up since you're new and everything...$9",
+    "Festival.Alex.spring13.true.1": "Do you need any help carrying your basket, {{LPetName}}?#$b#I don't mind helping you carry things, you know that, right?$1",
+    "Festival.Alex.spring13.true.2": "Are you joining again this year?#$b#If you win, can I wear the hat this time?$1",
+
+    // Flower Dance
+    // 3 LDescript, 3 LPetName
+    "Festival.Alex.spring24.false.1": "I-#$b#Um, you look {{LDescript}} today.",
+    "Festival.Alex.spring24.false.2": "I'm so used to being paired up with Haley for these dances but...$9#$b#Seeing you dressed up like that is seriously making me reconsider that.",
+    "Festival.Alex.spring24.true.1": "It was worth it waiting for you to get ready this morning, you look {{LDescript}}, {{LPetName}}.$4",
+    "Festival.Alex.spring24.true.2": "Y'know I'm surprised my suit still fits.#$b#I think married life has made me a little soft...$2#$e#You look as {{LDescript}} as ever though.$4",
+    "Festival.Alex.DanceAccept": "Yeah, of course I will.$1#$b#Now, how about you give me a little twirl so I can see the whole outfit?",
+    "Festival.Alex.DanceAccept.Spouse": "Aren't I supposed to be the one asking you?#$b#Of course I'll dance with you, {{LPetName}}.$1",
+    "Festival.Alex.DanceDeny": "Sorry, {{LPetName}}. I kinda promised Haley already...$9",
+
+    // Luau 
+    // 1 LPetName
+    "Festival.Alex.summer11.false.1": "This festival's always so boring.$s#$b#How about we go across the beach and uh... throw a ball around?$1",
+    "Festival.Alex.summer11.false.2": "Aren't you hot wearing that?#$b#Maybe you should strip down a little more.$1",
+    "Festival.Alex.summer11.true.1": "Now that you're here, {{LPetName}}, skinny dipping sounds real fun.$1#$b#Do you think everyone else would notice?",
+    "Festival.Alex.summer11.true.2": "Are you throwing something in the pot this year?#$b#Maybe if you do, I'll actually eat some for once.$1",
+
+    // Desert Festival
+    // 1 LDescript
+    "Festival.Alex.Desert": "You look hot out here.#$b#Maybe you should take off your shirt to cool down.$1#$e#Well, are you?#$b#If you're worried about others seeing, we can always go to a secluded spot...$4",
+    "Festival.Alex.Desert.Married": "Have I ever told you you look really {{LDescript}} when you're all hot and sweaty?#$b#Maybe you and me can come out here again, alone this time...$4",
+    "Festival.Alex.Desert.Shop": "I have a few things in my shop that make me think about you.#$b#Can you guess which ones?$1",
+
+    // Moonlight Jellies 
+    // NO KEYS
+    "Festival.Alex.summer28.false.1": "%You feel Alex's hand push slightly against the small of your back.#$b#Earlier, I heard Penny telling the kids that jellyfish sting.#$b#Wanna find out if these ones do?$1#$e#Don't worry, I'll follow right after you.",
+    "Festival.Alex.summer28.false.2": "Isn't it pretty out here?#$b#$y 'This would make for a great date night, wouldn't it?_Yeah, it would._Maybe I'll take you on one, one of these days._Not really._What a shame, I was prepared to whip out my charm to ask you on one. Nevermind now.'",
+    "Festival.Alex.summer28.true.1": "My mom used to take me to see the jellies when I was younger.$2#$b#I'm glad I can watch them with you now.$4",
+    "Festival.Alex.summer28.true.2": "I can't believe Summer's already over...$2#$b#At least this means I get to admire the way your face glows in two different ways tonight.$4",
+
+    // Fair
+    // 2 LPetName
+    "Festival.Alex.fall16.false.1": "Hey, {{LPetName}}. Wanna see me destroy that strength test?$1",
+    "Festival.Alex.fall16.false.2": "I swear, I could eat y-$7#$b#I mean, one of the burgers Gus is selling right now...$1",
+    "Festival.Alex.fall16.true.1": "I know you normally handle the display, but I wanted to help out a bit by growing something for you.$1#$b#I just hope the size of this thing is enough to impress the judges.[272]",
+    "Festival.Alex.fall16.true.2": "Want me to win you a prize this year, {{LPetName}}?$1#$b#I've gotten pretty good at that slingshot game...",
+
+    // Spirit's Eve
+    // 1 LDescript
+    "Festival.Alex.fall27.false.1": "That's what you're wearing?#$b#I honestly thought you'd show up in a more... skimpy outfit.$9#$b#$y 'I have a bunny outfit if you'd like to put that on instead._I think that'd actually look better on you._...You just wanna see my tits in a corset. Nice try.$9_Fuck you._No, thanks for the offer, but I'm not interested.'",
+    "Festival.Alex.fall27.false.2": "Hmm...#$e#If I lift you up, do you think you could find the edge of the maze from here?",
+    "Festival.Alex.fall27.true.1": "Finally, you're here... I'm getting soo scared in this maze.$7#$b#I think I need a {{LDescript}} little farmer to keep me calm.$1",
+    "Festival.Alex.fall27.true.2": "Now that you're here, why don't you let me take you behind one of these bushes real quick...$4#$b#Don't worry, your screams will fit right in.$1",
+
+    // Ice Festival
+    // 2 LPetName, 1 LDescript
+    "Festival.Alex.winter8.false.1": "Huh...#$b#Gonna bring out that big rod this year, @?#$b#Can't wait to see it...$1",
+    "Festival.Alex.winter8.false.2": "You're cold?#$b#And you're wanting my jacket?#$b#Yeah right, get your own.$5#$e#Ugh, fine. Just be sure to bring it back.$9",
+    "Festival.Alex.winter8.true.1": "Are you cold, {{LPetName}}?$9#$b#Come closer, I know you're just itching to be between my arms.$4",
+    "Festival.Alex.winter8.true.2": "Let me know if you need any help reeling in those fish, {{LPetName}}.#$b#I don't want a {{LDescript}} little thing like you hurting yourself.$1",
+
+    // Winter Star
+    // 1 LDescript
+    "Festival.Alex.winter28.false.1": "%You hear Alex sigh.#$b#I'm a little disappointed with the gifts this year.$2#$b#How about you hold still so I can wrap you up in a nice, pretty bow?$4#$e#Come on, it'll make me feel better!$1",
+    "Festival.Alex.winter28.false.2": "I really hope I don't get another book this year...$2#$e#Actually, if you're the one reading it to me, I don't think I'd mind one...$1",
+    "Festival.Alex.winter28.true.1": "You know what I'm thankful for this year?#$b#Actually, I'll show you when we get back home...$4",
+    "Festival.Alex.winter28.true.2": "You look {{LDescript}} surrounded by snow, you know that?#$b#Maybe that's what I'm thankful for this year; getting to see you like this every Winter from now on.$4",
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ ████  █████ █   █  ████ █████ 
+    █       █   █   █   █   ██  █ █     █     
+    █████   █   ████    █   █ █ █ █  ██ █████ 
+        █   █   █   █   █   █  ██ █   █     █ 
+    █████   █   █   █ █████ █   █  ███  █████  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* Thank you:
+    - Pixie
+    For helping with some of these lines :3 */    
+
+    // Strings/StringsFromMaps
+    // NO KEYS
+    "Strings.Alex.Bathhouse.Locker": "Alex's Locker... As you snoop through his things, you can't help but note a bright pink jock strap hiding in the back...",
+
+    "Strings.Alex.JoshHouse.3": "'Pro Gridball Season 44: Stats and Standings'... Huh, looks like a few pages in the middle are stuck together.",
+    "Strings.Alex.JoshHouse.4": "As you pick up a book titled 'Dealing with Loss' you can't help but notice dried water staining a few of the pages.",
+    "Strings.Alex.JoshHouse.5": "Looks like a magazine with a bunch of muscly men inside... Maybe Alex wouldn't notice if you grabbed it for yourself.",
+    "Strings.Alex.JoshHouse.6": "You see a note stuck to the side of the weight, it reads: 'Approx weight of a farmer's...', the rest is smudged.",
+    "Strings.Alex.JoshHouse.7": "Between a few bottles of hair gel and more trading cards, you notice a small hand written note from someone named 'Clara'. Maybe you shouldn't dig further....",
+    "Strings.Alex.JoshHouse.8": "As you peek into Alex's drawer, underneath a few gridball trading cards, you notice a small polaroid of... is that you?",
+    "Strings.Alex.JoshHouse.9": "Alex's gridball helmet, it's in really good condition despite some wear and tear. You can't help but imagine Granny showing him how to polish his gear. How cute.",
+    "Strings.Alex.JoshHouse.10": "That's definitely a gridball but... why does it look sticky?",
+
+    // Strings/Locations
+    "Strings.Alex.JoshHouse.Trash": "Underneath a few protein bar wrappers, you notice a crumbled piece of paper with your name on it. Digging further, the entire paper is scratched out.",
+
+    // Strings/animationDescriptions
+    // 2 LPetName
+    "Strings.Alex.LiftingWeights.1": "How much do you weigh again?#$b#Huh, looks like I need to train a little more...$s",
+    "Strings.Alex.LiftingWeights.2": "Hey, since you're here, do you think you can spot me on this next rep?#$b#Actually, are you even strong enough for that?$9#$e#Maybe I'll ask you another time, {{LPetName}}.$s",
+    "Strings.Alex.LiftingWeights.3": "Hey, {{LPetName}}. Wanna run through a few reps with me?$1",
+
+    // Strings/schedules/Alex
+    // 2 LPetName
+    "Strings.Alex.winter.17.000": "Did you know there's a mermaid putting on a show in that boat over there?$1#$b#Yeah, she had HUGE... uh- a huge tail.$7",
+    "Strings.Alex.marriage.Mon.000": "I'm gonna have dinner here tonight, {{LPetName}}. Want me to bring you back some?$1",
+    "Strings.Alex.summer.16.000": "Hey, @. Just going to go see if I can get my ankle taped up.#$e#What'd I do to it?$7#$b#I sprained it while I was uh... Actually, how's your day going?$4",
+    "Strings.Alex.summer.16.001": "Yeah, yeah. I'm fine, doc. Don't worry about the hand, just the ankle.$9",
+    "Strings.Alex.Sun.000": "%You notice Alex growing more and more frustrated. As you look on the screen, you notice he's still on the first level.",
+    "Strings.Alex.Sun.000.married": "Hey, {{LPetName}}, wanna join us?$1#$b#I'd love having you sit on my lap while we watch the game.$4",
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █   █ █████ █   █ █████ █████ 
+    █     █   █ █     ██  █   █   █     
+    ████   █ █  ████  █ █ █   █   █████ 
+    █      █ █  █     █  ██   █       █ 
+    █████   █   █████ █   █   █   █████
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    "Events.Alex.1Heart.1": "Hey!$5",
+    "Events.Alex.1Heart.2": "Huh, sorry.$5#$b#I thought you were someone else.$9",
+    "Events.Alex.1Heart.3": "Y'know, I haven't actually seen you here before.$9#$b#Just so you're aware, this is the spot I come to be alone.$9",
+    "Events.Alex.1Heart.4": "So, I'd uh...$9#$b#I'd appreciate it if you left it to me from now on.$5#$b#I'd rather not see you here everyday if I don't have to.$5",
+    "Events.Alex.1Heart.5": "Plus, I'm not really into that.$9",
+    "Events.Alex.1Heart.6": "Y'know, the whole dirty, sweaty farmer thing you have going on?$5",
+    "Events.Alex.1Heart.7": "'What's wrong with being a little sweaty?'",
+    "Events.Alex.1Heart.8": "'I'm surprised you're afraid of a little dirt.'",
+    "Events.Alex.1Heart.9": "That's not the point-$7",
+    "Events.Alex.1Heart.10": "I'm not afraid of dirt, it just doesn't look good on someone like you.$5",
+    "Events.Alex.1Heart.11": "You know what, whatever.$5#$b#I'll choose another spot.$5",
+
+    // 1 LDescript, 1 LPetName, 1 PetName
+    "Events.Alex.2Heart.1": "Oh great, are you stalking me now?$5#$b#What even was your name again? %name?$9#$b#Or was it %name?#$b#No, don't tell me, it's %name!$h",
+    "Events.Alex.2Heart.2": "Wait! Come on, I was kidding!$7#$b#Can't you take a joke?$5",
+    "Events.Alex.2Heart.3": "'What's my actual name?'",
+    "Events.Alex.2Heart.4": "'Only when the jokes are funny.'",
+    "Events.Alex.2Heart.5": "What? You want me to moan it out?#$b#You'll have to get to know me a little more before I can do that.$h",
+    "Events.Alex.2Heart.6": "Wait! Wait.$5#$b#Are you really gonna make me say it like this?$5",
+    "Events.Alex.2Heart.7": "Fine, it's @.$9#$b#Are you happy now?$5",
+    "Events.Alex.2Heart.8": "Hey uh...$9#$b#Do you wanna throw this ball around with me for a little?",
+    "Events.Alex.2Heart.9": "Y'know, I was actually thinking about going pro...",
+    "Events.Alex.2Heart.10": "Hey, next time we hang out, we'll have to work on your form a little bit.",
+    "Events.Alex.2Heart.11": "Sorry, I only bring out the good jokes for my actual friends.#$b#Not some farmer who has an obsession with stalking me.$5",
+    "Events.Alex.2Heart.12": "'Your football skills are a good joke.'",
+    "Events.Alex.2Heart.13": "'I bet you're just as obsessed with me.'",
+    "Events.Alex.2Heart.14": "Right, and I bet you could catch this gridball perfectly.$5",
+    "Events.Alex.2Heart.15": "Yeah, right.$9#$b#Like I'd ever be into someone like you.$5#$b#I bet you can't even catch this.$9",
+    "Events.Alex.2Heart.16": "That's what I thought.#$b#Just stick to farm work and being {{LDescript}}, {{LPetName}}.$h",
+    "Events.Alex.2Heart.17": "'{{PetName}}?' You barely know this guy...",
+    "Events.Alex.2Heart.18": "You know, you're not bad company, @.#$b#I could show you how to properly catch it, if you'd like.",
+    "Events.Alex.2Heart.19": "Huh, he got your name right...",
+    "Events.Alex.2Heart.20": "Don't forget those tricks I showed you earlier.#$b#They should help out on the farm, too.",
+
+    // 1 LPetName
+    "Events.Alex.3Heart.1": "How are you, dear?",
+    "Events.Alex.3Heart.2": "Mph... Ugh...",
+    "Events.Alex.3Heart.3": "I can't stop pumping....$9#$b#@...$l",
+    "Events.Alex.3Heart.4": "Holy fuck, ever hear of knocking?$5#$b#What's wrong with you?$5",
+    "Events.Alex.3Heart.5": "'I thought you were...'",
+    "Events.Alex.3Heart.6": "I thought I'd get a good show.'",
+    "Events.Alex.3Heart.7": "Thought I was what?$5",
+    "Events.Alex.3Heart.8": "Oh, gross.$9#$b#You thought I was jerking off and your first thought was to come watch?$5",
+    "Events.Alex.3Heart.9": "Of me working out?$5#$b#Or what, you heard the grunting and thought something else?",
+    "Events.Alex.3Heart.10": "Even if I was, what makes you think I'd do it to the thought of you, huh?$5#$b#Are you that confident that some dirt and sweat makes you that attractive to me?",
+    "Events.Alex.3Heart.11": "'I bet if I ask Granny...'",
+    "Events.Alex.3Heart.12": "'Then why call my name out?'",
+    "Events.Alex.3Heart.13": "Okay, okay...$7#$b#No need for all that.$5",
+    "Events.Alex.3Heart.14": "I-$7#$b#I don't know what you're talking about.",
+    "Events.Alex.3Heart.15": "You hear him sigh.",
+    "Events.Alex.3Heart.16": "Look, {{LPetname}}, since you're here, do you want to work out or something?$9#$b#Maybe it'll help you out on the farm or whatever.",
+    "Events.Alex.3Heart.17": "Is that...",
+    "Events.Alex.3Heart.18": "Do they have no shame?"
+}
