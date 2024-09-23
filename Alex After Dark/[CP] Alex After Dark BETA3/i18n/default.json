@@ -27,30 +27,6 @@
     "Core.Alex.GreenRainFinished": "That green rain was pretty weird, huh?#$b#It almost reminded me of the bathhouse showers, so I'm kinda used to it already.$h",
     "Core.Alex.GreenRain2": "My grandparents are freaking out about the rain.$s#$b#I don't see what the problem is, I was fine when I went out this morning.",
 
-    // Specific Dates/Questions
-    "Core.Alex.Wed.Question": "Days like today make me really wish I had someone to play catch with.$u#$b#I'd ask you, but I wouldn't want to hurt you.$e#$q 5/6 Wed_01_old#How about one of these days I give you some private lessons on how to throw a gridball properly?#$r 6 0 Wed_01_02#I already know how to throw one.#$r 5 15 Wed_01_01#I'd rather just watch you throw it from a distance.#$r 5 0 Wed_01_03#Who says I'd even play catch with you?",
-    "Core.Alex.Wed.01.old": "Thought about those private lessons yet, {{LPetName}}?$h",
-    "Core.Alex.Wed.01.01": "Yeah, nice try. With arms like those, I bet it wouldn't even go far.#$b#Just think about it, yeah?$h",
-    "Core.Alex.Wed.01.02": "Already prepared to be a fan, huh {{LPetName}}?#$b#Obedience looks good on you.$h",
-    "Core.Alex.Wed.01.03": "I don't know.#$b#Something tells me you have plenty of experience throwing balls around.$h",
-
-    "Core.Alex.Summer.1": "Summer's definitely my favorite season by far. Hey, how about we go to the beach sometime?#$b#Now that I think about it, I'd love to see you in a tiny little bathing suit.$l",
-
-    "Core.Alex.Summer.Wed.Question": "Hey @, let me ask you a question real quick.#$b#$q 52/53 summer_Wed_01_old#Do you think I'm good enough to go pro?#$r 52 30 summer_Wed_01_01#I think so, yeah.#$r 52 0 summer_Wed_01_02#I haven't really seen you play...#$r 53 -50 summer_Wed_01_03#In your dreams.",
-    "Core.Alex.Summer.Wed.01.old": "$p 52#Now that I think about it, having you walk around in one of my old jerseys would be pretty hot.$h|Willing to reconsider? Maybe if you apologize right now I'll even sign a jersey for you.",
-    "Core.Alex.Summer.Wed.01.01": "You really think so?#$b#Or are you just saying that to see me in my uniform again?$h",
-    "Core.Alex.Summer.Wed.01.02": "Hm, I guess you really haven't seen me play much, huh?$9#$b#Maybe you could come watch me practice one of these days.",
-    "Core.Alex.Summer.Wed.01.03": "Aww, where's all this hate coming from, {{LPetName}}?$h#$b#C'mon, if I do go pro, I'll maybe consider letting you be my first fan.",
-
-    "Core.Alex.Fall.1": "Ugh, I hate that it's getting colder.$9#$b#At least this means gridball season's officially started again.",
-
-    "Core.Alex.Fall.Wed.Question": "...$a#$e#$q 54/55 fall_Wed_01_old#Why do you always have to show up here and bother me?#$r 54 30 fall_Wed_01_01#You didn't think I was bothering you last night.#$r 55 -30 fall_Wed_01_02#Fine, I'll be on my way then.",
-    "Core.Alex.Fall.Wed.01.old": "You're fun when you fight back, you know that?$h",
-    "Core.Alex.Fall.Wed.01.01": "...$7#$b#Shut up...$9",
-    "Core.Alex.Fall.Wed.01.02": "Aww, not gonna put up a fight today, {{LPetName}}?$h#$b#You're no fun when you're so submissive...",
-
-    "Core.Alex.Winter.1": "Winter's so lame, there's never really anything to do.$s#$b#Actually...$l",
-
     // Jealousy 
     "Core.Alex.Jealous.Married.Sebastian": "Does Sebastian make you happy?$s#$b#What does he have that I don't...$9",
     "Core.Alex.Jealous.Married.Shane": "Are you happy with Shane?$s#$b#I swear to Yoba, if he ever does anything...$a",
@@ -122,15 +98,20 @@
 
     // SPRING
     "Core.Alex.Spring.EarlyHeart.1": "Don't you get tired of coming around here all the time?$9#$b#Am I that interesting to talk to?$h",
-    "Core.Alex.Spring.EarlyHeart.2": "How many other guys do you talk to?$9#$b#Actually, don't answer that. I feel like I'd be hurting my own feelings there.$s",
+    "Core.Alex.Spring.EarlyHeart.2": "Hey, how many other guys do you talk to?#$b#Actually, don't answer that. I feel like I'd be hurting my own feelings there.$s",
     "Core.Alex.Spring.EarlyHeart.3": "%You catch Alex staring at you with a serious expression. Looks like he's actually thinking for once.",
     "Core.Alex.Spring.EarlyHeart.4": "Have I ever told you how big your forehead is?$h#$b#$y 'Yeah, I could land a plane on there. C'mon, don't look at me like that..._You're one to talk._I'll have you know, my forehead is AVERAGE size, thank you very much._Don't respond._Aww, did my way with words make you speechless? How cute.$h'",
-    "Core.Alex.Spring.EarlyHeart.5": "Hmm... Maybe it's the hair.$9#$b#$y 'Yeah, it's definitely the hair..._What about my hair?_Huh? Who says I was talking to you?$9_Yeah, your hair is pretty bad._I was actually talking about yours. It looks different. I WAS gonna say good, but...$a",
+    "Core.Alex.Spring.EarlyHeart.5": "Hmm... Maybe it's the hair.$9#$b#$y 'Yeah, it's definitely the hair..._What about my hair?_Huh? Who says I was talking to you?$9_Yeah, your hair is pretty bad._I was actually talking about yours. It looks different. I WAS gonna say good, but...$a'",
     "Core.Alex.Spring.EarlyHeart.6": "You look halfway decent today, {{LPetName}}.#$e#What? That eager for another compliment from me?$h",
     "Core.Alex.Spring.EarlyHeart.7": "Ugh, look who it is!$9#$b#Don't you have another pretty man to bother?$a#$b#Or am I the only one?$h",
     "Core.Alex.Spring.EarlyHeart.8": "Look, if you keep bothering me like this I'll have to assume you're in love with me or something.#$e#Well, are you?$h",
     "Core.Alex.Spring.EarlyHeart.9": "Ugh, could you at least shower before you come here?$a#$b#I can still smell farm all over you.$9",
     "Core.Alex.Spring.EarlyHeart.10": "%Alex rolls his eyes as soon as he sees you walking up. Doesn't look like he wants to talk to you today.",
+    "Core.Alex.Spring.EarlyHeart.11": "...$a#$e#$q 54/55 fall_Wed_01_old#Why do you always have to show up here and bother me?#$r 54 30 fall_Wed_01_01#You didn't think I was bothering you last night.#$r 55 -30 fall_Wed_01_02#Fine, I'll be on my way then.",
+    "Core.Alex.Fall.Wed.01.old": "You're fun when you fight back, you know that?$h",
+    "Core.Alex.Fall.Wed.01.01": "...$7#$b#Shut up...$9",
+    "Core.Alex.Fall.Wed.01.02": "Aww, not gonna put up a fight today, {{LPetName}}?$h#$b#You're no fun when you're so submissive...",
+
 
     "Core.Alex.Spring.MidHeart.1": "Hey, how's farm-life treating you?$h#$e#%You overhear him swearing under his breath, saying something similar to 'So stupid... 'How's farm-life'? Seriously?'",
     "Core.Alex.Spring.MidHeart.2": "%You catch Alex staring at you, this time blushing and turning away.#$b#You uh, you look good today, @.$l",
@@ -162,24 +143,31 @@
 
 
     // SUMMER
+    "Core.Alex.Summer.1": "Ugh, great. First I have to deal with the heat, now I gotta deal with you too?$9#$b#Can this season get any worse?$a",
+
     "Core.Alex.Summer.EarlyHeart.1": "Yoba, {{LPetName}}, why do you keep bothering me so much?$a#$b#$y 'Can't you see I don't want you here?_I like annoying you._You're impossible, you know that?$l_If I'm so much of a bother, I'll leave._Wait, no- I didn't mean it like that...$7",
     "Core.Alex.Summer.EarlyHeart.2": "%Alex is ignoring you. Better try again tomorrow.",
-    "Core.Alex.Summer.EarlyHeart.3": "Ugh, great. First I have to deal with the heat, now I gotta deal with you too?$9#$b#Can this season get any worse?$a",
+    "Core.Alex.Summer.EarlyHeart.3": "%Alex sighs, running his hands through his hair.#$b#Why do you keep coming around here? You're just so...$9#$b#I don't know, but you're confusing and it's pissing me off.$a",
     "Core.Alex.Summer.EarlyHeart.4": "The air feels so good today.#$b#Though, it'd feel even better if you weren't here bothering me.$9",
     "Core.Alex.Summer.EarlyHeart.5": "Ugh, listen, as much as I'd 'love' to hear about your farm or whatever, I have better things to do right now.$9#$b#You know, like risking a sunburn or dropping a weight on my foot just to be in Harvey's clinic and not here talking to you.$9",
     "Core.Alex.Summer.EarlyHeart.6": "Do you ever do farmwork or do you just try to spend your entire day bothering me?$9",
     "Core.Alex.Summer.EarlyHeart.7": "Every time you come to talk to me, you have some sort of dirt on your face.$9#$b#Do you know how to bathe or do you need m- er, someone to teach you?$a",
-    "Core.Alex.Summer.EarlyHeart.8": "Look, {{LPetName}}, I know I'm extremely good-looking, but you gotta realize, I'm not interested.#$e#%Alex is ignoring you now.",
-    "Core.Alex.Summer.EarlyHeart.9": "{{PetName}}, I don't want to have to keep wiping dirt from your face each time I see you. You're such a mess.$9",
+    "Core.Alex.Summer.EarlyHeart.8": "Look, {{LPetName}}, I know I'm extremely good-looking.#$b#But, you gotta realize, I'm just not interested.#$e#%Alex is ignoring you now.",
+    "Core.Alex.Summer.EarlyHeart.9": "{{PetName}}, I don't want to have to keep wiping dirt from your face each time I see you.$9#$b#You're such a mess.",
     "Core.Alex.Summer.EarlyHeart.10": "Summer's such a great season, isn't it, @?#$b#You know what'd make it even better?#$b#Not talking to you.$9",
-
+    "Core.Alex.Summer.EarlyHeart.11": "Hey @, let me ask you a question real quick.#$b#$q 52/53 summer_Wed_01_old#Do you think I'm good enough to go pro?#$r 52 30 summer_Wed_01_01#I think so, yeah.#$r 52 0 summer_Wed_01_02#I haven't really seen you play...#$r 53 -50 summer_Wed_01_03#In your dreams.",
+    "Core.Alex.Summer.Wed.01.old": "$p 52#Now that I think about it, having you walk around in one of my old jerseys would be pretty hot.$h|Willing to reconsider? Maybe if you apologize right now I'll even sign a jersey for you.",
+    "Core.Alex.Summer.Wed.01.01": "You really think so?#$b#Or are you just saying that to see me in my uniform again?$h",
+    "Core.Alex.Summer.Wed.01.02": "Hm, I guess you really haven't seen me play much, huh?$9#$b#Maybe you could come watch me practice one of these days.",
+    "Core.Alex.Summer.Wed.01.03": "Aww, where's all this hate coming from, {{LPetName}}?$h#$b#C'mon, if I do go pro, I'll maybe consider letting you be my first fan.",
+    
     "Core.Alex.Summer.MidHeart.1": "...$l#$b#The Summer tan you got going on suits you. I like it.",
     "Core.Alex.Summer.MidHeart.2": "%You catch Alex staring at you.#$b#Huh? What? Why would I ever stare at you? There's mu- uh, there's not much to even look at...$9",
     "Core.Alex.Summer.MidHeart.3": "Uh, I got you this.[402]#$b#I had this whole speech on how you were as sweet at this flower but, eh, it sounded better in my head.$s",
     "Core.Alex.Summer.MidHeart.4": "Harvey gave me one of these drinks the other day, but I don't really put stuff like this in my body.$s#$b#Here, I thought maybe you could use it.[351]",
     "Core.Alex.Summer.MidHeart.5": "Did you do something different with your look?#$b#Not that it looks horrible or anything!$7#$b#It just uh, it looks nice.$l",
     "Core.Alex.Summer.MidHeart.6": "I've been trying to build a better playlist to workout to, do you think you could help me?#$b#I'm sure you have great taste.$l",
-    "Core.Alex.Summer.MidHeart.7": "%Alex sighs, running his hands through his hair.#$b#Why do you keep coming around here? You're just so...$9#$b#I don't know, but you're confusing and it's pissing me off.$a",
+    "Core.Alex.Summer.MidHeart.7": "Summer's definitely my favorite season by far. Hey, how about we go to the beach sometime?#$b#Now that I think about it, I'd love to see you in a tiny little bathing suit.$l",
     "Core.Alex.Summer.MidHeart.8": "Do you even like talking to me or do you just so happen to come by each time I so happen to be hot and sweaty?$9#$b#Look, honestly, either way I'll take it. I think I'm starting to like having you around more often.",
     "Core.Alex.Summer.MidHeart.9": "Ugh, I haven't been able to find any weights heavy enough for what I need...$s#$b#Actually, if you have some time to spare, do you think you could come over and sit on my back while I do some pushups?",
     "Core.Alex.Summer.MidHeart.10": "How are the mosquitos treating you? Are they eating you up like I-#$b#Shit, wait, ignore me. That came out wrong.$s",   
@@ -195,7 +183,7 @@
     "Core.Alex.Summer.LateHeart.7": "Ugh, I know it's hot out here but it's not really fair seeing you dressed like this.$s#$b#I just-I can't help myself here. You really want me wrapped around that {{LDescript}} little finger, don't you?$l",
     "Core.Alex.Summer.LateHeart.8": "Hey, Gran needs some help planting some flowers by the house, wanna come with?#$b#It'll give you a chance to see what I look like on my knees.$h",
     "Core.Alex.Summer.LateHeart.9": "%You hear Alex sigh.#$b#It's kind of boring having to work the ice cream stall the entire Summer.$s#$b#Maybe you should come keep me company more often, {{LPetName}}.$h",
-    "Core.Alex.Summer.LateHeart.10": "The ice cream stall's been pretty busy this year.#$b#Maybe I'll make enough to buy you something pretty, would you like that, {{LPetName}}?$h",
+    "Core.Alex.Summer.LateHeart.10": "The ice cream stall's been pretty busy this year.#$b#Maybe I'll make enough to buy you something pretty.$h",
     "Core.Alex.Summer.LateHeart.11": "%Alex leans in close, whispering in your ear.#$b#You look tense from all that farmwork, how about you and I...$l#$b#Hm, actually, never mind...$h",
     "Core.Alex.Summer.LateHeart.12": "Did you know swimming in the ocean is the best way to cool off during the Summer?#$b#Plus, I know a secluded spot so no one would know what we'd be up to...$l",
 
@@ -207,6 +195,8 @@
 
 
     // FALL
+    "Core.Alex.Fall.1": "Ugh, I hate that it's getting colder.$9#$b#At least this means gridball season's officially started again.",
+
     "Core.Alex.Fall.EarlyHeart.1": "Looks like all that farm work is really wearing you down, huh, @?$9#$b#Maybe you should head up to the bathhouse and recover a little. Your whole aura is... depressing.$s",
     "Core.Alex.Fall.EarlyHeart.2": "You look worn out.$9#$b#$y 'Is that normal for a farmer?_Yeah, so what?_Hm... No reason.$h_No, I was busy with your mom last night._You know she's dead, right?$s'",
     "Core.Alex.Fall.EarlyHeart.3": "For someone who's supposedly SOOO productive on their farm, you seem to love spending all day here talking my ear off.$9#$b#Don't you have some dying crops or something to take care of?",
@@ -217,6 +207,11 @@
     "Core.Alex.Fall.EarlyHeart.8": "Look, I have some plans with Haley today and I don't wanna be bothered by you.$9#$b#So, how about you make like a leaf and dip or something.#$e#Go on, I don't know why you're still here.$9",
     "Core.Alex.Fall.EarlyHeart.9": "Ugh, look, you know it's gridball season, right?$9#$b#I can't be spending all my time doting on you whenever you want to talk to me right now.",
     "Core.Alex.Fall.EarlyHeart.10": "You know what I've been thinking about lately, @?$l#$b#Not you.$9",
+    "Core.Alex.Fall.EarlyHeart.11": "Days like today make me really wish I had someone to play catch with.$u#$b#I'd ask you, but I wouldn't want to hurt you.$e#$q 5/6 Wed_01_old#How about one of these days I give you some private lessons on how to throw a gridball properly?#$r 6 0 Wed_01_02#I already know how to throw one.#$r 5 15 Wed_01_01#I'd rather just watch you throw it from a distance.#$r 5 0 Wed_01_03#Who says I'd even play catch with you?",
+    "Core.Alex.Wed.01.old": "Thought about those private lessons yet, {{LPetName}}?$h",
+    "Core.Alex.Wed.01.01": "Yeah, nice try. With arms like those, I bet it wouldn't even go far.#$b#Just think about it, yeah?$h",
+    "Core.Alex.Wed.01.02": "Already prepared to be a fan, huh {{LPetName}}?#$b#Obedience looks good on you.$h",
+    "Core.Alex.Wed.01.03": "I don't know.#$b#Something tells me you have plenty of experience throwing balls around.$h",
 
     "Core.Alex.Fall.MidHeart.1": "You have a few leaves stuck in your hair, you should get them out.#$e#Ugh, you're so useless... Here, let me get them for you.$9",
     "Core.Alex.Fall.MidHeart.2": "Hm, I don't think I've ever asked you what kind of music you're into.#$b#I bet you're into that country stuff, huh?$h",
@@ -246,6 +241,8 @@
 
 
     // WINTER
+    "Core.Alex.Winter.1": "Winter's so lame, there's never really anything to do.$s#$b#Actually...$l",
+    
     "Core.Alex.Winter.EarlyHeart.1": "Huh? You're talking to me now?$9#$b#And how long have you been ignoring me for, @?$a",
     "Core.Alex.Winter.EarlyHeart.2": "Kind of a pity we've gone this long without getting to know each other but, oh well.$9",
     "Core.Alex.Winter.EarlyHeart.3": "It's cold out today, huh?#$e#What, are you expecting a longer conversation? {{LPetName}}, I barely know you.$s",
@@ -556,12 +553,12 @@
 
     // Flower Dance
     // 3 LDescript, 3 LPetName
-    "Festival.Alex.spring24.false.1": "I-#$b#Um, you look {{LDescript}} today.",
-    "Festival.Alex.spring24.false.2": "I'm so used to being paired up with Haley for these dances but...$9#$b#Seeing you dressed up like that is seriously making me reconsider that.",
+    "Festival.Alex.spring24.false.1": "Huh...#$b#I'm surprised you even had nice clothes for something like this.$h#$b#You look {{LDescript}}.",
+    "Festival.Alex.spring24.false.2": "I'm so used to being paired up with Haley for these dances but...#$b#Seeing you dressed up like that is seriously making me reconsider that.$l",
     "Festival.Alex.spring24.true.1": "It was worth it waiting for you to get ready this morning, you look {{LDescript}}, {{LPetName}}.$4",
     "Festival.Alex.spring24.true.2": "Y'know I'm surprised my suit still fits.#$b#I think married life has made me a little soft...$2#$e#You look as {{LDescript}} as ever though.$4",
-    "Festival.Alex.DanceAccept": "Yeah, of course I will.$1#$b#Now, how about you give me a little twirl so I can see the whole outfit?",
-    "Festival.Alex.DanceAccept.Spouse": "Aren't I supposed to be the one asking you?#$b#Of course I'll dance with you, {{LPetName}}.$1",
+    "Festival.Alex.DanceAccept": "Yeah, of course I will.$h#$b#Now, how about you give me a little twirl so I can see the whole outfit?$l",
+    "Festival.Alex.DanceAccept.Spouse": "Aren't I supposed to be the one asking you?#$b#Of course I'll dance with you, {{LPetName}}.$l",
     "Festival.Alex.DanceDeny": "Sorry, {{LPetName}}. I kinda promised Haley already...$9",
 
     // Luau 
@@ -629,11 +626,11 @@
     "Strings.Alex.Bathhouse.Locker": "Alex's Locker... As you snoop through his things, you can't help but note a bright pink jock strap hiding in the back...",
 
     "Strings.Alex.JoshHouse.3": "'Pro Gridball Season 44: Stats and Standings'... Huh, looks like a few pages in the middle are stuck together.",
-    "Strings.Alex.JoshHouse.4": "As you pick up a book titled 'Dealing with Loss' you can't help but notice dried water staining a few of the pages.",
+    "Strings.Alex.JoshHouse.4": "As you pick up a book titled 'Dealing with Loss', you can't help but notice dried water staining a few of the pages.",
     "Strings.Alex.JoshHouse.5": "Looks like a magazine with a bunch of muscly men inside... Maybe Alex wouldn't notice if you grabbed it for yourself.",
-    "Strings.Alex.JoshHouse.6": "You see a note stuck to the side of the weight, it reads: 'Approx weight of a farmer's...', the rest is smudged.",
-    "Strings.Alex.JoshHouse.7": "Between a few bottles of hair gel and more trading cards, you notice a small hand written note from someone named 'Clara'. Maybe you shouldn't dig further....",
-    "Strings.Alex.JoshHouse.8": "As you peek into Alex's drawer, underneath a few gridball trading cards, you notice a small polaroid of... is that you?",
+    "Strings.Alex.JoshHouse.6": "You see a note stuck to the side of the weight, it reads: \"Approx weight of a farmer's\"... the rest is smudged.",
+    "Strings.Alex.JoshHouse.7": "Between a few bottles of hair gel and more trading cards, you notice a small hand written note from someone named 'Clara'.",
+    "Strings.Alex.JoshHouse.8": "Underneath a few gridball trading cards, you notice a small polaroid of... is that you?",
     "Strings.Alex.JoshHouse.9": "Alex's gridball helmet, it's in really good condition despite some wear and tear. You can't help but imagine Granny showing him how to polish his gear. How cute.",
     "Strings.Alex.JoshHouse.10": "That's definitely a gridball but... why does it look sticky?",
 

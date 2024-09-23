@@ -32,8 +32,8 @@
                 // Flower Dance
                 "FlowerDance_Accept": "{{i18n:Festival.Alex.DanceAccept}}",
                 "FlowerDance_Accept_Spouse": "{{i18n:Festival.Alex.DanceAccept.Spouse |LPetName={{LPetName}}}}",
-                "FlowerDance_Decline": "{{i18n:Festival.Alex.DanceDeny}}",
-                "danceRejection": "{{i18n:Festival.Alex.DanceDeny}}",
+                "FlowerDance_Decline": "{{i18n:Festival.Alex.DanceDeny |LPetName={{LPetName}}}}",
+                "danceRejection": "{{i18n:Festival.Alex.DanceDeny |LPetName={{LPetName}}}}",
 
                 // Romance
                 "AcceptBouquet": "{{i18n:Core.Alex.AcceptBouquet |LPetName={{LPetName}}}}",
@@ -77,23 +77,21 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Alex",
             "Entries": {
-                // Specific Dates
-                "Wed": "{{i18n:Core.Alex.Wed.Question}}",
+                // Questions
                 "Wed_01_old": "{{i18n:Core.Alex.Wed.01.old |LPetName={{LPetName}}}}",
                 "Wed_01_01": "{{i18n:Core.Alex.Wed.01.01}}",
                 "Wed_01_02": "{{i18n:Core.Alex.Wed.01.02 |LPetName={{LPetName}}}}",
                 "Wed_01_03": "{{i18n:Core.Alex.Wed.01.03}}",
-                "summer_1": "{{i18n:Core.Alex.Summer.1}}",
-                "summer_Wed": "{{i18n:Core.Alex.Summer.Wed.Question}}",
                 "summer_Wed_01_old": "{{i18n:Core.Alex.Summer.Wed.01.old}}",
                 "summer_Wed_01_01": "{{i18n:Core.Alex.Summer.Wed.01.01}}",
                 "summer_Wed_01_02": "{{i18n:Core.Alex.Summer.Wed.01.02}}",
                 "summer_Wed_01_03": "{{i18n:Core.Alex.Summer.Wed.01.03 |LPetName={{LPetName}}}}",
-                "fall_1": "{{i18n:Core.Alex.Fall.1}}",
-                "fall_Wed": "{{i18n:Core.Alex.Fall.Wed.Question}}",
                 "fall_Wed_01_old": "{{i18n:Core.Alex.Fall.Wed.01.old}}",
                 "fall_Wed_01_01": "{{i18n:Core.Alex.Fall.Wed.01.01}}",
                 "fall_Wed_01_02": "{{i18n:Core.Alex.Fall.Wed.01.02 |LPetName={{LPetName}}}}",
+
+                "summer_1": "{{i18n:Core.Alex.Summer.1}}",
+                "fall_1": "{{i18n:Core.Alex.Fall.1}}",
                 "winter_1": "{{i18n:Core.Alex.Winter.1}}",
 
                 // Early Hearts
