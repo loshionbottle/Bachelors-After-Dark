@@ -1,0 +1,27 @@
+// Festival Dialogue 
+
+{
+    "Changes": [
+       {
+            "LogName": "Alex's Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/winter8, Data/Festivals/winter28",
+            "Entries": {
+                "Alex": "{{i18n:Festival.Alex.{{TargetWithoutPath}}.{{Relationship:Alex |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Alex_y2": "{{i18n:Festival.Alex.{{TargetWithoutPath}}.{{Relationship:Alex |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Alex_spouse": "{{i18n:Festival.Alex.{{TargetWithoutPath}}.{{Relationship:Alex |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Alex_spouse_y2": "{{i18n:Festival.Alex.{{TargetWithoutPath}}.{{Relationship:Alex |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}"
+            }
+       },
+       {
+            "LogName": "Alex's Desert Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/1_6_Strings",
+            "Entries": {
+                "DesertFestival_Alex": "{{i18n:Festival.Alex.Desert}}",
+                "DesertFestival_Alex_marriage": "{{i18n:Festival.Alex.Desert.Married |LDescript={{LDescript}}}}",
+                "Shop_Alex": "{{i18n:Festival.Alex.Desert.Shop |LPetName={{LPetName}}}}"
+            }
+       }
+    ]
+}

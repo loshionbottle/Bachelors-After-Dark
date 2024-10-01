@@ -1,0 +1,10 @@
+{
+    "Name": "Alex After Dark",
+    "Author": "loshionbottle",
+    "Description": "Adds over 500 lines of cute dialogue and tsundere-esque events for Alex.",
+    "Version": "1.0.1",
+    "UniqueID": "loshionbottle.alexafterdark",
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

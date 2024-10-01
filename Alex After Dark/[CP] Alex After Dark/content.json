@@ -1,0 +1,205 @@
+// Config Schema & Includes 
+
+{
+    "Format": "2.0.0",
+
+    // Config 
+    "ConfigSchema": {
+      // Player Info: Pronouns/Accessory/etc.
+      "Player Pronouns 1": {
+        "Default": "Them",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Player Info",
+        "Description": "Would typically be something similar to \"Them\", \"Her\", \"Him\"."
+      },
+      "Player Pronouns 2": {
+        "Default": "They're",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Player Info",
+        "Description": "Would typically be something similar to \"They're\", \"She's\", \"He's\"."
+      },
+      "Player Pronouns 3": {
+        "Default": "They",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Player Info",
+        "Description": "Would typically be something similar to \"They\", \"She\", \"He\"."
+      },
+      "Player Accessory": {
+        "Default": "Necklace",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Player Info",
+        "Description": "There are a few events where he tugs on your stated accessory. Keep in mind, one of these is in the pool so.... choose wisely. If you need an example of how it's used: \"Instantly, the fingers that were once tugging at your (accessory) let go.\""
+      },
+      // Pet Name
+      "Player Pet Name": {
+        "Default": "Babe",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Pet Name",
+        "Description": "Sets the player's desired pet name."
+      },
+      // What the player prefers to be called
+      "Descriptive Word": {
+        "Default": "Cute",
+        "AllowBlank": false,
+        "AllowMultiple": true,
+        "Section": "Pet Name",
+        "Description": "Would typically be \"Pretty\", \"Cute\", \"Handsome\", etc."
+      },
+
+      // Events
+      // Whether to include the events as a whole or not
+      "After Dark Events": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "Events",
+        "Description": "Disable to turn off all events this mod adds/rewrites."
+      },
+
+      // Dialogue 
+      // Whether to include each dialogue file
+      "Generic Dialogue": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "Dialogue",
+        "Description": "Disable to turn off the generic spice. If no other dialogue mods are installed, reverts Spicy Alex back to Vanilla Alex :(."
+      },
+      "Marriage Dialogue": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "Dialogue",
+        "Description": "Disable to turn off the marriage spice."
+      },
+      "Gift Dialogue": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "Dialogue",
+        "Description": "Disable to turn off this mod's gift dialogue."
+      },
+      "Festival Dialogue": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Section": "Dialogue",
+        "Description": "Disable to turn off this mod's festival dialogue."
+      }
+
+    },
+    
+    // Dynamic Tokens
+    "DynamicTokens": [
+      {
+        "Name": "PPN1",
+        "Value": "{{Player Pronouns 1}}"
+      },
+      {
+        "Name": "LPPN1",
+        "Value": "{{Lowercase: {{Player Pronouns 1}}}}"
+      },
+      {
+        "Name": "PPN2",
+        "Value": "{{Player Pronouns 2}}"
+      },
+      {
+        "Name": "LPPN2",
+        "Value": "{{Lowercase: {{Player Pronouns 2}}}}"
+      },
+      {
+        "Name": "PPN3",
+        "Value": "{{Player Pronouns 3}}"
+      },
+      {
+        "Name": "LPPN3",
+        "Value": "{{Lowercase: {{Player Pronouns 3}}}}"
+      },
+      {
+        "Name": "PetName",
+        "Value": "{{Player Pet Name}}"
+      },
+      {
+        "Name": "LPetName",
+        "Value": "{{Lowercase: {{Player Pet Name}}}}"
+      },
+      {
+        "Name": "Descript",
+        "Value": "{{Descriptive Word}}"
+      },
+      {
+        "Name": "LDescript",
+        "Value": "{{Lowercase: {{Descriptive Word}}}}"
+      },
+      {
+        "Name": "Accessory",
+        "Value": "{{Player Accessory}}"
+      },
+      {
+        "Name": "LAccessory",
+        "Value": "{{Lowercase: {{Player Accessory}}}}"
+      },
+      {
+        "Name": "WeekDayList",
+        "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+      },
+      {
+        "Name": "WeekDay",
+        "Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+      }
+    ],
+
+    // Include files
+    "Changes": [
+      // Event Files
+      {
+        "LogName": "Alex's New Events",
+        "Action": "Include",
+        "FromFile": "Data/Events/NewEvents.json",
+        "When": {
+          "After Dark Events": "true"
+        }
+      },
+      {
+        "LogName": "Alex's Rewritten Vanilla Events",
+        "Action": "Include",
+        "FromFile": "Data/Events/VanillaRewrite.json",
+        "When": {
+          "After Dark Events": "true"
+        }
+      },
+      // Dialogue Files
+      {
+        "LogName": "Generic Dialogue",
+        "Action": "Include",
+        "FromFile": "Data/Dialogue/GenericDialogue.json",
+        "When": {
+          "Generic Dialogue": "true"
+        }
+      },
+      {
+        "LogName": "Marriage Dialogue",
+        "Action": "Include",
+        "FromFile": "Data/Dialogue/MarriageDialogue.json",
+        "When": {
+            "Marriage Dialogue": "true"
+        }
+      },
+      {
+        "LogName": "Gift Dialogue",
+        "Action": "Include",
+        "FromFile": "Data/Dialogue/GiftDialogue.json",
+        "When": {
+          "Gift Dialogue": "true"
+        }
+      },
+      {
+        "LogName": "Festival Dialogue",
+        "Action": "Include",
+        "FromFile": "Data/Dialogue/FestivalDialogue.json",
+        "When": {
+          "Festival Dialogue": "true"
+        }
+      }
+    ]
+}

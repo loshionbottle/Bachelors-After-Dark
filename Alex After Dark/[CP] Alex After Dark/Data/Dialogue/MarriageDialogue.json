@@ -1,0 +1,138 @@
+// Marriage Dialogue
+
+{
+    "Changes": [
+        {
+            "LogName": "Alex's Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Alex0": "{{i18n:Marriage.Alex.Engagement.0 |LPetName={{LPetName}}}}",
+                "Alex1": "{{i18n:Marriage.Alex.Engagement.1}}"
+            }
+        },
+        {
+            "LogName": "Alex's Married Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries": {
+                // Rando Dialogue
+                "patio_Alex": "{{i18n:Marriage.Alex.Patio.{{Random:1++2++3|inputSeparator=++}} |LPetName={{LPetName}}}}",
+                "spouseRoom_Alex": "{{i18n:Marriage.Alex.SpouseRoom.{{Random:1++2++3|inputSeparator=++}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "funLeave_Alex": "{{i18n:Marriage.Alex.funLeave |LPetName={{LPetName}}}}",
+                "funReturn_Alex": "{{i18n:Marriage.Alex.funReturn.{{Random:1++2++3|inputSeparator=++}}}}",
+
+                // Special Dates - Spring
+                "spring_Alex": "{{i18n:Marriage.Alex.Spring |LPetName={{LPetName}}}}",
+                "spring_1": "{{i18n:Marriage.Alex.Spring1}}",
+                "spring_6": "{{i18n:Marriage.Alex.Spring6}}",
+                "spring_8": "{{i18n:Marriage.Alex.Spring8}}",
+                "spring_12": "{{i18n:Marriage.Alex.Spring12 |LPetName={{LPetName}}}}",
+                "spring_23": "{{i18n:Marriage.Alex.Spring23}}",
+
+                // Special Dates - Summer
+                "summer_Alex": "{{i18n:Marriage.Alex.Summer}}",
+                "summer_1": "{{i18n:Marriage.Alex.Summer1}}",
+                "summer_8": "{{i18n:Marriage.Alex.Summer8 |LDescript={{LDescript}}}}",
+                "summer_10": "{{i18n:Marriage.Alex.Summer10}}",
+                "summer_15": "{{i18n:Marriage.Alex.Summer16}}",
+                "summer_27": "{{i18n:Marriage.Alex.Summer27}}",
+                
+                // Special Dates - Fall
+                "fall_Alex": "{{i18n:Marriage.Alex.Fall}}",
+                "fall_1": "{{i18n:Marriage.Alex.Fall1}}",
+                "fall_8": "{{i18n:Marriage.Alex.Fall8}}",
+                "fall_15": "{{i18n:Marriage.Alex.Fall15 |LPetName={{LPetName}}}}",
+                "fall_20": "{{i18n:Marriage.Alex.Fall20 |LPetName={{LPetName}}}}",
+                "fall_26": "{{i18n:Marriage.Alex.Fall26}}",
+
+                // Special Dates - Winter
+                "winter_Alex": "{{i18n:Marriage.Alex.Winter}}",
+                "winter_1": "{{i18n:Marriage.Alex.Winter1 |LPetName={{LPetName}}}}",
+                "winter_7": "{{i18n:Marriage.Alex.Winter7}}",
+                "winter_9": "{{i18n:Marriage.Alex.Winter9}}",
+                "winter_17": "{{i18n:Marriage.Alex.Winter17}}",
+                "winter_24": "{{i18n:Marriage.Alex.Winter24}}",
+                "winter_28": "{{i18n:Marriage.Alex.Winter28}}",
+
+                // Rainy Dayz
+                "Rainy_Day_Alex": "{{i18n:Marriage.Alex.Rainy.Day.Alex |LPetName={{LPetName}}}}",
+                "Rainy_Day_0": "{{i18n:Marriage.Alex.Rainy.Day.0 |LPetName={{LPetName}}}}",
+                "Rainy_Day_1": "{{i18n:Marriage.Alex.Rainy.Day.1}}",
+                "Rainy_Day_2": "{{i18n:Marriage.Alex.Rainy.Day.2}}",
+                "Rainy_Day_3": "{{i18n:Marriage.Alex.Rainy.Day.3}}",
+                "Rainy_Day_4": "{{i18n:Marriage.Alex.Rainy.Day.4}}",
+                "Rainy_Day_5": "{{i18n:Marriage.Alex.Rainy.Day.5}}",
+                "Rainy_Night_Alex": "{{i18n:Marriage.Alex.Rainy.Night.Alex |LPetName={{LPetName}}}}",
+                "Rainy_Night_0": "{{i18n:Marriage.Alex.Rainy.Night.0 |LPetName={{LPetName}}}}",
+                "Rainy_Night_1": "{{i18n:Marriage.Alex.Rainy.Night.1 |LPetName={{LPetName}}}}",
+                "Rainy_Night_2": "{{i18n:Marriage.Alex.Rainy.Night.2 |LPetName={{LPetName}}}}",
+                "Rainy_Night_3": "{{i18n:Marriage.Alex.Rainy.Night.3}}",
+                "Rainy_Night_4": "{{i18n:Marriage.Alex.Rainy.Night.4}}",
+                "Rainy_Night_5": "{{i18n:Marriage.Alex.Rainy.Night.5 |LPetName={{LPetName}}}}",
+
+                // Indoor/Outdoor Dayz
+                "Indoor_Day_Alex": "{{i18n:Marriage.Alex.Indoor.Day.Alex}}",
+                "Indoor_Day_0": "{{i18n:Marriage.Alex.Indoor.Day.0 |LPetName={{LPetName}}}}",
+                "Indoor_Day_1": "{{i18n:Marriage.Alex.Indoor.Day.1 |LPetName={{LPetName}}}}",
+                "Indoor_Day_2": "{{i18n:Marriage.Alex.Indoor.Day.2 |LDescript={{LDescript}}}}",
+                "Indoor_Day_3": "{{i18n:Marriage.Alex.Indoor.Day.3}}",
+                "Indoor_Day_4": "{{i18n:Marriage.Alex.Indoor.Day.4 |LPetName={{LPetName}}}}",
+                "Indoor_Night_Alex": "{{i18n:Marriage.Alex.Indoor.Night.Alex |LPetName={{LPetName}}}}",
+                "Indoor_Night_0": "{{i18n:Marriage.Alex.Indoor.Night.0 |LPetName={{LPetName}}}}",
+                "Indoor_Night_1": "{{i18n:Marriage.Alex.Indoor.Night.1 |LPetName={{LPetName}}}}",
+                "Indoor_Night_2": "{{i18n:Marriage.Alex.Indoor.Night.2 |LPetName={{LPetName}}}}",
+                "Indoor_Night_3": "{{i18n:Marriage.Alex.Indoor.Night.3}}",
+                "Indoor_Night_4": "{{i18n:Marriage.Alex.Indoor.Night.4 |LPetName={{LPetName}}}}",
+                "Outdoor_Alex": "{{i18n:Marriage.Alex.Outdoor.Alex}}",
+                "Outdoor_0": "{{i18n:Marriage.Alex.Outdoor.0}}",
+                "Outdoor_1": "{{i18n:Marriage.Alex.Outdoor.1}}",
+                "Outdoor_2": "{{i18n:Marriage.Alex.Outdoor.2}}",
+                "Outdoor_3": "{{i18n:Marriage.Alex.Outdoor.3 |LPetName={{LPetName}}}}",
+                "Outdoor_4": "{{i18n:Marriage.Alex.Outdoor.4}}",
+
+                // Lil jits
+                "OneKid_0": "{{i18n:Marriage.Alex.OneKid.0}}",
+                "OneKid_1": "{{i18n:Marriage.Alex.OneKid.1}}",
+                "OneKid_2": "{{i18n:Marriage.Alex.OneKid.2}}",
+                "OneKid_3": "{{i18n:Marriage.Alex.OneKid.3 |LPetName={{LPetName}}}}",
+                "TwoKids_0": "{{i18n:Marriage.Alex.TwoKids.0}}",
+                "TwoKids_1": "{{i18n:Marriage.Alex.TwoKids.1}}",
+                "TwoKids_2": "{{i18n:Marriage.Alex.TwoKids.2}}",
+                "TwoKids_3": "{{i18n:Marriage.Alex.TwoKids.3 |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+
+                // affection
+                "Good_0": "{{i18n:Marriage.Alex.Good.0 |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "Good_1": "{{i18n:Marriage.Alex.Good.1 |LDescript={{LDescript}}}}",
+                "Good_2": "{{i18n:Marriage.Alex.Good.2 |LDescript={{LDescript}}}}",
+                "Good_3": "{{i18n:Marriage.Alex.Good.3 |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Good_4": "{{i18n:Marriage.Alex.Good.4}}",
+                "Good_5": "{{i18n:Marriage.Alex.Good.5 |LPetName={{LPetName}}}}",
+                "Good_6": "{{i18n:Marriage.Alex.Good.6}}",
+                "Good_7": "{{i18n:Marriage.Alex.Good.7}}",
+                "Good_8": "{{i18n:Marriage.Alex.Good.8 |LUnderwear={{LUnderwear}}}}",
+                "Good_9": "{{i18n:Marriage.Alex.Good.9 |LDescript={{LDescript}}}}",
+                "Neutral_0": "{{i18n:Marriage.Alex.Neutral.0 |LPetName={{LPetName}}}}",
+                "Neutral_1": "{{i18n:Marriage.Alex.Neutral.1 |LPetName={{LPetName}}}}",
+                "Neutral_2": "{{i18n:Marriage.Alex.Neutral.2}}",
+                "Neutral_3": "{{i18n:Marriage.Alex.Neutral.3}}",
+                "Neutral_4": "{{i18n:Marriage.Alex.Neutral.4}}",
+                "Neutral_5": "{{i18n:Marriage.Alex.Neutral.5 |LPetName={{LPetName}}}}",
+                "Neutral_6": "{{i18n:Marriage.Alex.Neutral.6 |LPetName={{LPetName}}}}",
+                "Neutral_7": "{{i18n:Marriage.Alex.Neutral.7}}",
+                "Neutral_8": "{{i18n:Marriage.Alex.Neutral.8}}",
+                "Neutral_9": "{{i18n:Marriage.Alex.Neutral.9 |LPetName={{LPetName}}}}",
+                "Bad_0": "{{i18n:Marriage.Alex.Bad.0 |LPetName={{LPetName}}}}",
+                "Bad_1": "{{i18n:Marriage.Alex.Bad.1 |LPetName={{LPetName}}}}",
+                "Bad_2": "{{i18n:Marriage.Alex.Bad.2 |LPetName={{LPetName}}}}",
+                "Bad_3": "{{i18n:Marriage.Alex.Bad.3 |LPetName={{LPetName}}}}",
+                "Bad_4": "{{i18n:Marriage.Alex.Bad.4 |LPetName={{LPetName}}}}",
+                "Bad_5": "{{i18n:Marriage.Alex.Bad.5}}",
+                "Bad_6": "{{i18n:Marriage.Alex.Bad.6 |LPetName={{LPetName}}}}",
+                "Bad_7": "{{i18n:Marriage.Alex.Bad.7 |LPetName={{LPetName}}}}",
+                "Bad_8": "{{i18n:Marriage.Alex.Bad.8}}",
+                "Bad_9": "{{i18n:Marriage.Alex.Bad.9}}"
+            }
+        }
+    ]
+}
