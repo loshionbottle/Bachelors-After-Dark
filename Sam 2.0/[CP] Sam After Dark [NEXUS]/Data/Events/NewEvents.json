@@ -1,0 +1,39 @@
+{
+    "Changes": [
+        {
+            // 1 Heart Event 
+            "LogName": "Sam's Wet Dream",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "SamWetDream/f Sam 250/w sunny/t 1500 1700": "none/-1000 -1000/Sam 24 97 3 Sebastian -100 -100 2 farmer -100 -100 2/showFrame Sam  16/skippable/viewport 24 97 true/pause 500/animate Sam false true 1000 16 17 18 19 16 17 18 19 16 17 18 19 16 17 18 19/pause 2500/stopAnimation Sam/showFrame Sam 12/pause 800/faceDirection Sam 0/pause 400/emote Sam 28/pause 500/speak Sam \"{{i18n:Events.WetDream.1}}\"/pause 200/faceDirection Sam 3/pause 500/emote Sam 40/speak Sam \"{{i18n:Events.WetDream.2}}\"/pause 300/emote Sam 32/pause 400/speak Sam \"{{i18n:Events.WetDream.3 |LPPN1={{LPPN1}}}}\"/pause 500/globalFade/viewport -1000 -1000/pause 900/message \"{{i18n:Events.WetDream.4}}\"/pause 200/message \"{{i18n:Events.WetDream.5}}\"/pause 200/message \"{{i18n:Events.WetDream.6}}\"/pause 200/message \"{{i18n:Events.WetDream.7}}\"/pause 800/message \"...\"/changeLocation Forest/warp farmer 34 25/message \"{{i18n:Events.WetDream.8}}\"/faceDirection farmer 2/warp Sam 34 16/faceDirection Sam 2/glow 0 0 255 true/viewport 34 25 clamp true/pause 400/move Sam 0 5 2/pause 400/emote Sam 32/move Sam 0 4 2/pause 200/message \"{{i18n:Events.WetDream.9}}\"/pause 200/emote farmer 20/pause 400/speak Sam \"{{i18n:Events.WetDream.10 |LPetName={{LPetName}}}}\"/pause 200/message \"{{i18n:Events.WetDream.11}}\"/eyes 4 -100000 true/pause 200/message \"{{i18n:Events.WetDream.12}}\"/pause 200/speak Sam \"{{i18n:Events.WetDream.13}}\"/pause 200/message \"'{{i18n:Events.WetDream.14}}'\"/pause 200/speak Sam \"{{i18n:Events.WetDream.15 |LPetName={{LPetName}}}}\"/pause 200/globalFade/viewport -1000 -1000 true/eyes 0 -100/stopGlowing/pause 400/message \"'{{i18n:Events.WetDream.14}}'\"/changeLocation Town/warp farmer -100 -100/speak Sebastian \"{{i18n:Events.WetDream.14}}\"/warp Sam 24 97/faceDirection Sam 3/warp Sebastian 23 96/faceDirection Sebastian 2/pause 200/speak Sebastian \"{{i18n:Events.WetDream.16}}\"/pause 200/viewport 24 97/pause 1000/emote Sam 40/pause 400/speak Sam \"{{i18n:Events.WetDream.17}}\"/pause 200/emote Sebastian 28/pause 500/speak Sebastian \"{{i18n:Events.WetDream.18}}\"/pause 200/speak Sam \"{{i18n:Events.WetDream.19}}\"/pause 200/speak Sebastian \"{{i18n:Events.WetDream.20}}\"/pause 200/emote Sam 16/pause 500/emote Sam 4/pause 500/emote Sebastian 28 true/pause 1500/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        // Also 1 Heart, DISCLAIMER: if your house has been upgraded 1+ times, he's gonna be in the void 
+        {
+            "LogName": "Sam Breaks In",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "SamBreakIn/f Sam 250/o Sam/e SamWetDream": "continue/-1000 -1000/Sam 64 15 0/pause 500/skippable/viewport 64 15 true/pause 200/faceDirection Sam 3/pause 100/faceDirection Sam 0/pause 100/faceDirection Sam 1/pause 100/faceDirection Sam 0/pause 200/move Sam 0 -2 0/warp Sam -100 -100/playSound doorClose/pause 200/globalFade/viewport -1000 -1000/pause 400/speak Sam \"{{i18n:Events.BreakIn.1 |LPPN1={{LPPN1}}}}\"/pause 500/speak Sam \"{{i18n:Events.BreakIn.2}}\"/pause 500/playSound clank/pause 400/playSound clank/pause 400/playSound clank/pause 400/playSound clank/pause 1500/playSound cameraNoise/pause 1500/speak Sam \"{{i18n:Events.BreakIn.3}}\"/pause 1500/playSound fishSlap/pause 200/playSound fishSlap/pause 500/end"
+            }
+        },
+         // 5 Heart - Enter the Forest between 5-8pm
+         {
+            "LogName": "Sam's Trippin Fr (Dream IRL)",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "SamTrippin/e SamWetDream/f Sam 1250/t 1700 2000": "fall1/-1000 -1000/farmer 34 25 2 Sam 34 16 2/faceDirection Sam 2/skippable/viewport 34 25 clamp true/pause 400/move Sam 0 5 2/pause 200/emote Sam 40/pause 400/textAboveHead Sam \"{{i18n:Events.ForestDream.1}}\"/pause 400/faceDirection farmer 0/pause 400/emote farmer 8/speak Sam \"{{i18n:Events.ForestDream.2}}\"/pause 200/move Sam 0 2 2/pause 200/speak Sam \"{{i18n:Events.ForestDream.3}}\"/pause 200/quickQuestion #{{i18n:Events.ForestDream.4}}#{{i18n:Events.ForestDream.5}}(break)speak Sam \"{{i18n:Events.ForestDream.6}}\"(break)speak Sam \"{{i18n:Events.ForestDream.7}}\"/pause 200/emote farmer 32/pause 400/move Sam 1 0 1 true/faceDirection farmer 2/move Sam 0 2 2/pause 400/animate Sam true true 100 1 2/positionOffset Sam 0 12/pause 100/positionOffset Sam -4 0/pause 100/positionOffset Sam -4 0/pause 100/positionOffset Sam -4 0/pause 100/stopAnimation Sam/positionOffset Sam -4 0/pause 200/message \"{{i18n:Events.ForestDream.8}}\"/pause 200/emote Sam 32/pause 400/speak Sam \"{{i18n:Events.ForestDream.9}}\"/pause 200/emote farmer 8/pause 400/speak Sam \"{{i18n:Events.ForestDream.10}}\"/pause 200/emote farmer 60/pause 400/speak Sam \"{{i18n:Events.ForestDream.11}}\"/pause 200/quickQuestion #{{i18n:Events.ForestDream.12}}#{{i18n:Events.ForestDream.13}}(break)faceDirection Sam 3\\pause 200\\faceDirection farmer 1\\pause 200\\speak Sam \"{{i18n:Events.ForestDream.14}}\"\\pause 200\\emote farmer 32\\pause 400\\faceDirection Sam 2\\pause 200\\speak Sam \"{{i18n:Events.ForestDream.15}}\"\\pause 200\\emote farmer 12\\pause 400\\faceDirection farmer 2(break)pause 200\\emote Sam 40\\speak Sam \"{{i18n:Events.ForestDream.16}}\"\\pause 600\\message \"...\"\\pause 200\\message \"{{i18n:Events.ForestDream.17}}\"\\pause 200\\emote farmer 40/pause 400/end dialogueWarpOut Sam \"{{i18n:Events.ForestDream.18}}\""
+            }
+        },
+        {
+            "LogName": "9 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "SamConfession/e SamTrippin/e SpicyChapelNS SpicyChapel SpicyPussyChapel SpicyDickChapel/f Sam 2250/t 1700 2000": "fall1/-1000 -1000/farmer 34 25 2 Sam 34 16 2/faceDirection Sam 2/skippable/viewport 34 25 clamp true/pause 400/move Sam 0 5 2/pause 200/emote Sam 32/pause 400/textAboveHead Sam \"{{i18n:Events.9Heart.1}}\"/pause 600/emote farmer 16/pause 400/faceDirection farmer 0/pause 200/move Sam 0 2 2/pause 200/speak Sam \"{{i18n:Events.9Heart.2}}\"/pause 200/emote farmer 8/pause 400/speak Sam \"{{i18n:Events.9Heart.3}}\"/pause 200/emote farmer 40/pause 400/move Sam 0 1 2/pause 400/speak Sam \"{{i18n:Events.9Heart.4}}\"/pause 200/emote farmer 28/pause 400/speak Sam \"{{i18n:Events.9Heart.5 |LPetName={{LPetName}}}}\"/pause 200/emote farmer 40/pause 400/speed farmer 4/move farmer 1 0 1/move farmer 0 -5 0/faceDirection Sam 0 true/move farmer 0 -1 0/emote Sam 32 true/move farmer 0 -8 0/pause 400/end"
+            }
+        }
+    ]
+}
