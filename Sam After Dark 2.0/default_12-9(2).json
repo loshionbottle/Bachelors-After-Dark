@@ -1,0 +1,710 @@
+{
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████  ███  █   █ █████ █████  ████     █   █ █████ █   █ █   █ 
+    █     █   █ ██  █ █       █   █         ██ ██ █     ██  █ █   █ 
+    █     █   █ █ █ █ ████    █   █  ██     █ █ █ ████  █ █ █ █   █ 
+    █     █   █ █  ██ █       █   █   █     █   █ █     █  ██ █   █ 
+     ████  ███  █   █ █     █████  ███      █   █ █████ █   █ █████   
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ████   ███  █   █ ████   ███  █   █     ████  █████  ███  █      ███   ████ █   █ █████ 
+    █   █ █   █ ██  █ █   █ █   █ ██ ██     █   █   █   █   █ █     █   █ █     █   █ █     
+    ████  █████ █ █ █ █   █ █   █ █ █ █     █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █ █  ██ █   █ █   █ █   █     █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █ █   █ █   █ ████   ███  █   █     ████  █████ █   █ █████  ███   ███  █████ █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* 
+    Thank you to the following users who've helped come up with or gave ideas for some lines:
+    - Monstarmews
+    - ChatDisabled
+    - MuselaSora
+    - ghotstee
+    */
+    
+    // Introduction
+    "Core.Sam.Introduction": "Oh, are you the new farmer?#$b#You're a lot more {{LDescript}} than I thought you'd be.$10#$b#I'm Sam, by the way.$u",
+    
+    // Specific Dates
+    "Core.Sam.10": "$y 'D'you see the game last night, @?_Yes._Oh, lucky. I had to miss it. You should come over later and give me a little recap.$u_No._Oh? Well, if you wanna come over later, I'd love to give you a full recap.$u'",
+    "Core.Sam.14": "...$s#$e#Oh, hey @.$10#$b#I was just thinking about taking the day off. Do you wanna join me?$u",
+    "Core.Sam.Spring12": "Ugh. I'm so not looking forward to-$a#$b#Actually...#$b#Are you going to the egg festival tomorrow?#$b#It'd be a hell of a lot more interesting if you do.$u",
+    "Core.Sam.Spring21": "%You catch Sam staring at you with a dazed expression.#$b#Has anyone ever told you that you look really {{LDescript}} with all the spring petals flying around you?$l",
+    "Core.Sam.Spring23": "What are you wearing to the dance tomorrow?#$b#Please tell me it's something white, I need something to look forward to this year.$u",
+    "Core.Sam.Spring23.4H": "Are you gonna let me dance with you tomorrow?#$b#I promise, seeing my two left feet in action will only make me cuter.$u",
+    "Core.Sam.Summer10": "It feels great knowing I don't have to work tomorrow.$h#$e#What are you doing today?#$b#Maybe we could do something and catch up a little.$l",
+    "Core.Sam.Fall9": "I've been thinking about buying some new shoes lately.#$b#$y 'What color should I get?_Green._Hmmm... You're right, I should stick with what I normally use._Black._You're right, my black pair is really worn out...$s#$b#Thanks, @.$h",
+    "Core.Sam.Fall14": "I can't believe fall is halfway over...$s#$b#And you haven't even FALLEN for me yet...$s",
+    "Core.Sam.Fall16": "Ugh, the shoes I ordered over a week ago still haven't shown up.$a#$b#I was really looking forward to the ones you picked out, too.$s",
+    "Core.Sam.Fall23": "Have you thought of anything to wear for Spirit's Eve yet, @?#$b#Well, I'm sure whatever costume you picked out will make you look even more {{LDescript}}.$u",
+    "Core.Sam.Fall26": "Excited for the festival tomorrow, {{LPetName}}?#$b#I know I'm looking forward to see what costume you picked out to wear.$10",
+    "Core.Sam.Winter7": "Maybe if I learned how to fish, the festival tomorrow would be a lot less boring.$s#$e#Hm, wait-#$b#You know how to fish.#$b#D'you think I could get some private lessons one of these days?$l",
+    "Core.Sam.Winter24": "Found a gift for your secret friend this year yet?#$b#Well, if you were thinking about getting ME something...$l#$b#Honestly, a new guitar stand would be great.$s",
+    
+    // Jealousy 
+    "Core.Sam.Jealous.Abigail": "Tch.$a#$b#Abigail? Really? Is it the dyed hair?$a#$b#I could go dye mine right now if it'd make you come back to me.$s",
+    "Core.Sam.Jealous.Dating.Sebastian": "You really think you can slip through my fingers that easily?$a#$b#With my best friend nonetheless?$s",
+    "Core.Sam.Jealous.Married.Sebastian": "I'm not super into polygamy, but if you don't divorce Sebastian I might have to end up sharing you.$s",
+    "Core.Sam.Jealous.Dating.Shane": "Did Shane leave those marks on your neck?$a#$b#They're sloppy, @.$a#$b#Come on, just give me a chance and I'll make some better ones, {{LPetName}}.[277]$l",
+    "Core.Sam.Jealous.Married.Shane": "Are you settling for Shane?$s#$b#I'm sure I could give you a lot more.$7",
+    "Core.Sam.Jealous.Dating.Harvey": "Let's be smart about this, {{LPetName}}.$a#$b#Leave Harvey and come back to me before I make you.[277]$7",
+    "Core.Sam.Jealous.Married.Harvey": "Does Harvey give you discounts to his services now that you're married?$s#$b#He doesn't? Well why the hell would you choose him over me, then?$a",
+    "Core.Sam.Jealous.Dating.Elliott": "Don't give me that look.$a#$b#I've told you numerous times you were mine and you go hookup with Elliott of all people.$a#$b#Now, be a good {{LGoodName}} and break up with him.[277]$u",
+    "Core.Sam.Jealous.Married.Elliott": "Are you sure you want to stay married to Elliott?$s#$b#I'm sure I could offer a lot more than he can.$a",
+    "Core.Sam.Jealous.Dating.Alex": "You know I could make you feel a hell of a lot better than Alex can.$a#$b#Come on, {{LPetName}}, I just need you to be all mine.[277]$u",
+    "Core.Sam.Jealous.Married.Alex": "Maybe I haven't made it clear to you that you're mine.$a#$b#Now, divorce Alex so I can have you all to myself again.$u",
+    
+    // Location Based
+    "Core.Sam.Saloon.1": "Hey, you look spent. Rough day?#$b#Maybe a round of pool with me and Seb will give you some energy back.$u",
+    "Core.Sam.Saloon.2": "Oh hey, you showed up.$h#$b#Are you hungry? We could split a pizza if you'd like.$u#$b#My treat.$l",
+    "Core.Sam.Saloon.3": "%Sam leans in close to whisper in your ear.#$b#You should go home and change before I flip you over this pool table and-$l#$b#Well, I think you know the rest.$u",
+    "Core.Sam.Saloon.4": "Yoba, if you keep coming in here look like that...$l#$b#Let's just say pool balls won't be the only thing I hit tonight.$u",
+    "Core.Sam.Saloon.5": "%You overhear Sam groan in frustration as Sebastian pockets another ball. Sam notices you walking up, now turning to face you.#$b#I'm so tired of losing to Seb, {{LPetName}}.$s#$e#Hey, actually...$u#$b#How about you help me release some of this pent-up frustration in Gus' backroom, hm?$l",
+    
+    // Pos Romantic Shit
+    "Core.Sam.AcceptBouquet": "You really think flowers are what make us official?$u#$b#{{PetName}}, you've been mine for a while.$l",
+    "Core.Sam.GivePendant": "...$8#$b#Sorry, I didn't expect this.$10#$b#I'm gonna go talk to the mayor right now... The wedding's in three days.$l#$e#What? I'm setting it up too soon?#$b#{{PetName}}, nothing's gonna stop me from making you officially mine now that you've given me permission.$l",
+    "Core.Sam.StarDrop": "I remember you talking about one of these before.$u#$b#I hope you like it, {{LPetName}}.$l",
+    "Core.Sam.Dating": "Mmmm...$l#$b#Does this mean I get to finally kiss you in public now, {{LPetName}}?$l",
+    
+    // Neg Romantic Shit
+    "Core.Sam.RejectBouquet": "%You hear Sam laugh.#$b#Are you that eager to become mine already, {{LPetName}}?$u#$b#Mmmm... not yet, but soon.$l",
+    "Core.Sam.RejectPendant": "What game are you trying to play by giving me that now?$7#$b#You know I can't accept that yet...$s",
+    "Core.Sam.RejectGift.Divorced": "...$s#$b#Why do you have to-$a#$b#%You hear Sam sigh.#$b#Nevermind, I don't want this.$a",
+    "Core.Sam.Divorced": "I didn't think you'd actually follow through with the threats...$s#$b#Was I too much for you, {{LPetName}}?$s",
+    "Core.Sam.BreakUp": "You think this little rejection means much to me, {{LPetName}}?$a#$b#We're not done here.$a",
+    "Core.Sam.DumpedGuys": "I mean, I knew about-$s#$b#Nevermind...$s",
+    "Core.Sam.SecondChanceGuys": "Were the rest not good enough for you, {{LPetName}}?$u#$b#Well, I'm glad you came to your senses and chose me.$l",
+    
+    // SlingShot
+    "Core.Sam.Slingshot": "{{PetName}}...$s#$b#This isn't what I meant when I said you should hit on me more.$s",
+    
+    // First Visit - Sewer
+    "Core.Sam.Sewer.FirstVisit": "Err... I don't know how to ask this but...$s#$b#Have you been to the sewers recently?$7#$b#You kinda smell like it, {{LPetName}}.$s",
+    
+    // Green Rain
+    "Core.Sam.GreenRain": "This rain makes my skin crawl. It's almost... alive?$s#$e#Wait, do you think it'd be fun if we-$l#$b#Actually, never mind. I'll tell you another time.$u",
+    "Core.Sam.GreenRainFinished": "I'm glad the rain's finally stopped, it's been hell trying to keep Vincent inside.$a#$b#How are you holding up though?$u",
+    "Core.Sam.GreenRain2": "Didn't you have to run through the rain to get here?$8#$b#Isn't it dangerous?$8#$b#You should really be more careful with yourself, {{LPetName}}.$s#$e#I guess I should be flattered that you did all that for me, huh?$10",
+    
+    // Resort
+    "Core.Sam.Resort.Entering": "I don't think I could ever get used to the scenery on this island.$u#$b#Though, it doesn't nearly compare to someone as {{LDescript}} as you.$l",
+    "Core.Sam.Resort": "...$s#$b#Willy said not to venture too far out into the island but...$s#$b#Hey, how about you take me to a little secluded spot that I know you know of?$u",
+    "Core.Sam.Resort.Leaving": "I hate that I have to leave here so soon.$s#$b#You know what you should do, @?#$b#Let me spend the night in that little cabin I know you have.$l",
+    "Core.Sam.Resort.Shore": "Everytime I look at the waves, I can't help but think of how fun they'd be to ride.#$b#I bet that's what you think when you look at me, huh?$l",
+    "Core.Sam.Resort.Towel.1": "%You notice Sam's fingers dance along the strings masterfully as he plays a jazzy tune.#$b#%The music abruptly stops as he nearly drops his guitar when he notices you standing near him.#$b#Shit, I didn't notice you were there.$10#$b#Care to join me?$u",
+    "Core.Sam.Resort.Towel.2": "This towel has enough space for two if you wanna join me, {{LPetName}}.#$b#Or would you rather sit in my lap?$l",
+    "Core.Sam.Resort.Bar": "Want something to drink since I'm here?#$b#Or, are you thirsty for something a bit more...$l#$b#Me?$l",
+    
+    // Summit
+    "Extra.Sam.Summit": "I truly got lucky with you, {{LPetName}}.$l#$b#I honestly still can't believe you decided to marry me despite everything we went through.$10#$b#I hope you'll continue letting me spend the rest of my life with you, @.$l",
+    
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████ █████ █   █ █████ ████  █████  ████       ████  █████  ███  █      ███   ████ █   █ █████ 
+    █     █     ██  █ █     █   █   █   █           █   █   █   █   █ █     █   █ █     █   █ █     
+    █  ██ ████  █ █ █ ████  ████    █   █           █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █     █  ██ █     █   █   █   █           █   █   █   █   █ █     █   █ █   █ █   █ █     
+     ███  █████ █   █ █████ █   █ █████  ████       ████  █████ █   █ █████  ███   ███  █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* 
+    Thank you to the following users who've helped come up with or gave ideas for some lines:
+    - zestylimesss
+    - iluminknotty
+    - MuselaSora
+    - ChatDisabled
+    - MonstarMews
+    - mickie
+    - superdelusional
+    - Special thanks to frozenoj and stolna2lampa for helping me come up with stuff for the band question :]
+    i was stuck on that one for an embarassing amount of time tbh
+    */
+
+    // SPRING
+    "Core.Sam.Spring.EarlyHeart.1": "Hey, @.$u#$e#Hm? Oh, I'm not busy.#$b#You know I always have time to talk to someone as {{LDescript}} as you.$u",
+    "Core.Sam.Spring.EarlyHeart.2": "Have you ever been interested in learning to ride a skateboard?#$b#Well, if you ever are, let me know.$u#$e#I think it'd be real fun to give you a few lessons on skating, actually.$10#$b#I'd just love getting to teach someone like you a trick or two.$l",
+    "Core.Sam.Spring.EarlyHeart.3": "I've had this one song stuck in my head lately.$s#$b#Ha, I guess it's kinda like you in that way, huh?$10",
+    "Core.Sam.Spring.EarlyHeart.4": "Say, what kind of music do you listen to?#$b#I'll have to make you a playlist one of these days.$u",
+    "Core.Sam.Spring.EarlyHeart.5": "...$s#$b#Y'know, I love Seb and Abby but, I really hate feeling like a third wheel when I'm with them.$s#$b#How about you join us more often and keep me company, hm?$u",
+    "Core.Sam.Spring.EarlyHeart.6": "Yoba, the pollen this year is actually killing me and my sinuses.$s#$b#Good thing the flowers make it worth it.$u#$e#Here, I got you this.[402]#$b#Get it, cause you're so sweet?$h",
+    "Core.Sam.Spring.EarlyHeart.7": "I know we barely know each other but I'm going crazy here...$s#$b#All I can think about is you.$7#$e#How do you do that? Just get in my head and make it your own?$7#$b#Though, I can't really say I mind all that much.$l",
+    "Core.Sam.Spring.EarlyHeart.8": "Oh hey, @.#$b#What do you think about being my muse for this next song I'm writing?$u#$e#What?$u#$b#I know it's soon but, everytime I look at you, I just think of more and more things to write about.$l",
+    "Core.Sam.Spring.EarlyHeart.9": "How's that little farm of yours coming along?#$b#Made any room for me on it yet?$l",
+    "Core.Sam.Spring.EarlyHeart.10": "Have you been taking enough breaks lately?$7#$b#You shouldn't overwork yourself, {{LPetName}}.#$b#I don't know what I'd do without you.$s",
+    "Core.Sam.Spring.EarlyHeart.11": "Hey, {{LPetName}}...$l#$b#Shit, I meant @!$8#$b#Sorry, I've been daydreaming wayyy too much lately.$10",
+    "Core.Sam.Spring.EarlyHeart.12": "%You notice Sam fiddling with something in his hands.#$b#$y 'Ask him about it?_Yes._Wouldn't you like to know, {{LPetName}}?$l_No._Oh, hey @. How are you?$u'#$b#%He quickly hides the item he was previously holding. It almost looked like a tiny camera.",
+    "Core.Sam.Spring.EarlyHeart.13": "$y 'Hey, @... Who was your first kiss with?_Some random guy..._Tch... Do you happen to know where he lives perchance?$a_No one, yet._How adorable.$l'",
+    // Song for band question
+    "Core.Sam.Spring.EarlyHeart.14": "I'm trying to come up with a new song for my band, but I'm blanking....$s#$b#$q 19/20 Wed_old#Hey, what do you think my new song should be about?#$r 20 30 Wed_20#(Jokingly) You should write about your love for me!#$r 8820 30 Wed_20#Your latest obsession.#$r 8821 30 Wed_20#What you dreamt about last night.#$r 19 -50 Wed_19#Choose anything. It'll still be a horrible song.",
+    "Core.Sam.Wed.Old": "$p 19#I already know what you think about my music.$a|Thanks to your help, I already know the perfect thing to write about.$l",
+    "Core.Sam.Wed.Answer.Neg": "What's your problem? I was just asking a question.$a",
+    "Core.Sam.Wed.Answer.Pos": "Haha, you know what? I actually just might.$10#$b#Thanks, @.$u",
+
+    "Core.Sam.Spring.MidHeart.1": "Y'know, everytime I see you, I think of another song I could add to your mixtape.$10#$b#Don't worry, I'll give it to you when I think you can handle it.$u",
+    "Core.Sam.Spring.MidHeart.2": "Give me your hands.#$b#...$7#$b#You really should be taking better care of them, {{LPetName}}.$a#$b#These belong to me, after all.$u",
+    "Core.Sam.Spring.MidHeart.3": "You look really {{LDescript}} today, {{LPetName}}.$l#$b#I wonder if it's because you're in love with me.$u#$b#No?$8#$b#Are you sure?$l",
+    "Core.Sam.Spring.MidHeart.4": "You should really start closing your bedroom window at night, @. You'll catch a cold.$s#$b#Or worse, you'll catch another man entering through it.$a#$e#How did I know that it was open last night?$8#$b#Oh {{LPetName}}, you should know that I'm a little obsessed with you by now.$10",
+    "Core.Sam.Spring.MidHeart.5": "I swear, springtime is the worst for my allergies.$s#$b#I can't help but...$s#$b#*sneezes*$8#$B#Hnng...$s#$e#Hey, maybe you should come real close so I could take in your scent and lose all this dreadful pollen.$u",
+    "Core.Sam.Spring.MidHeart.6": "Hmmm...$u#$b#I swear, one of these days I'm gonna tie you up and force you to love me, @.$l",
+    "Core.Sam.Spring.MidHeart.7": "Tch...$s#$b#Man, I'm REALLY depressed, {{LPetName}}.$s#$e#Actually, you know what'd make me feel better?$u#$b#You not talking to anyone else for the rest of the day.$l#$b#I wanna be the last and only one that gets to witness those lips moving today.$l",
+    "Core.Sam.Spring.MidHeart.8": "Are you trying to romance me, {{LPetName}}? You've been giving me a lot of gifts lately.$u#$b#Don't worry, even if you aren't, I'll still make you mine one of these days.$l",
+    "Core.Sam.Spring.MidHeart.9": "%You hear Sam sigh loudly.#$b#When will you be mine already, @?$s#$b#I need to touch, hold, kiss you...$s",
+    "Core.Sam.Spring.MidHeart.10": "Hey, {{LPetName}}.$u#$b#I'm glad you're here actually, I was just thinking about how cute it'd be to own something belonging to you.#$b#Think you could help me out by giving me a few pairs of your {{LUnderwear}}?$u",
+    "Core.Sam.Spring.MidHeart.11": "What do I have to do to get you to laugh today, hm?$u#$b#Yoba, I don't know what it is but lately I've been craving each and every sound you could possibly make.$10",
+    "Core.Sam.Spring.MidHeart.12": "%You notice a photograph fall out of Sam's pocket. He quickly picks it up, but not before you notice your own silhouette in the frame.#$b#%He shoves the glossy paper back into his pants, hoping you didn't see much.#$b#Oh, hey @. Fancy seeing you here.$10",
+    "Core.Sam.Spring.MidHeart.13": "Y'know, you look really {{LDescript}} when you're wearing multiple accessories.$u#$b#Say, how about I get you a new one? Like a new necklace, ring, or...#$b#Maybe even my arms wrapped around you...$l",
+    "Core.Sam.Spring.MidHeart.14": "Is it too soon to get a kiss out of you, {{LPetName}}?$u#$b#Aww, come on. I'll do anything.$l",
+
+    "Core.Sam.Spring.LateHeart.1": "So, {{LPetName}}...$l#$b#When will you finally agree to be mine?$u#$b#It's getting really hard to hold back, you know that?$s",
+    "Core.Sam.Spring.LateHeart.2": "I swear, springtime stuffing up my nose only makes me want to stuff something else up so I won't be the only one suffering.$a#$b#Though, if it were you, I don't think you'd really be suffering.$l",
+    "Core.Sam.Spring.LateHeart.3": "Hey, {{LPetName}}.$l#$b#Say, when are you gonna let me live on that little farm of yours, hm?$u",
+    "Core.Sam.Spring.LateHeart.4": "Y'know, no matter how many times you... spring up in front of me, I never get tired of it.$u#$b#Now, how about you spring onto my lap, {{LPetName}}?$l",
+    "Core.Sam.Spring.LateHeart.5": "Yoba, you look so {{LDescript}} with all these spring petals flying around the place.$u#$b#Though, I bet you'd look even hotter with my hand wrapped around that {{LDecript}} little throat of yours.$l",
+    "Core.Sam.Spring.LateHeart.6": "Hey, I saw one of these earlier and thought it'd look really pretty in your hair.[591]$10#$e#Hey, speaking of giving each other things, put any thought into giving me a pendant yet?$u#$b#Come on, you know I'm just itching to be yours.$l#$b#And I don't think you'd exactly mind being mine either, {{LPetName}}.$u",
+    "Core.Sam.Spring.LateHeart.7": "%You catch Sam messing with some sort of...#$b#%Is that a collar or a necklace?",
+    "Core.Sam.Spring.LateHeart.8": "Oh, there you are, {{LPetName}}!$u#$b#I've actually been meaning to ask you something.#$b#...#$b#...$a#$e#Shit, I forgot what it was...$s#$b#Well, no matter. Let's talk about something more important.$u#$b#For example, have I told you how {{LDescript}} you've been looking lately?$10",
+    "Core.Sam.Spring.LateHeart.9": "Hey, I'm the only one you have eyes for, right?#$b#If not, I'll just have to remind you who you belong to.$u",
+    "Core.Sam.Spring.LateHeart.10": "What do you think about going on a date with me one of these days, {{LPetName}}?$u#$b#Don't worry, I'll plan it all. You won't have to worry about a thing.$l",
+    "Core.Sam.Spring.LateHeart.11": "You look exhausted!$8#$b#You haven't been overworking yourself on that farm, have you?$8#$b#You know I hate seeing you other than healthy, @.$s#$b#Take care of yourself or I'll have to forcefully make you relax somehow.$l",
+    "Core.Sam.Spring.LateHeart.12": "Hey, what do you think about making a small cameo on one of the band's songs?#$b#I just love the way your voice sounds and I'd love to memorialize it on one of our albums.$l",
+    "Core.Sam.Spring.LateHeart.13": "$y 'Say, this might be a little personal but... Do you have any kinks?_A few..._Oh, really? I can't wait to find out what they are.$l_Not really._That's surprising, but I can work with that.$l'",
+    "Core.Sam.Spring.LateHeart.14": "Hmm... Maybe if I bribe you you'll finally agree to be all mine.#$b#Here, I don't really have a need for this anymore.[74]$u",
+
+
+    // SUMMER
+    "Core.Sam.Summer.EarlyHeart.1": "",
+    "Core.Sam.Summer.EarlyHeart.2": "",
+    "Core.Sam.Summer.EarlyHeart.3": "",
+    "Core.Sam.Summer.EarlyHeart.4": "",
+    "Core.Sam.Summer.EarlyHeart.5": "",
+    "Core.Sam.Summer.EarlyHeart.6": "",
+    "Core.Sam.Summer.EarlyHeart.7": "",
+    "Core.Sam.Summer.EarlyHeart.8": "",
+    "Core.Sam.Summer.EarlyHeart.9": "",
+    "Core.Sam.Summer.EarlyHeart.10": "",
+    "Core.Sam.Summer.EarlyHeart.11": "",
+    "Core.Sam.Summer.EarlyHeart.12": "",
+    "Core.Sam.Summer.EarlyHeart.13": "",
+    "Core.Sam.Summer.EarlyHeart.14": "'",
+
+    "Core.Sam.Summer.MidHeart.1": "",
+    "Core.Sam.Summer.MidHeart.2": "",
+    "Core.Sam.Summer.MidHeart.3": "",
+    "Core.Sam.Summer.MidHeart.4": "",
+    "Core.Sam.Summer.MidHeart.5": "",
+    "Core.Sam.Summer.MidHeart.6": "",
+    "Core.Sam.Summer.MidHeart.7": "",
+    "Core.Sam.Summer.MidHeart.8": "",
+    "Core.Sam.Summer.MidHeart.9": "",
+    "Core.Sam.Summer.MidHeart.10": "",
+    "Core.Sam.Summer.MidHeart.11": "",
+    "Core.Sam.Summer.MidHeart.12": "",
+    "Core.Sam.Summer.MidHeart.13": "",
+    "Core.Sam.Summer.MidHeart.14": "",
+
+    "Core.Sam.Summer.LateHeart.1": "",
+    "Core.Sam.Summer.LateHeart.2": "",
+    "Core.Sam.Summer.LateHeart.3": "",
+    "Core.Sam.Summer.LateHeart.4": "",
+    "Core.Sam.Summer.LateHeart.5": "",
+    "Core.Sam.Summer.LateHeart.6": "",
+    "Core.Sam.Summer.LateHeart.7": "",
+    "Core.Sam.Summer.LateHeart.8": "",
+    "Core.Sam.Summer.LateHeart.9": "",
+    "Core.Sam.Summer.LateHeart.10": "",
+    "Core.Sam.Summer.LateHeart.11": "",
+    "Core.Sam.Summer.LateHeart.12": "",
+    "Core.Sam.Summer.LateHeart.13": "",
+    "Core.Sam.Summer.LateHeart.14": "",
+
+    // BIRTHDAY
+    "Core.Sam.Birthday.0": "",
+    "Core.Sam.Birthday.4": "",
+    "Core.Sam.Birthday.6": "",
+    "Core.Sam.Birthday.8": "",
+    "Core.Sam.Birthday.10": "",
+
+    // FALL
+    "Core.Sam.Fall.EarlyHeart.1": "",
+    "Core.Sam.Fall.EarlyHeart.2": "",
+    "Core.Sam.Fall.EarlyHeart.3": "",
+    "Core.Sam.Fall.EarlyHeart.4": "",
+    "Core.Sam.Fall.EarlyHeart.5": "",
+    "Core.Sam.Fall.EarlyHeart.6": "",
+    "Core.Sam.Fall.EarlyHeart.7": "",
+    "Core.Sam.Fall.EarlyHeart.8": "",
+    "Core.Sam.Fall.EarlyHeart.9": "",
+    "Core.Sam.Fall.EarlyHeart.10": "",
+    "Core.Sam.Fall.EarlyHeart.11": "",
+    "Core.Sam.Fall.EarlyHeart.12": "",
+    "Core.Sam.Fall.EarlyHeart.13": "",
+    "Core.Sam.Fall.EarlyHeart.14": "",
+
+    "Core.Sam.Fall.MidHeart.1": "",
+    "Core.Sam.Fall.MidHeart.2": "",
+    "Core.Sam.Fall.MidHeart.3": "",
+    "Core.Sam.Fall.MidHeart.4": "",
+    "Core.Sam.Fall.MidHeart.5": "",
+    "Core.Sam.Fall.MidHeart.6": "",
+    "Core.Sam.Fall.MidHeart.7": "",
+    "Core.Sam.Fall.MidHeart.8": "",
+    "Core.Sam.Fall.MidHeart.9": "",
+    "Core.Sam.Fall.MidHeart.10": "",
+    "Core.Sam.Fall.MidHeart.11": "",
+    "Core.Sam.Fall.MidHeart.12": "",
+    "Core.Sam.Fall.MidHeart.13": "",
+    "Core.Sam.Fall.MidHeart.14": "",
+
+    "Core.Sam.Fall.LateHeart.1": "",
+    "Core.Sam.Fall.LateHeart.2": "",
+    "Core.Sam.Fall.LateHeart.3": "",
+    "Core.Sam.Fall.LateHeart.4": "",
+    "Core.Sam.Fall.LateHeart.5": "",
+    "Core.Sam.Fall.LateHeart.6": "",
+    "Core.Sam.Fall.LateHeart.7": "",
+    "Core.Sam.Fall.LateHeart.8": "",
+    "Core.Sam.Fall.LateHeart.9": "",
+    "Core.Sam.Fall.LateHeart.10": "",
+    "Core.Sam.Fall.LateHeart.11": "",
+    "Core.Sam.Fall.LateHeart.12": "",
+    "Core.Sam.Fall.LateHeart.13": "",
+    "Core.Sam.Fall.LateHeart.14": "",
+
+
+    // WINTER
+    "Core.Sam.Winter.EarlyHeart.1": "",
+    "Core.Sam.Winter.EarlyHeart.2": "",
+    "Core.Sam.Winter.EarlyHeart.3": "",
+    "Core.Sam.Winter.EarlyHeart.4": "",
+    "Core.Sam.Winter.EarlyHeart.5": "",
+    "Core.Sam.Winter.EarlyHeart.6": "",
+    "Core.Sam.Winter.EarlyHeart.7": "",
+    "Core.Sam.Winter.EarlyHeart.8": "",
+    "Core.Sam.Winter.EarlyHeart.9": "",
+    "Core.Sam.Winter.EarlyHeart.10": "",
+    "Core.Sam.Winter.EarlyHeart.11": "",
+    "Core.Sam.Winter.EarlyHeart.12": "",
+    "Core.Sam.Winter.EarlyHeart.13": "",
+    "Core.Sam.Winter.EarlyHeart.14": "",
+
+    "Core.Sam.Winter.MidHeart.1": "",
+    "Core.Sam.Winter.MidHeart.2": "",
+    "Core.Sam.Winter.MidHeart.3": "",
+    "Core.Sam.Winter.MidHeart.4": "",
+    "Core.Sam.Winter.MidHeart.5": "",
+    "Core.Sam.Winter.MidHeart.6": "",
+    "Core.Sam.Winter.MidHeart.7": "",
+    "Core.Sam.Winter.MidHeart.8": "",
+    "Core.Sam.Winter.MidHeart.9": "",
+    "Core.Sam.Winter.MidHeart.10": "",
+    "Core.Sam.Winter.MidHeart.11": "",
+    "Core.Sam.Winter.MidHeart.12": "",
+    "Core.Sam.Winter.MidHeart.13": "",
+    "Core.Sam.Winter.MidHeart.14": "",
+
+    "Core.Sam.Winter.LateHeart.1": "",
+    "Core.Sam.Winter.LateHeart.2": "",
+    "Core.Sam.Winter.LateHeart.3": "",
+    "Core.Sam.Winter.LateHeart.4": "",
+    "Core.Sam.Winter.LateHeart.5": "",
+    "Core.Sam.Winter.LateHeart.6": "",
+    "Core.Sam.Winter.LateHeart.7": "",
+    "Core.Sam.Winter.LateHeart.8": "",
+    "Core.Sam.Winter.LateHeart.9": "",
+    "Core.Sam.Winter.LateHeart.10": "",
+    "Core.Sam.Winter.LateHeart.11": "",
+    "Core.Sam.Winter.LateHeart.12": "",
+    "Core.Sam.Winter.LateHeart.13": "",
+    "Core.Sam.Winter.LateHeart.14": "",
+    
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  ████  ████  █████  ███   ████ █████     ████  █████  ███  █      ███   ████ █   █ █████ 
+    ██ ██ █   █ █   █ █   █   █   █   █ █     █         █   █   █   █   █ █     █   █ █     █   █ █     
+    █ █ █ █████ ████  ████    █   █████ █  ██ ████      █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █ █   █ █   █   █   █   █ █   █ █         █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █ █   █ █   █ █   █ █████ █   █  ███  █████     ████  █████ █   █ █████  ███   ███  █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* 
+    Thank you to the following users who've helped come up with or gave ideas for some lines:
+    - MuseLaSora
+    - MonstarMews
+    - Zestylimesss
+    - Tatie
+    - Sticky
+    - Mari 
+    */
+
+    // Engagement
+    "Marriage.Sam.Engagement.0": "...$l#$b#Sorry, I can't stop picturing what you'd look like dressed in all white.$10",
+    "Marriage.Sam.Engagement.1": "I can't wait for our wedding night.$l#$b#I actually got you a white version of the underwear I stole from you a while back.$u",
+
+    // Patio
+    "Marriage.Sam.Patio.1": "Hey, want me to teach you some skateboarding tricks?$u#$b#Don't worry, I'll be sure to catch you when you fall.$l",
+    "Marriage.Sam.Patio.2": "Now that I think about it, you'd look really cute on a skateboard.#$b#Maybe I should get you some gear.$u",
+    "Marriage.Sam.Patio.3": "Want to join me, @?$u#$b#I'll be sure to teach you nice and slow.$l",
+
+    // SpouseRoom
+    "Marriage.Sam.SpouseRoom.1": "Morning, {{LPetName}}. How'd you sleep?$l#$b#Here, I made you something to help you wake up.[253 395]$3#$b#Go ahead, drink up. You'll need your energy for later.$l",
+    "Marriage.Sam.SpouseRoom.2": "Have I ever told you how {{LDescript}} you look when you wake up?$l#$b#Here's some coffee to help wake you up some more.[395]$u#$e#What? Wanting some sugar?#$b#Maybe you should give some to me, first.$l",
+    "Marriage.Sam.SpouseRoom.3": "Morning, {{LDescript}}.$h#$b#Sorry I got out of bed early.$10#$b#I saw you sleeping and thought of some more lines for a new song.$u",
+
+    // FunLeave & Return
+    "Marriage.Sam.funLeave.1": "Hey {{LPetName}}, I'm going out for a bit today.#$b#Don't worry, I'll be back before dinner and I'll bring you back something nice.$u",
+    "Marriage.Sam.funLeave.2": "{{PetName}}!$h#$b#Glad I caught you before I went out today.#$b#I'll be back soon with something special for you, don't wait up.$l",
+    "Marriage.Sam.funLeave.3": "Hey, give me a kiss before I leave today.$l#$b#I'll be back soon, I just didn't wanna go the whole day without tasting your lips first.$u",
+    "Marriage.Sam.funReturn.1": "While I was out, I made an extra stop at Gus' just for you.[224]$h#$b#I thought we could try having a lady and the tramp moment with the noodles.$10",
+    "Marriage.Sam.funReturn.2": "Hey, I stopped by Pierre's for this.[348]#$b#I thought we could crack it open and see how long we last.$l",
+    "Marriage.Sam.funReturn.3": "You won't believe what I found while I was out today.[74]$3#$b#Now, since I was a good boy and helped you out, you'll give me something in return, right?$l",
+
+    // Special Dates - Spring
+    "Marriage.Sam.Spring": "I found a little secluded area with a bunch of flowers earlier.#$b#I think you'd look amazing taking my dick surrounded by them.$l",
+    "Marriage.Sam.Spring1": "Compared to winter, spring's air feels so much better.$u#$b#Now if I could just not sneeze every 3 seconds...$s",
+    "Marriage.Sam.Spring4": "Ugh, I can't seem to get the stove working.$s#$b#Will you show me how to do it again, {{LPetName}}?$s#$b#Don't be shy, I like a hands-on instructor.$l",
+    "Marriage.Sam.Spring8": "Despite my allergies, I think spring's my new favorite season.$3#$b#Why?$8#$b#Oh, well because flowers this time of year are a lot easier to find.$u#$b#Here, I picked this one for you.[597]",
+    "Marriage.Sam.Spring12": "%You hear Sam groan in frustration.#$b#Ugh, do we have to go to the Egg Festival tomorrow?$a#$b#As much fun as it is watching you run around, I'd so much rather keep you cooped up and alone here.$l#$e#I mean, think about it. We could...$l#$b#Actually, I guess you'll find out if you end up staying home tomorrow.$u",
+    "Marriage.Sam.Spring16": "Here, I got you this so you can wear it in your hair today.[591]$u",
+    "Marriage.Sam.Spring23": "Are we going to the dance tomorrow, {{LPetName}}?#$b#If we are, you should definitely wear that one outfit I know you keep in the back of your closet.$3#$b#I just love the way it frames you.$l",
+
+    // Special Dates - Summer
+    "Marriage.Sam.Summer": "We should go to the beach sometime.$u#$b#I'd love to watch you run around in a tiny little bathing suit again.$l",
+    "Marriage.Sam.Summer1": "Yoba, I love summer.$u#$b#You'll come to the beach with me often, right?#$b#Mmmm... What if I said I have a nice little secluded spot that I found a while back?$l",
+    "Marriage.Sam.Summer8": "Here, I was walking past a bunch earlier before you woke up.[593]$u#$b#I thought it'd go well with your eyes.$l",
+    "Marriage.Sam.Summer10": "Do you think Seb would let me steal his motorcycle so I could take you out on a little roadtrip?#$b#Hm... Maybe he would if you were the one asking...$a",
+    "Marriage.Sam.Summer16": "Hmm...#$b#What'd you get me for my birthday tomorrow, hm?$u#$b#Wait- Don't tell me.#$b#It's a naked lap dance, isn't it?$l",
+    "Marriage.Sam.Summer27": "Damn, I nearly forgot about the moonlight jellies tomorrow night.$6#$b#Say, how about we head to the beach a bit later than everyone else so it'll be just us?$l",
+    "Marriage.Sam.Summer28": "Hey {{LPetName}}, don't forget about the moonlight jellies tonight.$h#$b#I want to see your pretty little lips glow while we make out.$l",
+
+    // Special Dates - Fall
+    "Marriage.Sam.Fall": "Hey, what costume are we wearing for Spirit's Eve?#$b#What?$3#$b#I assumed we were matching this year.$10",
+    "Marriage.Sam.Fall1": "...$a#$b#I don't like that it's getting colder.$a#$b#With all the time you spend outside, you're bound to get a cold one of these days.$s#$b#Promise me you'll put on a few more layers today?",
+    "Marriage.Sam.Fall8": "The weather today is just perfect for a concert.#$b#How about I pull out my guitar and serenade you when you get back home later?$3",
+    "Marriage.Sam.Fall15": "Hey, {{LPetName}}.$3#$b#What am I doing?$8#$b#Oh, just warming up my arm for the fair tomorrow.$10#$b#What kind of husband would I be if I didn't win you as many prizes as I could?$h",
+    "Marriage.Sam.Fall17": "Just in case you didn't win everything that you wanted at the fair yesterday.[74]$3#$b#Now, for that other gift I was thinking of giving you...$l",
+    "Marriage.Sam.Fall18": "Don't worry, {{LPetName}}. I'll get the house prepared for Winter.#$b#You focus on looking cute and taking care of your farm.$u",
+    "Marriage.Sam.Fall20": "Here's a little something for you.[595]#$b#Don't worry, even though winter's coming and flowers won't be as common, I'll still find a way brighten your day.$3",
+    "Marriage.Sam.Fall26": "Excited for Spirit's Eve tomorrow?$u#$b#Well, no matter what happens, I'll still make you scream louder than that maze ever will.$l",
+
+    // Special Dates - Winter
+    "Marriage.Sam.Winter": "Don't forget to wear a jacket today.#$b#I can't have my {{LPetName}} getting sick now, can I?$u",
+    "Marriage.Sam.Winter1": "%You notice Sam shivering.#$b#Yoba, it's so cold out today.$s#$b#Can you stay home today since there's not a lot of crops to grow in winter?#$b#Please? I need my {{LPetName}} to warm me up.$l",
+    "Marriage.Sam.Winter7": "...$s#$b#Sorry, I couldn't find any mistletoe this year but, maybe you'll let me kiss you under one of these.[283]$10",
+    "Marriage.Sam.Winter9": "Hey, close your eyes. I have something special for you.$u#$b#I told you I'd find something in winter that'd brighten your day.[418]$10",
+    "Marriage.Sam.Winter17": "Did you get everything you wanted at the night market?#$b#I actually got you this.[240]$u#$b#What? I thought it was fitting.$h",
+    "Marriage.Sam.Winter24": "I know you might not be my secret 'friend' this year, but I hope you'll still get me something.$s#$b#I know I'll be giving you something big tomorrow night.$l",
+    "Marriage.Sam.Winter28": "Thank you for all the time we've spent together this year, {{LPetName}}.$l#$b#You're truly the best thing that's ever happened to me.$u",
+
+    // Generic - Rainy Days
+    "Marriage.Sam.Rainy.Day.Sam": "...$l#$b#Sorry, just imagining what you'd look like working out in the rain with your clothes off.$10",
+    "Marriage.Sam.Rainy.Day.0": "I'll never get tired of the sound of rain hitting our roof.$3#$b#Don't you just love rainy days?",
+    "Marriage.Sam.Rainy.Day.1": "Since it's raining, you should stay home today.$u#$b#I get to be as loud as I want with you without anyone hearing.$l",
+    "Marriage.Sam.Rainy.Day.2": "Hey {{LPetName}}...$u#$b#It's raining, you know what that means?$l#$e#Oh come on, don't play dumb. You know exactly what I'm talking about.$l",
+    "Marriage.Sam.Rainy.Day.3": "$y '{{LDescript}}?_Yes?_Be careful out in the rain today.$u_I'm busy._Yoba, I love when you walk all over me like that.$l",
+    "Marriage.Sam.Rainy.Day.4": "$y 'Say, if I asked you to work out in the rain with no clothes on, would you?_Sure._Obedient little thing, huh?$l_Pervert._For you? Always.$l'",
+    "Marriage.Sam.Rainy.Day.5": "You kept saying my name last night while you were sleeping.#$b#Good to know I occupy your dreams as well.$l",
+    "Marriage.Sam.Rainy.Night.Sam": "%You follow Sam's gaze down to your shirt, wet from the rain.#$b#...$l#$b#Sorry, rainy days really are my favorite.$10",
+    "Marriage.Sam.Rainy.Night.0": "%You catch Sam staring at your shirt for a little too long.#$b#Hm? Oh, sorry. The rain made your clothes see through.$10",
+    "Marriage.Sam.Rainy.Night.1": "There's some mud still on your legs.$8#$b#Here, let me take your pants off.$u#$b#Maybe I'll just tear off those little undies as well...$l",
+    "Marriage.Sam.Rainy.Night.2": "Aww, your clothes are all wet from the rain.$l#$b#Here, let me help you get out of them.$3",
+    "Marriage.Sam.Rainy.Night.3": "Y'know, I never get tired of seeing you drenched from the rain.$l#$b#Here, let me run you a hot bath to warm you up.$u",
+    "Marriage.Sam.Rainy.Night.4": "Hey, welcome home.$u#$b#Do you need me to run you a bath? I bet you're cold from the rain.",
+    "Marriage.Sam.Rainy.Night.5": "Yoba, I fucking love when you're all soaked from the rain.$l",
+
+    // Generic - Indoor/Outdoor
+    "Marriage.Sam.Indoor.Day.Sam": "Could you stay a little longer with me today, @?#$b#I go crazy when you're gone for so long.$s",
+    "Marriage.Sam.Indoor.Day.0": "Y'know, even half awake, you still look as {{LDescript}} as ever.$l#$b#Come back home soon, I don't think I could go the whole day without being near you.$u",
+    "Marriage.Sam.Indoor.Day.1": "Mmmm...$l#$b#Somehow you look better than you did in my dreams last night.$l#$b#Do you have to leave today?$10",
+    "Marriage.Sam.Indoor.Day.2": "Morning, {{LPetName}}.$l#$b#$y 'Eat breakfast with me?_Of course._You're such a good little {{LGoodName}}. Here, I thought you'd say yes.[211]$l_No thanks._No, don't do that. You're eating with me today whether you like it or not.[211]$3'",
+    "Marriage.Sam.Indoor.Day.3": "%You watch Sam stretch, his shirt riding up, exposing a bit of his stomach.#$b#Morning, {{LPetName}}. I was gonna spend the entire day cle-#$b#Hey, my eyes are up here, perv.$3",
+    "Marriage.Sam.Indoor.Day.4": "Hmm... I was thinking about busting out my old guitar and practicing a bit today.#$b#Actually, I'll cut a deal with you: If you stay home today, I'll serenade you all night long.$l",
+    "Marriage.Sam.Indoor.Night.Sam": "You're finally home.$u#$b#You've no idea how long I've been waiting.$s#$b#Quit leaving for so long, {{LPetName}}.$s",
+    "Marriage.Sam.Indoor.Night.0": "Hey, {{LPetName}}. How was your day?$u#$b#You look tired, how about I go run you a bath and you tell me everything you did today.",
+    "Marriage.Sam.Indoor.Night.1": "...$l#$b#You look so {{LDescript}} when you come home from working all day.#$b#Here,step out of your shoes and let me pamper you tonight.$u",
+    "Marriage.Sam.Indoor.Night.2": "Oh, you're home earlier than I expected.#$b#I was just about to start on dinner if you'd like to help.$3",
+    "Marriage.Sam.Indoor.Night.3": "Welcome home, {{LPetName}}.$u#$b#I was trying to get some cleaning done today, but I couldn't stop worrying about you...$s#$b#You were safe today, right?$7",
+    "Marriage.Sam.Indoor.Night.4": "$y 'I couldn't stop thinking about if you'd still love me when we're old..._Of course I would!_You would? I guess I don't have to bring out those cuffs as soon as I thought... Unless...$l_I don't think I would..._You wouldn't? No matter, I'll chain you up so you won't leave anyway.$u",
+    "Marriage.Sam.Outdoor.Sam": "You look amazing in the sunlight today, {{LPetName}}.$l",
+    "Marriage.Sam.Outdoor.0": "Save some energy for what I have planned tonight, {{LPetName}}. You'll need it.$l#$b#And no, I won't tell you what it is.$u",
+    "Marriage.Sam.Outdoor.1": "Are you happy with me being on the farm with you, @?#$b#I know I am, you're the best thing that's ever happened to me.$l",
+    "Marriage.Sam.Outdoor.2": "Well good morning to you too, {{LPetName}}.$l#$b#Be sure you give me a kiss before you leave.$u#$b#Please?$l",
+    "Marriage.Sam.Outdoor.3": "I still can't believe I get to call you mine.$l#$b#Hey, why don't we go ahead and fuck in the middle of townsquare so everyone else knows it as well?$u",
+    "Marriage.Sam.Outdoor.4": "Mmmm... Wait, don't leave quite yet.$l#$b#I need a kiss or two or maybe even three before you leave.$l",
+
+    // Generic - Kids
+    "Marriage.Sam.OneKid.0": "Now that I've given you a kid, you'll still give me the same attention, right?$u#$b#Who am I kidding, I'll force that attention out of you.$l",
+    "Marriage.Sam.OneKid.1": "Hey {{LPetName}}, I was thinking about taking %kid1 to the park later.#$b#Do you wanna join?$u",
+    "Marriage.Sam.OneKid.2": "It makes me so happy when I look %kid1.#$b#I wonder if they'll grow up to be just like you.$u",
+    "Marriage.Sam.OneKid.3": "When do you think we could have another kid?#$b#I just love how parenthood looks on you.$u",
+    "Marriage.Sam.TwoKids.0": "We should let my mom babysit tonight. %kid1 and %kid2 should see their grandparents every once in a while.#$b#Totally not because I want some more alone time with you...$l",
+    "Marriage.Sam.TwoKids.1": "I love our little family more than you know.#$b#I wish we could stay like this forever.$10",
+    "Marriage.Sam.TwoKids.2": "I can't believe how lucky I got with you and our two kids.$10#$b#They're almost as adorable as you.$l",
+    "Marriage.Sam.TwoKids.3": "I'm glad we decided to have kids.$h#$b#Giving these kids a good life reminds me of the good you brought into mine.$u",
+
+    // Affection 
+    "Marriage.Sam.Good.0": "...$l#$b#You look really good today, you know that?$l",
+    "Marriage.Sam.Good.1": "Y'know, if you keep looking at me like that, I'll have to write another song about you, {{LPetName}}.$10",
+    "Marriage.Sam.Good.2": "Sometimes I can't believe how lucky I am to have met you.$l#$b#You're just so {{LDescript}}, I might end up forcing you to stay home with me all the time.$10",
+    "Marriage.Sam.Good.3": "Are you sure you have to work on the farm today?$s#$b#Can't we just spend the day in bed together?$u",
+    "Marriage.Sam.Good.4": "Please {{LPetName}}, I need a kiss.$s#$b#I can't stop thinking about those sweet lips of yours.$l",
+    "Marriage.Sam.Good.5": "Mmmmm...$l#$b#How'd I get so lucky with such a {{LDescript}} little thing like you, hm?$l",
+    "Marriage.Sam.Good.6": "%You catch Sam staring at you for a little too long.#$b#Sorry, I just can't stop thinking about how lucky I am to have married you, {{LPetName}}.$10",
+    "Marriage.Sam.Good.7": "Finish up early today, I have something planned for us later.$3#$e#What? That eager to find out what it is?$h#$b#Nice try, {{LPetName}}. You'll have to wait 'til after it gets dark.$l",
+    "Marriage.Sam.Good.8": "Hey, before you go, give me a kiss.$l#$b#I swear, I could never get enough of you, {{LPetName}}.$10",
+    "Marriage.Sam.Good.9": "I'm so happy I get to see you naked whenever I want.$l#$b#Speaking of, mind taking off your top while you work today?$u",
+
+    "Marriage.Sam.Neutral.0": "%You notice Sam fiddling with the pendant around his neck.#$b#Oh, hey {{LPetName}}.$u#$b#I was just admiring the necklace you gave me.$10",
+    "Marriage.Sam.Neutral.1": "Lately, for some reason, the thought of switching music genres has been calling me.#$b#I seriously can't stop thinking of lyrics for ballads.$10",
+    "Marriage.Sam.Neutral.2": "Don't worry about the farm today.$u#$b#I have something a lot bigger for you to handle.$l",
+    "Marriage.Sam.Neutral.3": "D'you need help on the farm today, {{LPetName}}?#$b#You know I'm always willing to help if you need it.$3",
+    "Marriage.Sam.Neutral.4": "Hey, what do you think about putting a mirror above our bed?#$b#I saw Alex had one and thought it was a good idea.$u",
+    "Marriage.Sam.Neutral.5": "Y'know, I never really saw myself living on a farm until I met you.$10#$b#You make it all worth it.$l",
+    "Marriage.Sam.Neutral.6": "%You notice Sam fiddling with his old guitar pick, humming softly. He looks lost in thought for once.",
+    "Marriage.Sam.Neutral.7": "I'd love to fuck you on every surface of this farm so I could leave my mark.$l#$e#What? Too much?$u",
+    "Marriage.Sam.Neutral.8": "Do you want to go to the bathhouse later tonight, {{LPetName}}?$l#$b#I guess I'm in a reminiscent mood today.$10",
+    "Marriage.Sam.Neutral.9": "You know, when you look like that, I can't help but stare at you.$l#$b#Finish early today or I just might have to drag you back home.$u",
+
+    "Marriage.Sam.Bad.0": "...$a#$b#What? Actually coming to pay me attention for once?$a",
+    "Marriage.Sam.Bad.1": "I heard you moan out another guys' name last night.$a#$b#Do I need to kill them for you to come back to me?$a",
+    "Marriage.Sam.Bad.2": "Please {{LPetName}}, I can't take this treatment anymore.$s#$b#I need you, I need you so bad.$s",
+    "Marriage.Sam.Bad.3": "You've been such a bad {{LGoodName}} lately, do I need to punish you?$a",
+    "Marriage.Sam.Bad.4": "How many times do I need to tell you, you're never leaving me.$a#$b#Now, get on your knees and make up this bad behavior to me.$u",
+    "Marriage.Sam.Bad.5": "I'm tired of this treatment.$a#$b#Do I need to tie you up so you don't leave me?$s",
+    "Marriage.Sam.Bad.6": "...$a#$e#What?$a#$b#I didn't think we were on speaking terms.$a",
+    "Marriage.Sam.Bad.7": "You've been acting like such a brat lately and not in a good way.$a#$b#Maybe I should give you the silent treatment to teach you a lesson.$u",
+    "Marriage.Sam.Bad.8": "What do I have to do to get you to be nice to me again, {{LPetName}}?$s#$b#You want to switch places?$7#$b#I'm happy to put on a leash for you this time.$u",
+    "Marriage.Sam.Bad.9": "Have you been thinking of someone else lately?$s#$b#Do I need to fuck those thoughts out of your head for you to focus on me again?$a",
+    
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████ █████ █████ █████     ████  █████  ███  █      ███   ████ █   █ █████ 
+    █       █   █       █       █   █   █   █   █ █     █   █ █     █   █ █     
+    █  ██   █   ████    █       █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █   █   █       █       █   █   █   █   █ █     █   █ █   █ █   █ █     
+     ███  █████ █       █       ████  █████ █   █ █████  ███   ███  █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* 
+    Thank you to the following users who've helped come up with or gave ideas for some lines:
+    - MuseLaSora
+    - MonstarMews
+    - Danny, my bitch
+    - auroragrove
+    - poptropicastan
+    */
+
+    "Gift.Sam.GiftReaction.CactusFruit.1": "Oh, I really like these, thanks!$h#$b#$y 'Say, do you like eating these raw or cooked?_Raw._Oh- Does that apply to other things as well?$l_Cooked._Oh, yeah. Me too.$u'",
+    "Gift.Sam.GiftReaction.CactusFruit.2": "Thanks, {{LPetName}}.$h#$b#Hey, d'you actually know if you cook one of these they kinda taste like-#$b#Well, I could actually let you get a taste of it another time, if you'd let me.$l",
+    "Gift.Sam.GiftReaction.Married.CactusFruit.1": "Oh you beat me to it!$h#$b#I was just about to give you one.$u#$b#Yeah, I've just been itching to lick the juice of one of these off your lips.$l",
+    "Gift.Sam.GiftReaction.Married.CactusFruit.2": "I never get sick of getting gifts from you, {{LPetName}}.$l#$b#Though, why don't you get back in bed and let me give you one for a change, hm?$l",
+
+    "Gift.Sam.GiftReaction.MapleBar.1": "Oh, do you wanna split this with me?$u#$b#Something like this is far too sweet to enjoy alone.$l",
+    "Gift.Sam.GiftReaction.MapleBar.2": "I love these but, you should try one.$u#$b#If you make a mess I'll be sure to lic-$l#$b#I mean clean it off of you.$u",
+    "Gift.Sam.GiftReaction.Married.MapleBar.1": "Thank you, {{LPetName}}.$u#$b#Though, I think I'd rather lick one of these off of your lips instead.$l",
+    "Gift.Sam.GiftReaction.Married.MapleBar.2": "Sweet, a maple bar.$h#$b#You know, sometimes when I think of these, I get reminded of you: filled nicely with cream.$u",
+
+    "Gift.Sam.GiftReaction.Pizza.1": "...$8#$b#I'm kinda glad I didn't eat today now, thanks {{LPetName}}.$10#$b#Though, I was saving my appetite for someo-$l#$b#Something a hell of a lot more sweet.$u",
+    "Gift.Sam.GiftReaction.Pizza.2": "Oh thanks, but I'd much rather share one of these with you.$10#$e#Say, do you think if we ate from the same pizza, we could have one of those lady and the tramp moments with the cheese?$u#$b#Oh wait, they were eating noodles...$s",
+    "Gift.Sam.GiftReaction.Married.Pizza.1": "Ough, I've actually eaten a lot already today, I don't think I could handle a pizza by myself.$s#$b#How about you stay and split this with me?$u#$b#C'mon, I'll even feed you, {{LPetName}}.$l",
+    "Gift.Sam.GiftReaction.Married.Pizza.2": "You know just what to get me to make me feel better huh, @?$u#$b#Though, you know what'd make this even better?#$b#If you let me get a slice of that ass next, {{LPetName}}.$l",
+
+    "Gift.Sam.GiftReaction.TigerEye.1": "Yoba, where did you find one of these?$8#$b#You didn't hurt yourself getting it, did you?$a#$b#Thank you {{LPetName}}, but you don't have to go through all that trouble for me.$10",
+    "Gift.Sam.GiftReaction.TigerEye.2": "Oh, what a cool rock.#$b#Thanks, @.$u#$e#Wait- Aren't tiger eye's really rare? How did you get one of these?$8#$b#Looks like I'll have to step up my gift-giving game a little more from now on.$10",
+    "Gift.Sam.GiftReaction.Married.TigerEye.1": "I swear, every time I get one of these I can't help but think of how pretty they are.$10#$b#Though, its looks could never compare to yours.$l",
+    "Gift.Sam.GiftReaction.Married.TigerEye.2": "Thanks, {{LPetName}}.$u#$b#Actually, maybe I'll ask Emily if she could turn this one into a necklace for you.#$b#I'd love to see something of mine wrapped around that pretty little neck of yours.$l",
+
+    "Gift.Sam.GiftReaction.JojaCola.1": "Oh thanks, I really like these despite their bad rep.$10#$b#Wait- You didn't dig this can out of the trash, did you?$7#$b#Sorry, I've just had one too many questionable cans recently...$s",
+    "Gift.Sam.GiftReaction.JojaCola.2": "Thanks, @. I really like this stuff.#$b#Do you wanna split it? I'm sure you'd enjoy it as much as I do.$u",
+    "Gift.Sam.GiftReaction.Married.JojaCola.1": "Thanks, {{LPetName}}.$u#$b#I know just the perfect meal to eat with this.$l",
+    "Gift.Sam.GiftReaction.Married.JojaCola.2": "I can't believe you still remember how much I like these.$10#$b#Thanks, {{LPetName}}.$l",
+
+    "Gift.Sam.GiftReaction.Flowers.1": "Oh, man I love the way these look, but...$s#$b#*sneezes*$8",
+    "Gift.Sam.GiftReaction.Flowers.2": "Aren't I supposed to be the one giving you flowers?$10",
+    "Gift.Sam.GiftReaction.Married.Flowers.1": "{{PetName}}, you know I'm allergic to these...$s#$b#*sneezes*$8#$b#But, they are really pretty.$u",
+    "Gift.Sam.GiftReaction.Married.Flowers.2": "*sneezes*$8#$b#You know I like flowers but I hate sneezing so much when I'm around them.$s",
+
+    "Gift.Sam.GiftReaction.Cooking.1": "Oh, did you make this just for me?$10#$b#Or did you buy it?$u#$b#Either way, thanks, {{LPetName}}.",
+    "Gift.Sam.GiftReaction.Cooking.2": "I didn't know you cooked.$10#$b#Well, I guess you could've also bought this.$s",
+    "Gift.Sam.GiftReaction.Married.Cooking.1": "You're trying to fatten me up, huh?$10#$b#Thanks, {{LPetName}}.$u",
+    "Gift.Sam.GiftReaction.Married.Cooking.2": "Oh, awesome.$u#$b#I'm so glad I don't have to cook dinner tonight.$10",
+
+    "Gift.Sam.GiftReaction.StarDropTea": "Is this for me?$8#$b#Wow, you're really trying to win my heart, huh?$10",
+    "Gift.Sam.GiftReaction.Married.StarDropTea": "Wow, and here I was thinking how I couldn't love you even more.$10",
+
+    "Gift.Sam.GiftReaction.RabbitsFoot": "What's the extra luck for?$u#$b#Anyways, thanks, @. I really love these.$10",
+    "Gift.Sam.GiftReaction.Married.RabbitsFoot": "Thanks for the extra luck, {{LPetName}}, but I'm pretty sure I already got lucky with you.$10",
+
+    "Gift.Sam.GiftReaction.PrismaticShard": "How'd you know I loved these?$10#$b#I swear, sometimes it feels like you know a little too much about me.$u",
+    "Gift.Sam.GiftReaction.Married.PrismaticShard": "{{PetName}}, have I ever told you how much I love you?$l#$b#The gifts you give me always make my day.$u",
+
+    // Birthdays
+    "Gift.Sam.GiftReaction.Positive.Birthday": "You remembered!$10#$b#Now, since it's my birthday, you'll let me ask for anything, right?$l",
+    "Gift.Sam.GiftReaction.Positive.Married.Birthday": "Y'know even though we've known each other for so long, it still surprises me you remember my birthday.$10#$b#Now, how about letting me do whatever I want to you for my second gift?$l",
+    "Gift.Sam.GiftReaction.Negative.Birthday": "...$s#$b#I thought you knew me better than this...$a",
+    "Gift.Sam.GiftReaction.Negative.Married.Birthday": "...$s#$b#We've known each other for how long and you thought this was good enough to give to me on my birthday?$s",
+
+    
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  █   █ █████ █████       ████  █████  ███  █      ███   ████ █   █ █████ 
+    ██ ██ █   █ █   █   █   █           █   █   █   █   █ █     █   █ █     █   █ █     
+    █ █ █ █   █  █ █    █   ████        █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █  █ █    █   █           █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █  ███    █   █████ █████       ████  █████ █   █ █████  ███   ███  █████ █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    "Movie.Sam.BeforeMovie.Wumbus": "I heard this movie was pretty funny.$u#$b#Thanks for inviting me, {{LPetName}}.",
+    "Movie.Sam.DuringMovie.Wumbus.0": "You look {{LDescript}} when you're focused on something, you know that?.$l",
+    "Movie.Sam.DuringMovie.Wumbus.1": "You feel Sam's arm wrap around and pull you closer.",
+    "Movie.Sam.AfterMovie.Wumbus": "You should invite me to watch another movie with you again.$u#$b#Maybe next time we could do something a little more...$l",
+    "Movie.Sam.BeforeMovie.Horror": "A horror movie?$8#$b#Did you choose this just so you'd have an excuse to jump in my lap?$u",
+    "Movie.Sam.AfterMovie.Horror": "I actually really enjoyed that.$u#$b#I especially loved the part where you jumped after every little scare.$h",
+    "Movie.Sam.BeforeMovie.Like": "Thanks for inviting me, by the way.$10#$b#Now that there's a movie theater in town, I hope we can come here more often.$u",
+    "Movie.Sam.AfterMovie.Like": "Coming to the movies with you might just be my new favorite thing.$10#$b#You should invite me out more often, {{LPetName}}.$u",
+    "Movie.Sam.BeforeMovie.Dislike": "Isn't this an old movie with a lot of talking in it?$s#$b#I can't promise I'll be focused on it, especially if you're sitting right next to me.$u",
+    "Movie.Sam.DuringMovie.Dislike.0": "I think I'd rather make out with you than keep watching this.$l#$b#Come on, just one kiss?$u",
+    "Movie.Sam.DuringMovie.Dislike.1": "You feel Sam's hand graze over your inner thigh.",
+    "Movie.Sam.AfterMovie.Dislike": "Hm?$7#$b#Oh, yeah. I guess that was fun.$u#$b#Though, next time we should go see a horror movie.#$b#I think I'd much rather see you scared.$l",
+
+    "Movie.Sam.Invite.Spouse": "Shouldn't I be the one inviting you out on dates?$10#$b#Of course I'll go with you, @.$l",
+    
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ █████ █████ █████ █   █  ███  █         ████  █████  ███  █      ███   ████ █   █ █████ 
+    █     █     █       █     █   █   █ █   █ █         █   █   █   █   █ █     █   █ █     █   █ █     
+    ████  ████  █████   █     █    █ █  █████ █         █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █     █         █   █     █    █ █  █   █ █         █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █     █████ █████   █   █████   █   █   █ █████     ████  █████ █   █ █████  ███   ███  █████ █████ 
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* 
+    Thank you to the following users who've helped come up with or gave ideas for some lines:
+    - zestylimesss
+    - caterpixie
+    - MuseLaSora
+    - iluminknotty
+    - MonstarMews
+    - Bunny
+    */
+
+    // Egg Festival
+    "Festival.Sam.spring13.false.1": "I watched the Mayor put down some eggs earlier, I could show you the spots...#$b#At a price.$u#$b#Agree first, then I'll tell you what you'll be paying with.$l",
+    "Festival.Sam.spring13.false.2": "I saw some eggs being placed near my house.#$b#Just thought I'd give you a hint.$u",
+    "Festival.Sam.spring13.true.1": "You're so cute, getting all excited over this festival.#$b#Be sure to sneak back over here before time is called, I'll give you a few extra eggs to make sure you win.$3",
+    "Festival.Sam.spring13.true.2": "Hey {{LPetName}}, if you want a good headstart at beating Abigail this year, I could sneak you some eggs.$u#$b#I'll just need one kiss per egg.$l",
+
+    // Flower Dance
+    "Festival.Sam.spring24.false.1": "It really sucks having to do this dance every year.$s#$b#Though, seeing how {{LDecript}} you look in that outfit was definitely worth the walk over here.$10",
+    "Festival.Sam.spring24.false.2": "...$l#$b#Sorry, you just look really {{LDescript}} today.$10",
+    "Festival.Sam.spring24.true.1": "Y'know, it was really hard to not keep you home when I saw you getting ready this morning.$10#$b#Dance with me? Make the waiting worth it?$l",
+    "Festival.Sam.spring24.true.2": "Yoba, you always look so {{LDescript}} at this festival.$10#$b#Come on {{LPetName}}, ask me to dance with you again.$l",
+    "Festival.Sam.DanceAccept": "I could get used to you begging for things.$l#$b#Of course I'll dance with you.$u",
+    "Festival.Sam.DanceAccept.Spouse": "How could I say no to you, {{LPetName}}?$l",
+    "Festival.Sam.DanceDeny": "...$8#$b#Sorry, I didn't expect it to be so hot when you beg.$10#$b#Maybe I'll go dance with Penny instead just to see how you look when jealous.$u",
+
+    // Luau 
+    "Festival.Sam.summer11.false.1": "The waves here really suck for surfing.$s#$b#Hmm...$7#$b#Now that I think about it, it'd be really hot to watch you ride my board.$l#$e#Huh? The Luau?$7#$b#Oh, right- I nearly forgot about that...$10",
+    "Festival.Sam.summer11.false.2": "Yoba, this festival is always so boring.$s#$b#They won't even let me near the pot anymore due to the little 'incident' I caused a few years back.$a#$b#Hey, what do you say about leaving early to go find a secluded spot, just us?$l",
+    "Festival.Sam.summer11.true.1": "Ugh, I should've brought a camera today.$a#$b#You just always look so {{LDescript}} next to the ocean, surrounded by sand.$10#$b#Remind me to force you back here tomorrow to take some pictures, alone.$3",
+    "Festival.Sam.summer11.true.2": "%You hear Sam sigh loudly.#$b#{{PetName}}, I know just how much you loooove slipping things into people's foods but...$7#$b#Do we have to keep coming here every year? It's always so boring.$s#$b#I'd much rather be alone with you at home.$3",
+
+    // Desert Festival
+    "Festival.Sam.Desert": "Damn, it sure is hot out here.$s#$b#You can't possibly be comfortable wearing all those layers...$7#$b#Here, let me help you strip down.$3",
+    "Festival.Sam.Desert.Married": "...$8#$b#Damn, hot and sweaty really is the perfect look for you, {{LPetName}}.$10",
+    "Festival.Sam.Desert.Shop": "Hey, {{LPetName}}. Came to see what I'm selling?$3#$b#Well, don't feel pressured to buy anything.#$b#You know I'm always down to give you a special gift later.$l",
+
+    // Moonlight Jellies 
+    "Festival.Sam.summer28.false.1": "Hmm...$7#$b#What do you say me and you go over to a secluded part of the beach?#$e#Come on, take me up on my offer.$3$b#I could show you a few other things that glow in the dark.$l",
+    "Festival.Sam.summer28.false.2": "The lighting here is pretty romantic, huh?$u#$b#I bet I could make this festival a hell of a lot more romantic if you'd let me.$l",
+    "Festival.Sam.summer28.true.1": "You know, I've always loved the way the moonlight jellies made your lips glow.$l#$b#I can't wait to see it again.$3",
+    "Festival.Sam.summer28.true.2": "Sometimes I wish we could do festivals like this with just us.$10#$b#I'd love to sit on the edge of the pier with you next to me, the jellies swimming around, and no one around to bother us.$l",
+
+    // Fair
+    "Festival.Sam.fall16.false.1": "Want me to show you a few tricks with the sling-shot booth?#$b#I'll have to warn you though, I'm a hands-on instructor.$3",
+    "Festival.Sam.fall16.false.2": "Weird, the Fortune Teller got really red when she read my fortune.$s#$b#She told me something really vague about having made friends with the new farmer.$s#$b#Then, she immediately announced she was taking a 30 minute break.$7",
+    "Festival.Sam.fall16.true.1": "If you're wanting some extra tokens I'd be happy to give you some.$u#$b#You just have to get on your knees and do me a little favor.$l",
+    "Festival.Sam.fall16.true.2": "%Sam looks busy stretching and getting ready to win a few games for you. He's set on winning the biggest prize.",
+
+    // Spirit's Eve
+    "Festival.Sam.fall27.false.1": "Hmm...#$b#I'm pretty sure the prize is just up ahead but, now that you're here...$l",
+    "Festival.Sam.fall27.false.2": "Y'know, if you ever get too scared, I'm the perfect size for someone like you to grab onto.$3",
+    "Festival.Sam.fall27.true.1": "Boo!$u#$b#$y 'Did I scare you?_Yes!_Good, just how I like it.$l_No..._Aww, you're no fun.$s'",
+    "Festival.Sam.fall27.true.2": "There you are.$u#$b#Come on, there's a secluded place nearby.$l#$e#Say, do you think the town'll be able to tell the difference between your moans and the monsters'?$u",
+
+    // Ice Festival
+    "Festival.Sam.winter8.false.1": "Are you participating the competition this year?#$b#I'd definitely join in if I knew how to fish.$s#$e#Actually, how about you teach me one of these days?$u#$b#One on one?$l",
+    "Festival.Sam.winter8.false.2": "You look cold.$7#$b#You know I'd gladly strip down and give you my jacket if you'd like.$l",
+    "Festival.Sam.winter8.true.1": "Can we go home?$s#$b#You look like you're freezing and I hate seeing you in so thick of clothing.$7",
+    "Festival.Sam.winter8.true.2": "Mmmmm...$s#$b#Since we have to be here, why don't we go spend a while in that igloo over there warming up?$u#$b#I'm sure the town wouldn't mind hearing the {{LDescript}} little noises you'd make.$l",
+
+    // Winter Star
+    "Festival.Sam.winter28.false.1": "Oh? Are you my secret gifter this year?$u#$b#Well, even if you aren't, I exactly what kind of gift you could give me.$l",
+    "Festival.Sam.winter28.false.2": "I've really enjoyed the time we've spent together this year, {{LPetName}}.$u#$b#Everyday I'm grateful that you moved down here.$10",
+    "Festival.Sam.winter28.true.1": "Hmmm.....$7#$b#Now that I'm looking at all the decorations here, I think it'd be really fun if I ti-$l#$b#Actually, let me tell you when we get back home.$u",
+    "Festival.Sam.winter28.true.2": "Hey, I wanted to give you a little something before all the actual gift-giving starts.$u#$b#Hope you enjoy it, {{LPetName}}. I love you...[74]$l",
+    
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ ████  █████ █   █  ████ █████ 
+    █       █   █   █   █   ██  █ █     █     
+    █████   █   ████    █   █ █ █ █  ██ █████ 
+        █   █   █   █   █   █  ██ █   █     █ 
+    █████   █   █   █ █████ █   █  ███  █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    /* 
+    Thank you to the following users who've helped come up with or gave ideas for some lines:
+    - zestylimesss
+    - caterpixie
+    */
+
+    // Desser 1 & 2
+    "Strings.Sam.SamHouse.5": "A few familiar trinkets that you lost a while ago sit at the back of the drawer.",
+    "Strings.Sam.SamHouse.6": "Looks like a bunch of socks and... is that {{LUnderwear}} one of yours?",
+    
+    // Bookshelf 1 & 2
+    "Strings.Sam.SamHouse.7": "A magazine on the shelf reads: 'How to pick up cute farmers without sounding creepy.'",
+    "Strings.Sam.SamHouse.8": "You find a photograph of yourself wearing your old Joja uniform. How did he get this?",
+    
+    // Computer
+    "Strings.Sam.SamHouse.11": "It's password protected. Is he hiding something?",
+    
+    // Basically lines he says while doing these animations
+    // Strings/animationDescriptions
+    "Strings.Sam.Guitar.1": "Hey, @.#$b#I'm finishing up a song, give me a bit.",
+    "Strings.Sam.Guitar.2": "Hold on... this song's almost finished.#$b#Don't worry, I'll be sure to play it for you later.$u",
+    "Strings.Sam.Guitar.3": "%Sam looks frustrated while playing, you probably shouldn't bother him.",
+
+    "Strings.Sam.Gameboy.1": "Hey, {{LPetName}}. Give me a min to finish this level.$7",
+    "Strings.Sam.Gameboy.2": "%Sam doesn't respond, looks like he's busy.",
+    "Strings.Sam.Gameboy.3": "Hold on {{LPetName}}, I'm about to beat this boss...$7",
+
+    "Strings.Sam.Skateboarding.1": "Whoa, sorry, almost hit you there, @.$10#$b#Wouldn't want to take you out with my skateboard before I can take you out on a date.$10",
+    "Strings.Sam.Skateboarding.2": "%Sam looks focused on trying to land a trick.",
+    "Strings.Sam.Skateboarding.3": "Want me to teach you how to skate?$u#$e#What? No, I'm not just offering so I could get a chance to touch you.$a",
+
+    "Strings.Sam.Pool.1": "I know you're just standing there cause you want to look at my ass, @.#$b#You're not being subtle.$u",
+    "Strings.Sam.Pool.2": "Hey, @. Fancy seeing you here.$h#$b#Wanna join us?$u",
+    "Strings.Sam.Pool.3": "Ugh, I can't seem to find a good shot.$s#$b#How about you guide me?$u",
+
+    "Strings.Sam.Work.1": "I can't talk much here.$s#$b#Meet me after work?$u",
+    "Strings.Sam.Work.2": "You know I'd love to talk to you, but I'll get yelled at.$s#$b#Come see me after I'm off.$u",
+    "Strings.Sam.Work.3": "You're so distracting, I'll never get any work done while you're here.$l",
+    
+    // Strings/schedules/Sam
+    "Strings.Sam.winter17.000": "What would you think about me becoming a submarine captain?#$b#I bet you'd love to see me in a uniform, huh?$u",
+    "Strings.Sam.Marriage.Mon.000": "Aww, coming to check in on me, {{LPetName}}?$u#$b#How sweet.$l",
+    "Strings.Sam.Marriage.Mon.001": "Vincent seems a little lonely without me around. I used to play with him a lot.",
+    "Strings.Sam.Marriage.Fri.000": "I love my mom's cooking, but I'd much rather be eating you out right about now.$l",
+    "Strings.Sam.Marriage.Fri.001": "Hey, {{LPetName}}. Give me a bit, I'm a little busy here.$u",
+    "Strings.Sam.Rainy.000": "Aren't you cold with your clothes all wet like that?$8#$b#You can grab some dry clothes from my room if you'd like.$10",
+    
+    // Phone Calls
+    // Strings/Characters
+    "Strings.Phonecalls.Cursed": "Upon placing the reciever to your ear, you're met with a rolling, abrasive static along with the sound of heavy breathing.#Beneath it all, it almost sounds like something is... clapping?",
+    "Strings.Phonecalls.Foreign": "You hear the sound of heavy breathing on the other side of the reciever.#Your name is moaned out by an indistinguishable voice.",
+    "Strings.Phonecalls.RoboCaller": "You hear a low growl at the end of the line.#'I can't stop thinking about your body, {{LPetName}}.'"
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █   █ █████ █   █ █████ █████ 
+    █     █   █ █     ██  █   █   █     
+    ████   █ █  ████  █ █ █   █   █████ 
+    █      █ █  █     █  ██   █       █ 
+    █████   █   █████ █   █   █   █████
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+}
