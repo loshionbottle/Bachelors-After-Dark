@@ -1,0 +1,21 @@
+{
+    "Name": "[CP] After Dark Series - Player Death",
+    "Author": "loshionbottle",
+    "Description": "Your spouses now react to ur death PROPERLY.",
+    "Version": "1.0.0",
+    "UniqueID": "loshionbottle.deathafterdark",
+    "UpdateKeys": [ "Nexus:30827" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "loshionbottle.shadowsafterdark",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "siliconmodding.NPCTokens",
+            "IsRequired": true
+        }
+    ]
+}

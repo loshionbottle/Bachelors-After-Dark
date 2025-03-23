@@ -1,0 +1,45 @@
+{
+    "Changes": [
+        // ----------------------------------------------------------------------------------------------------
+        // DEATH CONSEQUENCES - ON
+        // ----------------------------------------------------------------------------------------------------
+        {
+            "LogName": "Island Death - Default DC",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Shadow -100 -100 0/pause 1500/showFrame 5/message \"{{i18n:AD.Island.Default.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Island.Default.2}}\"/pause 1000/message \"{{i18n:AD.Island.Default.3}}\"/pause 1500/viewport 13 33 clamp true/pause 2000/showFrame 0/pause 500/emote farmer 8/pause 500/faceDirection farmer 1/pause 50/faceDirection farmer 0/pause 500/emote farmer 28/pause 1000/minedeath/end"
+            },
+            "When": {
+                "Death Consequences": "On, Off only when married to Harvey"
+            }            
+        },
+
+        // ----------------------------------------------------------------------------------------------------
+        // DEATH CONSEQUENCES - OFF
+        // ----------------------------------------------------------------------------------------------------
+        {
+            "LogName": "Island Death - Default NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Shadow -100 -100 0/pause 1500/showFrame 5/message \"{{i18n:AD.Island.Default.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Island.Default.2}}\"/pause 1000/message \"{{i18n:AD.Island.Default.3}}\"/pause 1500/viewport 13 33 clamp true/pause 2000/showFrame 0/pause 500/emote farmer 8/pause 500/faceDirection farmer 1/pause 50/faceDirection farmer 0/pause 500/emote farmer 28/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off"
+            }            
+        },
+        {
+            "LogName": "Island Death - Married to Harvey, Consequences off",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Shadow -100 -100 0/pause 1500/showFrame 5/message \"{{i18n:AD.Island.Default.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Island.Default.2}}\"/pause 1000/message \"{{i18n:AD.Island.Default.3}}\"/pause 1500/viewport 13 33 clamp true/pause 2000/showFrame 0/pause 500/emote farmer 8/pause 500/faceDirection farmer 1/pause 50/faceDirection farmer 0/pause 500/emote farmer 28/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off, Off only when married to Harvey",
+                "Spouse": "Harvey"
+            }            
+        }
+    ]
+}

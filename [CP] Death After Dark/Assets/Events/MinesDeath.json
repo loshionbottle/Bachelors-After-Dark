@@ -1,0 +1,122 @@
+{
+    "Changes": [
+
+        // ----------------------------------------------------------------------------------------------------
+        // DEATH CONSEQUENCES - ON
+        // ----------------------------------------------------------------------------------------------------
+
+        // default; unmarried
+        {
+            "LogName": "Mines Death - Default DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.NotMarried.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.2 |LPPN4={{LPPN4}}}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1000/viewport 19 10 true/pause 2000/showFrame 0/pause 500/emote farmer 8/pause 500/faceDirection farmer 3/pause 100/faceDirection farmer 2/pause 100/faceDirection farmer 1/pause 100/faceDirection farmer 2/pause 200/emote farmer 28/pause 500/message \"{{i18n:AD.Mines.NotMarried.6}}\"/pause 1000/minedeath/end"
+            },
+            "When": {
+                "Death Consequences": "On, Off only when married to Harvey"
+            }            
+        },
+
+        // married; any spouse except harvey
+        {
+            "LogName": "Mines Death - Married DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0 {{Spouse}} 18 10 1/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.Married.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.Married.{{siliconmodding.NPCTokens/NPC:{{Spouse}}+gender}}.2}}\"/pause 200/message \"{{i18n:AD.Mines.Married.{{siliconmodding.NPCTokens/NPC:{{Spouse}}+gender}}.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1500/speak {{Spouse}} \"{{i18n:AD.Mines.Married.PlayerName}}\"/pause 1000/speak {{Spouse}} \"{{i18n:AD.Mines.{{Spouse}}.Shocked}}\"/pause 200/viewport 19 10 true/pause 1500/showFrame 0/pause 1000/faceDirection farmer 3/pause 200/speak {{Spouse}} \"{{i18n:AD.Mines.Married.6}}\"/pause 500/emote farmer 8/pause 350/speak {{Spouse}} \"{{i18n:AD.Mines.Married.7}}\"/pause 500/emote farmer 28/pause 1000/minedeath/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "Spouse": "{{Spouse}}, default"
+            }            
+        },
+
+        // married; specifically harvey
+        {
+            "LogName": "Mines Death - Harvey DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0 {{Spouse}} 18 10 1/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.Married.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.Married.2}}\"/pause 200/message \"{{i18n:AD.Mines.Married.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1500/speak {{Spouse}} \"{{i18n:AD.Mines.Married.PlayerName}}\"/pause 1000/speak {{Spouse}} \"{{i18n:AD.Mines.{{Spouse}}.Shocked}}\"/pause 200/viewport 19 10 true/pause 1500/showFrame 0/pause 1000/faceDirection farmer 3/pause 200/speak {{Spouse}} \"{{i18n:AD.Mines.Married.Harvey.6}}\"/pause 500/emote farmer 8/pause 350/speak {{Spouse}} \"{{i18n:AD.Mines.Married.7}}\"/pause 500/emote farmer 28/pause 1000/minedeath/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "Spouse": "Harvey"
+            }            
+        },
+
+        // elliott's gone, vanished, died even
+        {
+            "LogName": "Mines Death - ElliottGone DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0 Marlon 18 10 1/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.Married.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.Married.ElliottGone.2}}\"/pause 200/message \"{{i18n:AD.Mines.Married.ElliottGone.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1500/speak Marlon \"{{i18n:AD.Mines.Married.PlayerName}}\"/pause 1000/viewport 19 10 true/pause 1500/showFrame 0/pause 1000/faceDirection farmer 3/pause 200/speak Marlon \"{{i18n:AD.Mines.Married.6}}\"/pause 500/emote farmer 8/pause 350/speak Marlon \"{{i18n:AD.Mines.Married.7}}\"/pause 500/emote farmer 28/pause 1000/minedeath/mail elliottADMines/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "HasConversationtopic": "elliottGone"
+            }            
+        },
+
+        // ----------------------------------------------------------------------------------------------------
+        // DEATH CONSEQUENCES - OFF
+        // ----------------------------------------------------------------------------------------------------
+        
+        // default; unmarried
+        {
+            "LogName": "Mines Death - Default NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.NotMarried.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.2 |LPPN4={{LPPN4}}}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1000/viewport 19 10 true/pause 2000/showFrame 0/pause 500/emote farmer 8/pause 500/faceDirection farmer 3/pause 100/faceDirection farmer 2/pause 100/faceDirection farmer 1/pause 100/faceDirection farmer 2/pause 200/emote farmer 28/pause 500/message \"{{i18n:AD.Mines.NotMarried.6}}\"/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off"
+            }            
+        },
+
+        // married; any spouse except harvey
+        {
+            "LogName": "Mines Death - Married NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0 {{Spouse}} 18 10 1/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.Married.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.Married.{{siliconmodding.NPCTokens/NPC:{{Spouse}}+gender}}.2}}\"/pause 200/message \"{{i18n:AD.Mines.Married.{{siliconmodding.NPCTokens/NPC:{{Spouse}}+gender}}.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1500/speak {{Spouse}} \"{{i18n:AD.Mines.Married.PlayerName}}\"/pause 1000/speak {{Spouse}} \"{{i18n:AD.Mines.{{Spouse}}.Shocked}}\"/pause 200/viewport 19 10 true/pause 1500/showFrame 0/pause 1000/faceDirection farmer 3/pause 200/speak {{Spouse}} \"{{i18n:AD.Mines.Married.6}}\"/pause 500/emote farmer 8/pause 350/speak {{Spouse}} \"{{i18n:AD.Mines.Married.7}}\"/pause 500/emote farmer 28/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off",
+                "Spouse": "{{Spouse}}, default"
+            }            
+        },
+
+        // married; specifically harvey
+        {
+            "LogName": "Mines Death - Harvey NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0 {{Spouse}} 18 10 1/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.Married.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.Married.2}}\"/pause 200/message \"{{i18n:AD.Mines.Married.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1500/speak {{Spouse}} \"{{i18n:AD.Mines.Married.PlayerName}}\"/pause 1000/speak {{Spouse}} \"{{i18n:AD.Mines.{{Spouse}}.Shocked}}\"/pause 200/viewport 19 10 true/pause 1500/showFrame 0/pause 1000/faceDirection farmer 3/pause 200/speak {{Spouse}} \"{{i18n:AD.Mines.Married.Harvey.6}}\"/pause 500/emote farmer 8/pause 350/speak {{Spouse}} \"{{i18n:AD.Mines.Married.7}}\"/pause 500/emote farmer 28/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off, Off only when married to Harvey",
+                "Spouse": "Harvey"
+            }            
+        },
+
+        // elliott's gone, vanished, died even
+        {
+            "LogName": "Mines Death - ElliottGone NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Shadow -100 -100 0 Marlon 18 10 1/pause 1500/showFrame 5/message \"{{i18n:AD.Mines.Married.1}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.Married.ElliottGone.2}}\"/pause 200/message \"{{i18n:AD.Mines.Married.ElliottGone.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Mines.NotMarried.4}}\"/pause 200/message \"{{i18n:AD.Mines.NotMarried.5}}\"/pause 1500/speak Marlon \"{{i18n:AD.Mines.Married.PlayerName}}\"/pause 1000/viewport 19 10 true/pause 1500/showFrame 0/pause 1000/faceDirection farmer 3/pause 200/speak Marlon \"{{i18n:AD.Mines.Married.6}}\"/pause 500/emote farmer 8/pause 350/speak Marlon \"{{i18n:AD.Mines.Married.7}}\"/pause 500/emote farmer 28/pause 1000/mail elliottADMines/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off",
+                "HasConversationtopic": "elliottGone"
+            }            
+        }
+    ]
+}

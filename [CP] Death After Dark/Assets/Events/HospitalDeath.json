@@ -1,0 +1,132 @@
+{
+    "Changes": [
+        // ----------------------------------------------------------------------------------------------------
+        // DEATH CONSEQUENCES - ON
+        // ----------------------------------------------------------------------------------------------------
+        
+        {
+            "LogName": "Hospital Death - Not Married DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 20 12 2 Shadow -200 -200 0/pause 1500/showFrame 5/message \"{{i18n:AD.Hospital.NotMarried.1}}\"/pause 1000/playSound Shadow_Breath2/pause 200/playSound Shadow_Breath2/pause 200/playSound Shadow_Breath2/message \"{{i18n:AD.Hospital.NotMarried.2}}\"/pause 200/speak Shadow \"{{i18n:AD.Hospital.NotMarried.3}}\"/pause 200/message \"{{i18n:AD.Hospital.NotMarried.4}}\"/pause 200/speak Shadow \"{{i18n:AD.Hospital.NotMarried.5}}\"/pause 200/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 800/viewport 20 12 true/pause 1000/showFrame 0/pause 1000/emote farmer 40/hospitaldeath/end"
+            },
+            "When": {
+                "Death Consequences": "On, Off only when married to Harvey"
+            }
+        },
+        {
+            "LogName": "Hospital Death - Married DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 19 12 2 Harvey 21 13 0 {{Spouse}} 21 12 2/positionOffset farmer -30 25/pause 1500/speak Harvey \"{{i18n:AD.Hospital.Married.2 |PPN2={{PPN2}} |LPPN1={{LPPN1}}}}\"/pause 50/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.3}}\"/pause 50/speak Harvey \"{{i18n:AD.Hospital.Married.4}}\"/pause 50/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.{{SpouseName}} |LPPN3={{LPPN3}} |LPPN1={{LPPN1}}}}\"/pause 50/speak Harvey \"{{i18n:AD.Hospital.Married.5}}\"/showFrame 5/pause 500/viewport 20 12 true/pause 1000/emote {{Spouse}} 12 true/emote Harvey 12/pause 500/showFrame 0/pause 200/emote farmer 8/pause 200/emote {{Spouse}} 16 true/emote Harvey 16/pause 500/faceDirection {{Spouse}} 3 true/faceDirection Harvey 3/pause 200/textAboveHead {{Spouse}} \"{{i18n:AD.Hospital.Married.6}}\"/textAboveHead Harvey \"{{i18n:AD.Hospital.Married.6}}\"/pause 2500/faceDirection Harvey 0/pause 200/emote Harvey 12/pause 350/speak Harvey \"{{i18n:AD.Hospital.Married.7}}\"/pause 1000/hospitalDeath/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "Spouse": "{{Spouse}}, default"
+            }
+        },
+        {
+            "LogName": "Hospital Death - Specific Shane/Alex DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 19 12 2 Harvey 21 13 0 {{Spouse}} 21 12 2/positionOffset farmer -30 25/pause 1500/speak Harvey \"{{i18n:AD.Hospital.Married.Specific.2 |PPN2={{PPN2}} |LPPN1={{LPPN1}}}}\"/pause 200/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.Specific.3 |LPPN1={{LPPN1}}}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Specific.4}}\"/pause 200/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.Specific.{{SpouseName}} |LPPN1={{LPPN1}}}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Specific.5 |LPPN1={{LPPN1}}}}\"/showFrame 5/pause 500/viewport 20 12 true/pause 1000/showFrame 0/pause 200/emote farmer 8/pause 200/emote {{Spouse}} 16 true/emote Harvey 16/pause 500/faceDirection {{Spouse}} 3/faceDirection Harvey 3/pause 800/textAboveHead {{Spouse}} \"{{i18n:AD.Hospital.Married.Specific.6}}\"/textAboveHead Harvey \"{{i18n:AD.Hospital.Married.Specific.6}}\"/pause 2500/faceDirection Harvey 0 true/faceDirection {{Spouse}} 2/pause 500/emote Harvey 12 true/emote {{Spouse}} 12/pause 1000/hospitalDeath/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "Spouse": "Alex, Shane"
+            }
+        },
+        {
+            "LogName": "Hospital Death - Harvey DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 19 12 2 Harvey 21 12 3/positionOffset farmer -30 25/pause 1500/message \"{{i18n:AD.Hospital.Married.Harvey.1}}\"/pause 500/message \"{{i18n:AD.Hospital.Married.Harvey.2}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Harvey.3}}\"/pause 200/message \"{{i18n:AD.Hospital.Married.Harvey.4}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Harvey.5}}\"/pause 200/message \"{{i18n:AD.Hospital.Married.Harvey.6}}\"/showFrame 5/pause 500/viewport 20 12 true/pause 1000/showFrame 0/pause 200/emote farmer 8/pause 350/speak Harvey \"{{i18n:AD.Hospital.Married.Harvey.7}}\"/pause 200/emote farmer 60/pause 1000/hospitalDeath/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "Spouse": "Harvey"
+            }
+        },
+        {
+            "LogName": "Hospital Death - ElliottGone DC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 20 12 2 Shadow -1000 -1000 0/pause 1500/showFrame 5/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.1}}\"/pause 200/message \"{{i18n:AD.Hospital.Married.ElliottGone.2}}\"/pause 500/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.3}}\"/pause 500/message \"{{i18n:AD.Hospital.Married.ElliottGone.4}}\"/pause 1000/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.5}}\"/pause 1000/message \"{{i18n:AD.Hospital.Married.ElliottGone.6}}\"/pause 1000/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.7}}\"/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 800/viewport 20 12 true/pause 1000/showFrame 0/pause 1000/emote farmer 40/mail elliottADHospital/hospitaldeath/end"
+            },
+            "When": {
+                "Death Consequences": "On",
+                "HasConversationtopic": "elliottGone"
+            }
+        },
+        
+        
+        // ----------------------------------------------------------------------------------------------------
+        // DEATH CONSEQUENCES - OFF
+        // ----------------------------------------------------------------------------------------------------
+        
+        {
+            "LogName": "Hospital Death - Not Married NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 20 12 2 Shadow -200 -200 0/skippable/pause 1500/showFrame 5/message \"{{i18n:AD.Hospital.NotMarried.1}}\"/pause 1000/playSound Shadow_Breath2/pause 200/playSound Shadow_Breath2/pause 200/playSound Shadow_Breath2/message \"{{i18n:AD.Hospital.NotMarried.2}}\"/pause 200/speak Shadow \"{{i18n:AD.Hospital.NotMarried.3}}\"/pause 200/message \"{{i18n:AD.Hospital.NotMarried.4}}\"/pause 200/speak Shadow \"{{i18n:AD.Hospital.NotMarried.5}}\"/pause 200/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 800/viewport 20 12 true/pause 1000/showFrame 0/pause 1000/emote farmer 40/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off"
+            }
+        },
+        {
+            "LogName": "Hospital Death - Married NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 19 12 2 Harvey 21 13 0 {{Spouse}} 21 12 2/positionOffset farmer -30 25/skippable/pause 1500/speak Harvey \"{{i18n:AD.Hospital.Married.2 |PPN2={{PPN2}} |LPPN1={{LPPN1}}}}\"/pause 50/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.3}}\"/pause 50/speak Harvey \"{{i18n:AD.Hospital.Married.4}}\"/pause 50/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.{{SpouseName}} |LPPN3={{LPPN3}} |LPPN1={{LPPN1}}}}\"/pause 50/speak Harvey \"{{i18n:AD.Hospital.Married.5}}\"/showFrame 5/pause 500/viewport 20 12 true/pause 1000/emote {{Spouse}} 12 true/emote Harvey 12/pause 500/showFrame 0/pause 200/emote farmer 8/pause 200/emote {{Spouse}} 16 true/emote Harvey 16/pause 500/faceDirection {{Spouse}} 3 true/faceDirection Harvey 3/pause 200/textAboveHead {{Spouse}} \"{{i18n:AD.Hospital.Married.6}}\"/textAboveHead Harvey \"{{i18n:AD.Hospital.Married.6}}\"/pause 2500/faceDirection Harvey 0/pause 200/emote Harvey 12/pause 350/speak Harvey \"{{i18n:AD.Hospital.Married.7}}\"/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off",
+                "Spouse": "{{Spouse}}, default"
+            }
+        },
+        {
+            "LogName": "Hospital Death - Specific Shane/Alex NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 19 12 2 Harvey 21 13 0 {{Spouse}} 21 12 2/positionOffset farmer -30 25/skippable/pause 1500/speak Harvey \"{{i18n:AD.Hospital.Married.Specific.2 |PPN2={{PPN2}} |LPPN1={{LPPN1}}}}\"/pause 200/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.Specific.3 |LPPN1={{LPPN1}}}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Specific.4}}\"/pause 200/speak {{Spouse}} \"{{i18n:AD.Hospital.Married.Specific.{{SpouseName}} |LPPN1={{LPPN1}}}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Specific.5 |LPPN1={{LPPN1}}}}\"/showFrame 5/pause 500/viewport 20 12 true/pause 1000/showFrame 0/pause 200/emote farmer 8/pause 200/emote {{Spouse}} 16 true/emote Harvey 16/pause 500/faceDirection {{Spouse}} 3/faceDirection Harvey 3/pause 800/textAboveHead {{Spouse}} \"{{i18n:AD.Hospital.Married.Specific.6}}\"/textAboveHead Harvey \"{{i18n:AD.Hospital.Married.Specific.6}}\"/pause 2500/faceDirection Harvey 0 true/faceDirection {{Spouse}} 2/pause 500/emote Harvey 12 true/emote {{Spouse}} 12/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off",
+                "Spouse": "Alex, Shane"
+            }
+        },
+        {
+            "LogName": "Hospital Death - Harvey NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 19 12 2 Harvey 21 12 3/positionOffset farmer -30 25/skippable/pause 1500/message \"{{i18n:AD.Hospital.Married.Harvey.1}}\"/pause 500/message \"{{i18n:AD.Hospital.Married.Harvey.2}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Harvey.3}}\"/pause 200/message \"{{i18n:AD.Hospital.Married.Harvey.4}}\"/pause 200/speak Harvey \"{{i18n:AD.Hospital.Married.Harvey.5}}\"/pause 200/message \"{{i18n:AD.Hospital.Married.Harvey.6}}\"/showFrame 5/pause 500/viewport 20 12 true/pause 1000/showFrame 0/pause 200/emote farmer 8/pause 350/speak Harvey \"{{i18n:AD.Hospital.Married.Harvey.7}}\"/pause 200/emote farmer 60/pause 1000/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off, Off only when married to Harvey",
+                "Spouse": "Harvey"
+            }
+        },
+        {
+            "LogName": "Hospital Death - ElliottGone NDC",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "Hospital_Ambient/-100 -100/farmer 20 12 2 Shadow -1000 -1000 0/skippable/pause 1500/showFrame 5/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.1}}\"/pause 200/message \"{{i18n:AD.Hospital.Married.ElliottGone.2}}\"/pause 500/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.3}}\"/pause 500/message \"{{i18n:AD.Hospital.Married.ElliottGone.4}}\"/pause 1000/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.5}}\"/pause 1000/message \"{{i18n:AD.Hospital.Married.ElliottGone.6}}\"/pause 1000/speak Shadow \"{{i18n:AD.Hospital.Married.ElliottGone.7}}\"/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 800/viewport 20 12 true/pause 1000/showFrame 0/pause 1000/emote farmer 40/mail elliottADHospital/end"
+            },
+            "When": {
+                "Death Consequences": "Fully off",
+                "HasConversationtopic": "elliottGone"
+            }
+        }
+    ]
+}

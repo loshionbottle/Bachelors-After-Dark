@@ -1,0 +1,20 @@
+{
+    "Changes": [
+         // String Edits
+         {
+            "LogName": "Harvey String Edits - Unmarried",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Event.cs.1068": "{{i18n:AD.Death.Strings.1068}}",
+                "Event.cs.1070": "{{i18n:AD.Death.Strings.1070}}",
+                "Event.cs.1071": "{{i18n:AD.Death.Strings.1071}}",
+                "Event.cs.1058": "{{i18n:AD.Death.Strings.1058}}",
+                "Event.cs.1060": "{{i18n:AD.Death.Strings.1060}}",
+                "Event.cs.1061": "{{i18n:AD.Death.Strings.1061}}",
+                "Event.cs.1062": "{{i18n:AD.Death.Strings.1062}}",
+                "Event.cs.1057": "{{i18n:AD.Death.Strings.1057}}"
+            }
+        }
+    ]
+}

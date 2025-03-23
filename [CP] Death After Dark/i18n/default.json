@@ -1,0 +1,157 @@
+{
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  █████ ████  █████ █████  ███  █  
+    █   █ █   █ █     █   █   █     █   █   █ █       
+    █████ █   █ █████ ████    █     █   █████ █    
+    █   █ █   █     █ █       █     █   █   █ █      
+    █   █  ███  █████ █     █████   █   █   █ █████
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    // Unmarried type shi
+    "AD.Hospital.NotMarried.1": "Your head is pounding...#Maybe it's for the best you don't keep passing out like this.",
+    "AD.Hospital.NotMarried.2": "You feel someone's breath against your neck before you hear them.#Who is that?#You should keep your eyes closed for now...",
+    "AD.Hospital.NotMarried.3": "Yoba, I love when you come to me all bloodied and bruised.$h#$b#It makes it so much easier to—$l#$b#What's this?$u#$b#Oh, @...$l#$b#Why's your heart rate climbing so quickly like this, hm?$l",
+    "AD.Hospital.NotMarried.4": "The sound of their laugh sends a chill straight through your spine.#They lean in close to whisper their next words.",
+    "AD.Hospital.NotMarried.5": "If you're this responsive to me in your sleep, I wonder what you'd be like when you're awake.$l#$b#How about I let you get some more rest, hm?$h",
+
+
+    // Specific Scenarios - Alex & Shane - They're well aware of Harvey
+    "AD.Hospital.Married.Specific.2": "{{PPN2}} vitals look strong, so {{LPPN1}} should be waking up soon.#$b#I don't know what's taking so long.$s",
+    "AD.Hospital.Married.Specific.3": "Maybe if the only doctor in this town wasn't a damn quack, {{LPPN1}} would've woken up by now.$a",
+    "AD.Hospital.Married.Specific.4": "What's that supposed to mean?$a",
+
+    "AD.Hospital.Married.Specific.Alex": "You know exactly what I mean, creep.$a#$b#Don't you remember dropping a half-empty vial of @'s blood during your last checkup with Granny?$a#$b#That's not the type of shit normal people just carry around.$a",
+    "AD.Hospital.Married.Specific.Shane": "You know exactly what I mean, you bastard. I've seen what you do.$a#$b#I remember when {{LPPN1}} passed out a while ago, I was a few beds over—$s#$b#Don't play dumb with me.$a",
+
+    "AD.Hospital.Married.Specific.5": "Ok—ok... I get it.$8#$b#I remember, just—$s#$b#Please, don't say anything about that once @ wakes up.$s",
+    "AD.Hospital.Married.Specific.6": "Oh thank Yoba...",
+
+    
+    // Default Scenario - They're only slightly aware of Harvey
+    "AD.Hospital.Married.2": "{{PPN2}} vitals look strong, so {{LPPN1}} should be waking up soon.#$b#Though, I don't know what's taking so long.$s",
+    "AD.Hospital.Married.3": "Are you sure? It didn't take this long last time—$s",
+    "AD.Hospital.Married.4": "'Last time'?$a#$b#Just how many times have you caught them passing out, %spouse?$a",
+
+    "AD.Hospital.Married.default": "Err...$s",
+    "AD.Hospital.Married.Sam": "Wouldn't you like to know?$u#$b#But since we're on the subject of @...$a#$b#How about I mention those missing trinkets {{LPPN1}} 'lost' that're now sitting in your lower cabinet?$7#$b#You should really learn to lock up after yourself, Harvey.$a",
+    "AD.Hospital.Married.Sebastian": "Listen, I don't need some quack-ass doctor questioning the shit I do.#$b#That's why we're here and not in the city with a REAL doctor.$a#$b#Now, why don't you just hurry up and do the shit I'm paying you for?$a",
+    "AD.Hospital.Married.Elliott": "Wouldn't you like to know, 'Doctor'?",
+
+    "AD.Hospital.Married.5": "...$a",
+    "AD.Hospital.Married.6": "Oh thank Yoba...",
+    "AD.Hospital.Married.7": "Would you leave my office now?$a#$b#I don't mind @ so much, but you're really starting to get on my nerves.$a",
+
+
+    // Married to Harvey 
+    "AD.Hospital.Married.Harvey.1": "Fuck... You can't keep passing out like this.#Somehow, your head feels even worse than last time.",
+    "AD.Hospital.Married.Harvey.2": "You try to feel for your surroundings to sense where you've ended up, but some force holds you in place.#As you finally come to your full senses, you realize it's a person laying next to you—holding you as they breathe into your ear.#Are they... asleep?",
+    "AD.Hospital.Married.Harvey.3": "Yoba, @...$l#$b#I swear, each and every time you get delivered to me unconscious, it makes me...$l",
+    "AD.Hospital.Married.Harvey.4": "Huh, looks like he wasn't actually asleep.",
+    "AD.Hospital.Married.Harvey.5": "Hm...$a#$b#Your heart rate is climbing, you better not be faking on me, @.$a#$b#I'll make those mines seem like a walk in the park unless you wake up right now.$l",
+    "AD.Hospital.Married.Harvey.6": "You feel Harvey get out of bed.",
+    "AD.Hospital.Married.Harvey.7": "Seriously though, the next time you pass out on me without my permission, I just might have to keep you home 24/7.$a#$b#I'll even open a home practice just to keep an eye on you.",
+
+    // ElliottGone
+    "AD.Hospital.Married.ElliottGone.1": "Well aren't I lucky?$h#$b#Getting you all alone and vulnerable while your husband's out on his little...$l#$b#Vacation?#$b#Is that what he's on?$h",
+    "AD.Hospital.Married.ElliottGone.2": "You hear the figure laugh as their hand traces along your arm.",
+    "AD.Hospital.Married.ElliottGone.3": "I've missed this...#$b#Missed you.$s",
+    "AD.Hospital.Married.ElliottGone.4": "The trails along your arm pause for a moment.",
+    "AD.Hospital.Married.ElliottGone.5": "When will you realize that he's not meant for you, @?$a#$b#He left you all alone on that huge farm...$s#$b#I bet even if he was here, he couldn't fix you like I could.#$b#Like I did.$a",
+    "AD.Hospital.Married.ElliottGone.6": "...#Huh.#The figure's right.#This is the first time you've passed out in a while where your head didn't hurt and your body didn't ache.",
+    "AD.Hospital.Married.ElliottGone.7": "Think about it, yeah?",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █ █████ █   █ █████ █████ 
+    ██ ██   █   ██  █ █     █     
+    █ █ █   █   █ █ █ ████  █████ 
+    █   █   █   █  ██ █         █  
+    █   █ █████ █   █ █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    // Default - Not Married 
+    "AD.Mines.NotMarried.1": "It's not long before you start to regain consciousness, but your eyes still feel too heavy to open fully.#You almost think you can see...",
+    "AD.Mines.NotMarried.2": "Yoba...$s#$b#I should've stepped in earlier.$s#$b#Ah~$l#$b#But @ looks so sweet when {{LPPN4}} asleep, though...$l",
+    "AD.Mines.NotMarried.3": "You feel your body being lifted off the ground–#Oh how you wish you could gather enough strength to fully see who's manhandling your limp body right now.",
+    "AD.Mines.NotMarried.4": "Don't worry, @.#$b#I'll make sure you're safe.$l",
+    "AD.Mines.NotMarried.5": "You feel your body being lowered onto a cool patch of dirt before you fall back into an unconscious state.",
+    "AD.Mines.NotMarried.6": "That wasn't Marlon, you're sure of that.",
+
+    // Married - Works for any spouse
+    "AD.Mines.Married.1": "It's not long before you start to regain consciousness, but your eyes still feel too heavy to open fully.",
+
+    "AD.Mines.Married.Male.2": "He never comes to save you, does he, @?$s",
+    "AD.Mines.Married.Female.2": "She never comes to save you, does she, @?$s",
+    "AD.Mines.Married.Undefined.2": "They never come to save you, do they, @?$s",
+
+    "AD.Mines.Married.Male.3": "You feel your body being lifted off the ground–#Oh how you wish you could gather enough strength to fully see who's manhandling your limp body right now.#Their hands don't quite feel like your husband's...#Who is this?",
+    "AD.Mines.Married.Female.3": "You feel your body being lifted off the ground–#Oh how you wish you could gather enough strength to fully see who's manhandling your limp body right now.#Their hands don't quite feel like your wife's...#Who is this?",
+    "AD.Mines.Married.Undefined.3": "You feel your body being lifted off the ground–#Oh how you wish you could gather enough strength to fully see who's manhandling your limp body right now.#Their hands don't quite feel like your spouse's...#Who is this?",
+
+    "AD.Mines.Married.6": "Oh, there you are.$h#$b#You worried me for a moment.",
+    "AD.Mines.Married.7": "Uh-no, I wasn't the one to pull you out of the mines...$s#$b#Are you alright?",
+
+    "AD.Mines.Married.PlayerName": "...@?",
+
+    "AD.Mines.default.Shocked": "@?!",
+    "AD.Mines.Alex.Shocked": "@?!$7",
+    "AD.Mines.Elliott.Shocked": "@?!$8",
+    "AD.Mines.Harvey.Shocked": "@?!$8",
+    "AD.Mines.Sam.Shocked": "@?!$8",
+    "AD.Mines.Sebastian.Shocked": "@?!$s",
+    "AD.Mines.Shane.Shocked": "@?!$10",
+
+    // Married - Harvey
+    "AD.Mines.Married.Harvey.6": "Oh, there you are.$h#$b#You worried me for a moment, I almost thought the first-aid I administered didn't work.",
+
+    // ElliottGone
+    "AD.Mines.Married.ElliottGone.2": "He never comes to save you, does he, @?$s#$b#He's not even here to take proper care of you...$a",
+    "AD.Mines.Married.ElliottGone.3": "You feel your body being lifted off the ground–#Oh how you wish you could gather enough strength to fully see who's manhandling your limp body right now.#Their hands don't quite feel like Elliott's...#Who is this?",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ █      ███  █   █ ████   
+      █   █     █     █   █ ██  █ █   █ 
+      █   █████ █     █████ █ █ █ █   █ 
+      █       █ █     █   █ █  ██ █   █ 
+    █████ █████ █████ █   █ █   █ ████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    "AD.Island.Default.1": "You feel your limp body being lifted off the ground.#It's a moment before you start to feel a cool breeze coming from the...#Ocean?#Were you really carried you all the way out here?",
+    "AD.Island.Default.2": "I can't always come saving you like this, @.#$b#Go back home so I can keep a better eye on you.$a",
+    "AD.Island.Default.3": "You feel the figure set you down on what seems to be a damp patch of sand before you fall back into an unconscious state.",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █   █ █████ ████   ███  
+    █      █ █    █   █   █ █   █ 
+    ████    █     █   ████  █████ 
+    █      █ █    █   █   █ █   █ 
+    █████ █   █   █   █   █ █   █  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    "AD.Death.ElliottMail.Hospital.1": "My Dearest,",
+    "AD.Death.ElliottMail.Hospital.2": "I heard about your little accident resulting in you ending up in Harvey's office.",
+    "AD.Death.ElliottMail.Hospital.3": "Though concerned for your health, I simply...",
+    "AD.Death.ElliottMail.Hospital.4": "I just—I cannot believe that BRUTE had been the one to save you, darling.",
+    "AD.Death.ElliottMail.Hospital.5": "It should have been me.",
+    "AD.Death.ElliottMail.Hospital.6": "It will only be me.",
+    "AD.Death.ElliottMail.Hospital.7": "Mark my words, I'll never leave you alone again after this, @.",
+    "AD.Death.ElliottMail.Hospital.8": "Yours truly and forever,",
+    "AD.Death.ElliottMail.Hospital.9": "Elliott",
+    "AD.Death.ElliottMail.Hospital.10": "Your Obsessed Husband (Hospital)",
+
+    "AD.Death.ElliottMail.Mines.1": "My Dearest,",
+    "AD.Death.ElliottMail.Mines.2": "I heard about your little accident in the mines, Marlon told me.",
+    "AD.Death.ElliottMail.Mines.3": "Though concerned for your health I simply...",
+    "AD.Death.ElliottMail.Mines.4": "I just—It pains me to believe you were hurt while I was away...",
+    "AD.Death.ElliottMail.Mines.5": "I promise, I'll never leave you alone again after this, @.",
+    "AD.Death.ElliottMail.Mines.6": "Yours truly and forever,",
+    "AD.Death.ElliottMail.Mines.7": "Elliott",
+    "AD.Death.ElliottMail.Mines.8": "Your Obsessed Husband (Mines)",
+
+    "AD.Death.Strings.1068": "It seems you were charged {0}g for the hospital visit. ",
+    "AD.Death.Strings.1070": "You had no money, but it seems someone was obligated to save your life free of charge. ",
+    "AD.Death.Strings.1071": "It also appears that you've lost ",
+    "AD.Death.Strings.1058": "You seem to have lost {0}g.",
+    "AD.Death.Strings.1060": "It seems you've lost ",
+    "AD.Death.Strings.1061": "an item from your backpack.",
+    "AD.Death.Strings.1062": "{0} items from your backpack.",
+    "AD.Death.Strings.1057": "Why does it feel like you've lost something..?"
+}
