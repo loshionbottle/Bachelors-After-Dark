@@ -1,0 +1,763 @@
+{
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████  ███  █   █ █████ █████  ████     █   █ █████ █   █ █   █ 
+    █     █   █ ██  █ █       █   █         ██ ██ █     ██  █ █   █ 
+    █     █   █ █ █ █ ████    █   █  ██     █ █ █ ████  █ █ █ █   █ 
+    █     █   █ █  ██ █       █   █   █     █   █ █     █  ██ █   █ 
+     ████  ███  █   █ █     █████  ███      █   █ █████ █   █ █████   
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    // Player Config 
+    "config.section.Player Info.name": "Player Info",
+    "config.Player Pronouns 1.name": "Player Pronouns 1",
+    "config.Player Pronouns 1.description": "Would typically be something similar to \"Them\", \"Her\", \"Him\".",
+    "config.Player Pronouns 2.name": "Player Pronouns 2",
+    "config.Player Pronouns 2.description": "Would typically be something similar to \"They're\", \"She's\", \"He's\".",
+    "config.Player Pronouns 3.name": "Player Pronouns 3",
+    "config.Player Pronouns 3.description": "Would typically be something similar to \"They\", \"She\", \"He\".",
+    
+    // PetNames
+    "config.section.Pet Name.name": "Pet Name",
+    "config.Player Pet Name.name": "Player Pet Name",
+    "config.Player Pet Name.description": "Sets the player's desired pet name.",
+    "config.Descriptive Word.name": "Descriptive Word",
+    "config.Descriptive Word.description": "Would typically be \"Pretty\", \"Cute\", \"Handsome\", etc.",
+    "config.Good....name": "Good...",
+    "config.Good....description": "I'm SORRY I can't help but put in praise kinks throughout my writing. Would typically be \"Boy\", \"Girl\", \"Slut\"....",
+
+    // Events
+    "config.section.Events.name": "Events",
+    "config.After Dark Events.name": "After Dark Events",
+    "config.After Dark Events.description": "Disable to turn off all events this mod adds/rewrites.",
+
+    // Dialogue
+    "config.section.Dialogue.name": "Dialogue",
+    "config.Generic Dialogue.name": "Generic Dialogue",
+    "config.Generic Dialogue.description": "Disable to turn off the generic spice. If no other dialogue mods are installed, reverts Spicy Alex back to Vanilla Alex :(",
+    "config.Marriage Dialogue.name": "Marriage Dialogue",
+    "config.Marriage Dialogue.description": "Disable to turn off the marriage spice.",
+    "config.Gift Dialogue.name": "Gift Dialogue",
+    "config.Gift Dialogue.description": "Disable to turn off this mod's gift dialogue.",
+    "config.Festival Dialogue.name": "Festival Dialogue",
+    "config.Festival Dialogue.description": "Disable to turn off this mod's festival dialogue.",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ████   ███  █   █ ████   ███  █   █     ████  █████  ███  █      ███   ████ █   █ █████ 
+    █   █ █   █ ██  █ █   █ █   █ ██ ██     █   █   █   █   █ █     █   █ █     █   █ █     
+    ████  █████ █ █ █ █   █ █   █ █ █ █     █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █ █  ██ █   █ █   █ █   █     █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █ █   █ █   █ ████   ███  █   █     ████  █████ █   █ █████  ███   ███  █████ █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    // Introduction
+    "Core.Sebastian.Introduction.030402": "",
+
+    // Specific Dates
+    /*
+    "spring_12": "I'm not too big on festivals. Lots of commotion, too much social interaction... More stress than fun, if you ask me.",
+    "spring_23": "Ugh... Tomorrow is the worst festival of the year by a mile. Just wait and see how stupid I look during the flower dance.",
+    "fall_20": "Are you looking forward to the Spirit's Eve festival? It's probably my favorite.$h",
+    "fall_26": "The Spirit's Eve festival is tomorrow. I really hope they have those skeletons on display again this year.$h#$e#I almost feel like they're my friends at this point.",
+    "summer_10": "Hehe... It might be funny to put something disgusting in the potluck soup tomorrow. Just don't poison anyone.#$e#Why ruin the potluck? Hmm... I guess some people feel liberated when the rigid structures of society break down a little. Maybe I'm weird.",
+    "summer_27": "Tomorrow we'll all be gathering at the docks to see the migration of the moonlight jellies. I think it starts at ten o'clock.",
+    "winter_24": "It's the eve of the winter star today. Better make sure you've got an empty stomach for the feast tomorrow.",
+    */
+
+    // Jealousy 
+    "Core.Sebastian.Jealous.Dating.Sebastian": "",
+    "Core.Sebastian.Jealous.Married.Sebastian": "",
+    "Core.Sebastian.Jealous.Dating.Shane": "",
+    "Core.Sebastian.Jealous.Married.Shane": "",
+    "Core.Sebastian.Jealous.Dating.Harvey": "",
+    "Core.Sebastian.Jealous.Married.Harvey": "",
+    "Core.Sebastian.Jealous.Dating.Elliott": "",
+    "Core.Sebastian.Jealous.Married.Elliott": "",
+    "Core.Sebastian.Jealous.Dating.Sam": "",
+    "Core.Sebastian.Jealous.Married.Sam": "",
+    //"Wed2_inlaw_Abigail": "Sam is probably my only friend in this town, anymore...",
+    //"married_Maru": "Demetrius has been all wound up because of the wedding, it's been pretty tense around the house.",
+
+    // Location Based
+    //"summer_Mountain_58_35": "#$c .5#The temperature only starts to get comfortable at night.#$e#It always seems to stay a little cooler by the lake.",
+    //"Mountain_47_23": "I come here for the peace and quiet.",
+
+    // Pos Romantic Shit
+    "Core.Sebastian.AcceptBouquet": "",
+    "Core.Sebastian.GivePendant": "",
+    "Core.Sebastian.StarDrop": "",
+    "Core.Sebastian.Dating": "",
+    //"dating_Sebastian_memory_oneday": "Hey... you look great.$l#$e#I've been thinking about you all day...$l",
+    //"dating_Sebastian_memory_oneyear": "Hey... It's been a year since we started dating, remember?$h#$e#It's been the best year of my life...$l",
+
+    // Neg Romantic Shit
+    "Core.Sebastian.RejectBouquet.Divorced": "",
+    "Core.Sebastian.RejectBouquet.NPCMarried": "",
+    "Core.Sebastian.RejectBouquet.VeryLowHearts": "",
+    "Core.Sebastian.RejectBouquet.LowHearts": "",
+    "Core.Sebastian.RejectBouquet": "",
+    "Core.Sebastian.RejectPendant.Divorced": "",
+    "Core.Sebastian.RejectPendant.HouseUpgrade": "",
+    "Core.Sebastian.RejectPendant.NPCWSomeone": "",
+    "Core.Sebastian.RejectPendant.PlayerWSomeone": "",
+    "Core.Sebastian.RejectPendant.Under8": "",
+    "Core.Sebastian.RejectPendant.Under10": "",
+    "Core.Sebastian.RejectPendant.Under10.Again": "",
+    "Core.Sebastian.RejectPendant": "",
+    "Core.Sebastian.RejectGift.Divorced": "",
+    "Core.Sebastian.Divorced": "",
+    "Core.Sebastian.BreakUp": "",
+    "Core.Sebastian.DumpedGuys": "",
+    "Core.Sebastian.SecondChanceGuys": "",
+
+    // SlingShot
+    "Core.Sebastian.Slingshot": "",
+
+    // First Visit - Railroad
+    //"firstVisit_Railroad": "I'm glad the path to the railroad tracks is open again.#$b#I like going up there when I feel like being alone.#$e#...Which is often.",
+
+    // Post Sam's Concert
+    //"eventSeen_4081148": "The show went well. I was kind of nervous beforehand, but once we went up on stage I just kinda got into the zone.",
+
+    // Green Rain
+    "Core.Sebastian.GreenRain": "",
+    "Core.Sebastian.GreenRainFinished": "",
+    "Core.Sebastian.GreenRain2": "",
+
+    // Resort
+    "Core.Sebastian.Resort.Entering": "",
+    "Core.Sebastian.Resort": "",
+    "Core.Sebastian.Resort.Leaving": "",
+    "Core.Sebastian.Resort.Shore": "",
+    "Core.Sebastian.Resort.Wander.1": "",
+    "Core.Sebastian.Resort.Wander.2": "",
+    "Core.Sebastian.Resort.Towel": "",
+    "Core.Sebastian.Resort.bar": "",
+
+    // Summit
+    //"Extra.Sebastian.Summit": "Before I met you, I spent most of my time turned away from reality... because I thought I'd never find happiness.#$b#...but you've shown me that the world isn't such a dark place, after all.$h\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...That's one of the reasons I love you...\"",
+
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████ █████ █   █ █████ ████  █████  ████       ████  █████  ███  █      ███   ████ █   █ █████ 
+    █     █     ██  █ █     █   █   █   █           █   █   █   █   █ █     █   █ █     █   █ █     
+    █  ██ ████  █ █ █ ████  ████    █   █           █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █     █  ██ █     █   █   █   █           █   █   █   █   █ █     █   █ █   █ █   █ █     
+     ███  █████ █   █ █████ █   █ █████  ████       ████  █████ █   █ █████  ███   ███  █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    // Fall Question
+    /*
+    "fall_Fri": "*yawn*... I was up until 3 reading this new book...#$q 62/63 fall_Fri_old#Do you read, @?#$r 62 -30 Fri_bad#Yep. The classics.#$r 63 30 Fri_good#Only Sci-fi and Fantasy#$r 62 0 Fri_bad#I like a good Romance#$r 63 -30 Fri_bad#No, I don't read books",
+    "fall_Fri_old": "$p 62#You probably wouldn't like it.$s|I think you'd like it.",
+    "fall_Fri_good": "Hey, me too. There's nothing like a good fiction to push the boundaries of the imagination.$h",
+    "fall_Fri_bad": "Huh. Sounds boring.",
+
+    // Generic Friday Question
+    "Fri2": "*sigh*... If gas wasn't so expensive I'd ride my motorcycle to the city today.#$e#$q 15/16 Fri_old#So what do you do when you aren't working?#$r 15 0 Fri_bad#More Farming#$r 16 30 Fri_good#Comic books#$r 15 -30 Fri_bad#Shopping#$r 15 -30 Fri_bad#Sports",
+    "Fri_old": "$p 16#Hey, if you're bored feel free to hang out in my room...$h|You probably prefer the small-town life, huh?",
+    "Fri_good": "Oh yeah? Well, did you read the new 'Cave Saga X'? I won't spoil it for you, but oh man...$h",
+    "Fri_bad": "Oh yea? Hmm... Not really my thing, but everyone's different I guess.$u",
+    */
+
+    // SPRING
+    // Specific Smoking Scenarios
+    "Core.Sebastian.Spring.10.Non-Smoker": "",
+    "Core.Sebastian.Spring.10.Smoker": "",
+    "Core.Sebastian.Spring.10.Quits Smoking": "",
+    "Core.Sebastian.Spring.18.Non-Smoker": "",
+    "Core.Sebastian.Spring.18.Smoker": "",
+    "Core.Sebastian.Spring.18.Quits Smoking": "",
+
+    "Core.Sebastian.Spring.EarlyHeart.1": "",
+    "Core.Sebastian.Spring.EarlyHeart.2": "",
+    "Core.Sebastian.Spring.EarlyHeart.3": "",
+    "Core.Sebastian.Spring.EarlyHeart.4": "",
+    "Core.Sebastian.Spring.EarlyHeart.5": "",
+    "Core.Sebastian.Spring.EarlyHeart.6": "",
+    "Core.Sebastian.Spring.EarlyHeart.7": "",
+    "Core.Sebastian.Spring.EarlyHeart.8": "",
+    "Core.Sebastian.Spring.EarlyHeart.9": "",
+    "Core.Sebastian.Spring.EarlyHeart.10": "",
+    "Core.Sebastian.Spring.EarlyHeart.11": "",
+    "Core.Sebastian.Spring.EarlyHeart.12": "",
+    "Core.Sebastian.Spring.EarlyHeart.13": "",
+    "Core.Sebastian.Spring.EarlyHeart.14": "",
+
+    "Core.Sebastian.Spring.MidHeart.1": "",
+    "Core.Sebastian.Spring.MidHeart.2": "",
+    "Core.Sebastian.Spring.MidHeart.3": "",
+    "Core.Sebastian.Spring.MidHeart.4": "",
+    "Core.Sebastian.Spring.MidHeart.5": "",
+    "Core.Sebastian.Spring.MidHeart.6": "",
+    "Core.Sebastian.Spring.MidHeart.7": "",
+    "Core.Sebastian.Spring.MidHeart.8": "",
+    "Core.Sebastian.Spring.MidHeart.9": "",
+    "Core.Sebastian.Spring.MidHeart.10": "",
+    "Core.Sebastian.Spring.MidHeart.11": "",
+    "Core.Sebastian.Spring.MidHeart.12": "",
+    "Core.Sebastian.Spring.MidHeart.13": "",
+    "Core.Sebastian.Spring.MidHeart.14": "",
+
+    "Core.Sebastian.Spring.LateHeart.1": "I've been trying to work up the nerve to go explore the caves near my house.$s#$b#How about you let me explore yours first?$l",
+    "Core.Sebastian.Spring.LateHeart.2": "",
+    "Core.Sebastian.Spring.LateHeart.3": "",
+    "Core.Sebastian.Spring.LateHeart.4": "",
+    "Core.Sebastian.Spring.LateHeart.5": "",
+    "Core.Sebastian.Spring.LateHeart.6": "",
+    "Core.Sebastian.Spring.LateHeart.7": "",
+    "Core.Sebastian.Spring.LateHeart.8": "",
+    "Core.Sebastian.Spring.LateHeart.9": "",
+    "Core.Sebastian.Spring.LateHeart.10": "",
+    "Core.Sebastian.Spring.LateHeart.11": "",
+    "Core.Sebastian.Spring.LateHeart.12": "",
+    "Core.Sebastian.Spring.LateHeart.13": "",
+    "Core.Sebastian.Spring.LateHeart.14": "",
+
+
+    // SUMMER
+    // Specific Smoking Scenarios
+    "Core.Sebastian.Summer.4.Non-Smoker": "",
+    "Core.Sebastian.Summer.4.Smoker": "",
+    "Core.Sebastian.Summer.4.Quits Smoking": "",
+    "Core.Sebastian.Summer.16.Non-Smoker": "",
+    "Core.Sebastian.Summer.16.Smoker": "",
+    "Core.Sebastian.Summer.16.Quits Smoking": "",
+
+    "Core.Sebastian.Summer.EarlyHeart.1": "",
+    "Core.Sebastian.Summer.EarlyHeart.2": "",
+    "Core.Sebastian.Summer.EarlyHeart.3": "",
+    "Core.Sebastian.Summer.EarlyHeart.4": "",
+    "Core.Sebastian.Summer.EarlyHeart.5": "",
+    "Core.Sebastian.Summer.EarlyHeart.6": "",
+    "Core.Sebastian.Summer.EarlyHeart.7": "",
+    "Core.Sebastian.Summer.EarlyHeart.8": "",
+    "Core.Sebastian.Summer.EarlyHeart.9": "",
+    "Core.Sebastian.Summer.EarlyHeart.10": "",
+    "Core.Sebastian.Summer.EarlyHeart.11": "",
+    "Core.Sebastian.Summer.EarlyHeart.12": "",
+    "Core.Sebastian.Summer.EarlyHeart.13": "",
+    "Core.Sebastian.Summer.EarlyHeart.14": "",
+
+    "Core.Sebastian.Summer.MidHeart.1": "",
+    "Core.Sebastian.Summer.MidHeart.2": "",
+    "Core.Sebastian.Summer.MidHeart.3": "",
+    "Core.Sebastian.Summer.MidHeart.4": "",
+    "Core.Sebastian.Summer.MidHeart.5": "",
+    "Core.Sebastian.Summer.MidHeart.6": "",
+    "Core.Sebastian.Summer.MidHeart.7": "",
+    "Core.Sebastian.Summer.MidHeart.8": "",
+    "Core.Sebastian.Summer.MidHeart.9": "",
+    "Core.Sebastian.Summer.MidHeart.10": "",   
+    "Core.Sebastian.Summer.MidHeart.11": "",
+    "Core.Sebastian.Summer.MidHeart.12": "",
+    "Core.Sebastian.Summer.MidHeart.13": "",
+    "Core.Sebastian.Summer.MidHeart.14": "",
+
+    "Core.Sebastian.Summer.LateHeart.1": "",
+    "Core.Sebastian.Summer.LateHeart.2": "",
+    "Core.Sebastian.Summer.LateHeart.3": "",
+    "Core.Sebastian.Summer.LateHeart.4": "",
+    "Core.Sebastian.Summer.LateHeart.5": "",
+    "Core.Sebastian.Summer.LateHeart.6": "",
+    "Core.Sebastian.Summer.LateHeart.7": "",
+    "Core.Sebastian.Summer.LateHeart.8": "",
+    "Core.Sebastian.Summer.LateHeart.9": "",
+    "Core.Sebastian.Summer.LateHeart.10": "",
+    "Core.Sebastian.Summer.LateHeart.11": "",
+    "Core.Sebastian.Summer.LateHeart.12": "",
+    "Core.Sebastian.Summer.LateHeart.13": "",
+    "Core.Sebastian.Summer.LateHeart.14": "",
+
+    // BIRTHDAY
+    "Core.Sebastian.Birthday.0": "",
+    "Core.Sebastian.Birthday.4": "",
+    "Core.Sebastian.Birthday.6": "",
+    "Core.Sebastian.Birthday.8": "",
+    "Core.Sebastian.Birthday.10": "",
+
+    // FALL
+    // Specific Smoking Scenarios
+    "Core.Sebastian.Fall.6.Non-Smoker": "",
+    "Core.Sebastian.Fall.6.Smoker": "",
+    "Core.Sebastian.Fall.6.Quits Smoking": "",
+    "Core.Sebastian.Fall.12.Non-Smoker": "",
+    "Core.Sebastian.Fall.12.Smoker": "",
+    "Core.Sebastian.Fall.12.Quits Smoking": "",
+
+    "Core.Sebastian.Fall.EarlyHeart.1": "",
+    "Core.Sebastian.Fall.EarlyHeart.2": "",
+    "Core.Sebastian.Fall.EarlyHeart.3": "",
+    "Core.Sebastian.Fall.EarlyHeart.4": "",
+    "Core.Sebastian.Fall.EarlyHeart.5": "",
+    "Core.Sebastian.Fall.EarlyHeart.6": "",
+    "Core.Sebastian.Fall.EarlyHeart.7": "",
+    "Core.Sebastian.Fall.EarlyHeart.8": "",
+    "Core.Sebastian.Fall.EarlyHeart.9": "",
+    "Core.Sebastian.Fall.EarlyHeart.10": "",
+    "Core.Sebastian.Fall.EarlyHeart.11": "",
+    "Core.Sebastian.Fall.EarlyHeart.12": "",
+    "Core.Sebastian.Fall.EarlyHeart.13": "",
+    "Core.Sebastian.Fall.EarlyHeart.14": "",
+
+    "Core.Sebastian.Fall.MidHeart.1": "",
+    "Core.Sebastian.Fall.MidHeart.2": "",
+    "Core.Sebastian.Fall.MidHeart.3": "",
+    "Core.Sebastian.Fall.MidHeart.4": "",
+    "Core.Sebastian.Fall.MidHeart.5": "",
+    "Core.Sebastian.Fall.MidHeart.6": "",
+    "Core.Sebastian.Fall.MidHeart.7": "",
+    "Core.Sebastian.Fall.MidHeart.8": "",
+    "Core.Sebastian.Fall.MidHeart.9": "",
+    "Core.Sebastian.Fall.MidHeart.10": "",
+    "Core.Sebastian.Fall.MidHeart.11": "",
+    "Core.Sebastian.Fall.MidHeart.12": "",
+    "Core.Sebastian.Fall.MidHeart.13": "",
+    "Core.Sebastian.Fall.MidHeart.14": "",
+
+    "Core.Sebastian.Fall.LateHeart.1": "",
+    "Core.Sebastian.Fall.LateHeart.2": "",
+    "Core.Sebastian.Fall.LateHeart.3": "",
+    "Core.Sebastian.Fall.LateHeart.4": "",
+    "Core.Sebastian.Fall.LateHeart.5": "",
+    "Core.Sebastian.Fall.LateHeart.6": "",
+    "Core.Sebastian.Fall.LateHeart.7": "",
+    "Core.Sebastian.Fall.LateHeart.8": "",
+    "Core.Sebastian.Fall.LateHeart.9": "",
+    "Core.Sebastian.Fall.LateHeart.10": "",
+    "Core.Sebastian.Fall.LateHeart.11": "",
+    "Core.Sebastian.Fall.LateHeart.12": "",
+    "Core.Sebastian.Fall.LateHeart.13": "",
+    "Core.Sebastian.Fall.LateHeart.14": "",
+
+
+    // WINTER
+    // Specific Smoking Scenarios
+    "Core.Sebastian.Winter.3.Non-Smoker": "",
+    "Core.Sebastian.Winter.3.Smoker": "",
+    "Core.Sebastian.Winter.3.Quits Smoking": "",
+    "Core.Sebastian.Winter.18.Non-Smoker": "",
+    "Core.Sebastian.Winter.18.Smoker": "",
+    "Core.Sebastian.Winter.18.Quits Smoking": "",
+
+    "Core.Sebastian.Winter.EarlyHeart.1": "",
+    "Core.Sebastian.Winter.EarlyHeart.2": "",
+    "Core.Sebastian.Winter.EarlyHeart.3": "",
+    "Core.Sebastian.Winter.EarlyHeart.4": "",
+    "Core.Sebastian.Winter.EarlyHeart.5": "",
+    "Core.Sebastian.Winter.EarlyHeart.6": "",
+    "Core.Sebastian.Winter.EarlyHeart.7": "",
+    "Core.Sebastian.Winter.EarlyHeart.8": "",
+    "Core.Sebastian.Winter.EarlyHeart.9": "",
+    "Core.Sebastian.Winter.EarlyHeart.10": "",
+    "Core.Sebastian.Winter.EarlyHeart.11": "",
+    "Core.Sebastian.Winter.EarlyHeart.12": "",
+    "Core.Sebastian.Winter.EarlyHeart.13": "",
+    "Core.Sebastian.Winter.EarlyHeart.14": "",
+
+    "Core.Sebastian.Winter.MidHeart.1": "",
+    "Core.Sebastian.Winter.MidHeart.2": "",
+    "Core.Sebastian.Winter.MidHeart.3": "",
+    "Core.Sebastian.Winter.MidHeart.4": "",
+    "Core.Sebastian.Winter.MidHeart.5": "",
+    "Core.Sebastian.Winter.MidHeart.6": "",
+    "Core.Sebastian.Winter.MidHeart.7": "",
+    "Core.Sebastian.Winter.MidHeart.8": "",
+    "Core.Sebastian.Winter.MidHeart.9": "",
+    "Core.Sebastian.Winter.MidHeart.10": "",
+    "Core.Sebastian.Winter.MidHeart.11": "",
+    "Core.Sebastian.Winter.MidHeart.12": "",
+    "Core.Sebastian.Winter.MidHeart.13": "",
+    "Core.Sebastian.Winter.MidHeart.14": "",
+
+    "Core.Sebastian.Winter.LateHeart.1": "",
+    "Core.Sebastian.Winter.LateHeart.2": "",
+    "Core.Sebastian.Winter.LateHeart.3": "",
+    "Core.Sebastian.Winter.LateHeart.4": "",
+    "Core.Sebastian.Winter.LateHeart.5": "",
+    "Core.Sebastian.Winter.LateHeart.6": "",
+    "Core.Sebastian.Winter.LateHeart.7": "",
+    "Core.Sebastian.Winter.LateHeart.8": "",
+    "Core.Sebastian.Winter.LateHeart.9": "",
+    "Core.Sebastian.Winter.LateHeart.10": "",
+    "Core.Sebastian.Winter.LateHeart.11": "",
+    "Core.Sebastian.Winter.LateHeart.12": "",
+    "Core.Sebastian.Winter.LateHeart.13": "",
+    "Core.Sebastian.Winter.LateHeart.14": "",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  ████  ████  █████  ███   ████ █████     ████  █████  ███  █      ███   ████ █   █ █████ 
+    ██ ██ █   █ █   █ █   █   █   █   █ █     █         █   █   █   █   █ █     █   █ █     █   █ █     
+    █ █ █ █████ ████  ████    █   █████ █  ██ ████      █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █ █   █ █   █   █   █   █ █   █ █         █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █ █   █ █   █ █   █ █████ █   █  ███  █████     ████  █████ █   █ █████  ███   ███  █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    /* Big thank you to the following users who helped with this section:
+    - ShiloCaptor
+    - danny, ma bitch <3
+    */
+
+    // Engagement 022822
+    "Marriage.Sebastian.Engagement.0": "Damn, it's gonna be such an adjustment seeing your room in person rather than on camera...$l#$b#Wait— Did you not know about those?$h",
+    "Marriage.Sebastian.Engagement.1": "Huh... I wonder if I'll still need all those photos I took of you.$7#$b#Especially now that we're moving in together and I get to see you whenever I want.$l",
+
+    // Patio
+    "Marriage.Sebastian.Patio.1": "Hey, have you ever wanted to learn how to maintain a bike?$7#$b#I'd be willing to teach you... at a price.$l",
+    "Marriage.Sebastian.Patio.2": "Oh, now that you're here, do you think you could hand me that wrench over there?$8#$b#{{PetName}}... that's a screwdriver.$9",
+    "Marriage.Sebastian.Patio.3": "Hey— Did you need something?#$b#I can finish this up quickly, but only if you get down on your knees and beg for attention.$l",
+
+    // SpouseRoom
+    "Marriage.Sebastian.SpouseRoom.1": "Good morning, {{LPetName}}.$l#$b#Thought I'd start our day off right by making us some breakfast.[194 211]$h",
+    "Marriage.Sebastian.SpouseRoom.2": "Ugh, sorry {{LPetName}}.$s#$b#I was meaning to help you out on the farm today but I totally forgot I had a deadline coming up...$s#$b#Promise, I'll make it up to you later.$l",
+    "Marriage.Sebastian.SpouseRoom.3": "Hey, I didn't have too much time to cook us breakfast this morning, but I brewed us a few cups of coffee at least.[253]$h#$e#What? Not enough sugar?$7#$b#Well then come closer and I'll give you some.$l",
+
+    // FunLeave & Return
+    "Marriage.Sebastian.funLeave": "Hey there you are, {{LPetName}}.$h#$b#I need to go stretch my legs after last night, so I'll be back later on.$7#$e#Oh, don't look so sad. I promise I'll bring you back some sort of treat.$l",
+    "Marriage.Sebastian.funReturn.1": "I ran into my mom today and she wouldn't let me leave until I took a few bowls of this stuff.[236]$7#$b#How about I warm it up and we can cuddle on the couch for the rest of the night?$h",
+    "Marriage.Sebastian.funReturn.2": "Hm?#$b#Where's the treat I was gonna give you?#$b#Oh, {{LPetName}}$l#$b#We both know the real treat is how I'll make you feel as soon as you sit your {{LDescript}} little ass down on our bed.$l",
+    "Marriage.Sebastian.funReturn.3": "I saw these while I was out today and couldn't stop thinking about you.[593 595 421]$7#$b#Now, how about you get your {{LDescript}} little ass over here and give me a taste of your nectar.$l",
+
+    // Special Dates - Spring
+    "Marriage.Sebastian.Spring": "",
+    "Marriage.Sebastian.Spring1": "",
+    "Marriage.Sebastian.Spring12": "",
+    "Marriage.Sebastian.Spring23": "",
+
+    "Marriage.Sebastian.Spring.6.Non-Smoker": "",
+    "Marriage.Sebastian.Spring.6.Smoker": "",
+    "Marriage.Sebastian.Spring.6.Quits Smoking": "",
+    "Marriage.Sebastian.Spring.8.Non-Smoker": "",
+    "Marriage.Sebastian.Spring.8.Smoker": "",
+    "Marriage.Sebastian.Spring.8.Quits Smoking": "",
+
+    // Special Dates - Summer
+    "Marriage.Sebastian.Summer": "",
+    "Marriage.Sebastian.Summer1": "",
+    "Marriage.Sebastian.Summer10": "",
+    "Marriage.Sebastian.Summer27": "",
+
+    "Marriage.Sebastian.Summer.8.Non-Smoker": "",
+    "Marriage.Sebastian.Summer.8.Smoker": "",
+    "Marriage.Sebastian.Summer.8.Quits Smoking": "",
+    "Marriage.Sebastian.Summer.15.Non-Smoker": "",
+    "Marriage.Sebastian.Summer.15.Smoker": "",
+    "Marriage.Sebastian.Summer.15.Quits Smoking": "",
+
+    // Special Dates - Fall
+    "Marriage.Sebastian.Fall": "",
+    "Marriage.Sebastian.Fall1": "",
+    "Marriage.Sebastian.Fall15": "",
+    "Marriage.Sebastian.Fall26": "",
+
+    "Marriage.Sebastian.Fall.8.Non-Smoker": "",
+    "Marriage.Sebastian.Fall.8.Smoker": "",
+    "Marriage.Sebastian.Fall.8.Quits Smoking": "",
+    "Marriage.Sebastian.Fall.20.Non-Smoker": "",
+    "Marriage.Sebastian.Fall.20.Smoker": "",
+    "Marriage.Sebastian.Fall.20.Quits Smoking": "",
+
+    // Special Dates - Winter
+    "Marriage.Sebastian.Winter": "",
+    "Marriage.Sebastian.Winter1": "",
+    "Marriage.Sebastian.Winter7": "",
+    "Marriage.Sebastian.Winter28": "", 
+
+    "Marriage.Sebastian.Winter.9.Non-Smoker": "",
+    "Marriage.Sebastian.Winter.9.Smoker": "",
+    "Marriage.Sebastian.Winter.9.Quits Smoking": "",
+    "Marriage.Sebastian.Winter.17.Non-Smoker": "",
+    "Marriage.Sebastian.Winter.17.Smoker": "",
+    "Marriage.Sebastian.Winter.17.Quits Smoking": "",
+    "Marriage.Sebastian.Winter.24.Non-Smoker": "",
+    "Marriage.Sebastian.Winter.24.Smoker": "",
+    "Marriage.Sebastian.Winter.24.Quits Smoking": "",
+
+    // Generic - Rainy Days     
+    "Marriage.Sebastian.Rainy.Day.Sebastian": "",
+    "Marriage.Sebastian.Rainy.Day.0": "Are you going out today?$s#$b#C'mon, {{LPetName}}... You work too hard.#$b#How about you let the weather take care of your crops and I'll take care of you today?$h",
+    "Marriage.Sebastian.Rainy.Day.1": "Hmm... Since it's raining today, how about we stay in?$h#$b#You put on a {{LDescript}} little outfit and I'll make a mess of you all throughout the house.$l",
+    "Marriage.Sebastian.Rainy.Day.2": "",
+    "Marriage.Sebastian.Rainy.Day.3": "",
+    "Marriage.Sebastian.Rainy.Day.4": "",
+    "Marriage.Sebastian.Rainy.Day.5": "",
+
+    "Marriage.Sebastian.Rainy.Night.Sebastian": "",
+    "Marriage.Sebastian.Rainy.Night.0": "",
+    "Marriage.Sebastian.Rainy.Night.1": "",
+    "Marriage.Sebastian.Rainy.Night.2": "",
+    "Marriage.Sebastian.Rainy.Night.3": "",
+    "Marriage.Sebastian.Rainy.Night.4": "",
+    "Marriage.Sebastian.Rainy.Night.5": "",
+
+    // Generic - Indoor/Outdoor
+    "Marriage.Sebastian.Indoor.Day.Sebastian": "",
+    "Marriage.Sebastian.Indoor.Day.0": "",
+    "Marriage.Sebastian.Indoor.Day.1": "",
+    "Marriage.Sebastian.Indoor.Day.2": "",
+    "Marriage.Sebastian.Indoor.Day.3": "",
+    "Marriage.Sebastian.Indoor.Day.4": "",
+
+    "Marriage.Sebastian.Indoor.Night.Sebastian": "",
+    "Marriage.Sebastian.Indoor.Night.0": "",
+    "Marriage.Sebastian.Indoor.Night.1": "",
+    "Marriage.Sebastian.Indoor.Night.2": "",
+    "Marriage.Sebastian.Indoor.Night.3": "",
+    "Marriage.Sebastian.Indoor.Night.4": "",
+
+    "Marriage.Sebastian.Outdoor.Sebastian": "",
+    "Marriage.Sebastian.Outdoor.0": "",
+    "Marriage.Sebastian.Outdoor.1": "",
+    "Marriage.Sebastian.Outdoor.2": "",
+    "Marriage.Sebastian.Outdoor.3": "",
+    "Marriage.Sebastian.Outdoor.4": "",
+
+    // Generic - Kids
+    "Marriage.Sebastian.OneKid.0": "",
+    "Marriage.Sebastian.OneKid.1": "",
+    "Marriage.Sebastian.OneKid.2": "",
+    "Marriage.Sebastian.OneKid.3": "",
+    "Marriage.Sebastian.TwoKids.0": "",
+    "Marriage.Sebastian.TwoKids.1": "",
+    "Marriage.Sebastian.TwoKids.2": "",
+    "Marriage.Sebastian.TwoKids.3": "",
+
+    // Affection 
+    "Marriage.Sebastian.Good.0": "",
+    "Marriage.Sebastian.Good.1": "",
+    "Marriage.Sebastian.Good.2": "",
+    "Marriage.Sebastian.Good.3": "",
+    "Marriage.Sebastian.Good.4": "",
+    "Marriage.Sebastian.Good.5": "",
+    "Marriage.Sebastian.Good.6": "",
+    "Marriage.Sebastian.Good.7": "",
+    "Marriage.Sebastian.Good.8": "",
+    "Marriage.Sebastian.Good.9": "",
+
+    "Marriage.Sebastian.Neutral.0": "Sometimes I like to think about how past me would react if he saw me now.#$b#For the longest, I thought he would hate me for staying here in the valley, but...$s#$b#No, he'd definitely be jealous. Especially since I have you all to myself now.$l",
+    "Marriage.Sebastian.Neutral.1": "I know that whole town loves you and everything but...$s#$b#Let's make one thing clear, {{LPetName}}.#$b#You belong to me, from now until forever.$l",
+    // yeah i hope you get this one frequently
+    "Marriage.Sebastian.Neutral.2": "Y'know, I've really been trying to get into the farmer mentality ever since moving down here.#$b#How about you let me get some practice by planting my eggplant inside you?$l",
+    "Marriage.Sebastian.Neutral.3": "I've been thinking about taking my bike out for a ride sometime.#$b#How about you join me? I'd love a chance to feel your hands all over me.$l",
+    "Marriage.Sebastian.Neutral.4": "Have I told you how {{LDescript}} you've looked lately?$l#$b#Marriage really looks good on you.$h",
+    // was gagging when i put this line in btw
+    "Marriage.Sebastian.Neutral.5": "Hey, do we have a little extra spending money right now?$7#$b#I found this new toy online and ugh...$l#$b#I just can't stop thinking about how you'd sound when I use it on you.$l",
+    "Marriage.Sebastian.Neutral.6": "I think I'll have to setup my keyboard in my room one of these days.#$b#It's just everytime I see you, I keep thinking of new melodies to put with these lyrics Sam wrote a while back.$7",
+    "Marriage.Sebastian.Neutral.7": "I know you've been busy with the farm lately, but how about you let me show you this little project I've been working on for a client?$7#$b#I snuck our anniversary date into one of the variables I used.$l",
+    "Marriage.Sebastian.Neutral.8": "Have you ever tried one of these? Sam's always going on and on about them but it's too sweet for me.[731]#$b#Actually, maybe it'd taste better if I could lick the remnants from your lips.$l",
+    "Marriage.Sebastian.Neutral.9": "Ugh, I almost didn't want to wake up this morning. I was having such a good dream about you.$s#$e#Hm? Oh, you want to know what it was about?#$b#How about we go back to bed and I'll show you myself.$l",
+
+    "Marriage.Sebastian.Bad.0": "It's starting to feel like you wouldn't even notice if I got on my bike and left one night.$s#$b#I love you, @. Please, what can I do to get you to talk to me again?$s",
+    // hope you cringe at this line like i did
+    "Marriage.Sebastian.Bad.1": "Y'know, if I wanted a sex toy that wouldn't talk to me, I'd have bought one online.$a#$b#Now, why don't you tell me what's wrong so we can move past this?",
+    "Marriage.Sebastian.Bad.2": "Did I do something wrong, @?#$b#I feel like I never see you and you've been coming to bed later than normal...$s",
+    "Marriage.Sebastian.Bad.3": "I'm so fucking tired of this treatment, {{LPetName}}.$s#$b#Can we just go back to normal?#$b#I miss you...$s",
+    "Marriage.Sebastian.Bad.4": "Y'know, if I didn't want to talk, I'd go back to stalking you.$s#$b#I thought now that we're married, you'd at least give me the chance to chat once in a while.#$b#I guess I was wrong.$s",
+    "Marriage.Sebastian.Bad.5": "What more do you want from me, @?$a#$b#I stayed in this fucking town and you still aren't happy.$s#$b#What do I have to change for you to go back to talking to me?",
+    "Marriage.Sebastian.Bad.6": "Why'd you agree to marry me if you were just going to ignore me?$s#$b#Was it just the thrill of me stalking that turned you on?$s#$b#Should I go back to doing that?",
+    "Marriage.Sebastian.Bad.7": "Why do you always look so angry when you look at me?$s#$b#If you hate me so much, I'll pay for the divorce.$s",
+    "Marriage.Sebastian.Bad.8": "Ugh, why don't you just go ahead and do what my mom did and build a basement to stick me in?$a#$b#It's not like you've been paying any attention to me anyway.$s",
+    "Marriage.Sebastian.Bad.9.Non-Smoker.No Smoking": "What do I have to do to make you love me again, {{LPetName}}?$s#$b#Please, I'll do anything.",
+    "Marriage.Sebastian.Bad.9.Smoker.Cigarettes": "What do I have to do to make you love me again, {{LPetName}}?$s#$b#Do I need to quit smoking cigs? Should I switch to those electric ones?#$b#Please, I'll do anything.",
+    "Marriage.Sebastian.Bad.9.Smoker.Joints ": "What do I have to do to make you love me again, {{LPetName}}?$s#$b#Do I need to quit smoking weed? Is it the smell?#$b#Please, I'll do anything.",
+    "Marriage.Sebastian.Bad.9.Quits Smoking.Cigarettes": "What do I have to do to make you love me again, {{LPetName}}?$s#$b#I already quit smoking for you, just—$s#$b#Please, I'll do anything.",
+    "Marriage.Sebastian.Bad.9.Quits Smoking.Joints": "What do I have to do to make you love me again, {{LPetName}}?$s#$b#I already quit smoking for you, just—$s#$b#Please, I'll do anything.",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ████ █████ █████ █████     ████  █████  ███  █      ███   ████ █   █ █████ 
+    █       █   █       █       █   █   █   █   █ █     █   █ █     █   █ █     
+    █  ██   █   ████    █       █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █   █   █       █       █   █   █   █   █ █     █   █ █   █ █   █ █     
+     ███  █████ █       █       ████  █████ █   █ █████  ███   ███  █████ █████ 
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    /* Big thank you to the following users who helped with this section:
+    - Kana 
+    - ShiloCaptor
+    - danny, ma bitch <3
+    - eirene [NEXUS]
+    */
+
+    "Gift.Sebastian.GiftReaction.FrogEgg": "Neat, where'd you find this?$7#$b#I'll have to see if I can get it to hatch in this little terrarium that I have.$7#$b#Thanks, @.$h",
+
+    "Gift.Sebastian.GiftReaction.VoidEgg": "I feel like I should thank you for this but...$s#$b#Honestly, you deserve a lot more than that.$l#$e#Where'd you even get one of those eggs, anyways? Aren't they SUPER rare to find here?",
+
+    "Gift.Sebastian.GiftReaction.DefenseBook": "Are you trying to say I need to work or something with this?$h#$b#I appreciate the sentiment, but lately I've been getting PLENTY of exercise running around on your fa—$7#$b#The town! Running around town.$h#$b#Yeah, Sam's refused to walk up here, so I've had to run across town to hang out...$s",
+
+    "Gift.Sebastian.GiftReaction.CombatQuarterly": "Oh, I've heard about this edition through Abi!$h#$b#Apparently there's some really cool knife tricks in it.$7#$b#Say, how 'bout I try a few on you, {{LPetName}}?$l",
+
+    "Gift.Sebastian.GiftReaction.MonsterCompendium": "Should I be offended or flattered that you somehow knew I'd like this book?$h#$b#Either way, thanks {{LPetName}}.$l",
+
+    "Gift.Sebastian.GiftReaction.FrozenTear.0": "Did you go all the way into the mines for this?#$b#I love these, but you didn't have to put yourself in harms way for me, {{LPetName}}.$s#$e#Man, now that I think about it, I don't even know what I'd do if you ended up alone and hurt down there.$s",
+    "Gift.Sebastian.GiftReaction.FrozenTear.1": "Y'know, sometimes when you hold these up to the light, they almost look as {{LDescript}} as you.$l#$b#Seriously though, thank you. I really love these.$h",
+    "Gift.Sebastian.GiftReaction.FrozenTear.2": "Oh, thanks for this.$h#$b#Y'know, there's something to be said about the sorrows of this being frozen in time.#$b#Sorry, I guess just the thought of something sad and painful being turned into something beautiful causes me to get a bit deep at times.$7",
+    "Gift.Sebastian.GiftReaction.Married.FrozenTear.0": "Have you ever thought about turning one of these into a piece of jewelry?$7#$b#Honestly, I might just put this onto a necklace.$h#$b#There's just something about having a gift you gave me close to my heart that makes me so...$l",
+    "Gift.Sebastian.GiftReaction.Married.FrozenTear.1": "I swear, no matter how many times I get gifted one of these, it never stops being my favorite.$h#$b#Maybe one of these days I'll commission Leah to make a sculpture of you out of them.$7#$b#Though, it could never replace the real thing.$l",
+    "Gift.Sebastian.GiftReaction.Married.FrozenTear.2": "%Sebastian takes the tear, holding it up for both of you to look at it.#$b#Hey, did you know if you hold these up to the light, you're able to see the individual flecks of ice crystals?$7#$b#Nah, I'm just kidding. You look really cute when you're focused on something though.$h",
+
+    "Gift.Sebastian.GiftReaction.Obsidian.0": "If you keep giving me rare gifts like this, I'll have no choice but to fall in love with you.$h#$b#Though, I'm sure you were planning on that anyways, weren't you?$l",
+    "Gift.Sebastian.GiftReaction.Obsidian.1": "You didn't hurt yourself getting this, did you?#$b#I love these, but be a little more careful for me. The edges are sharp and I wouldn't want you to cut yourself.$7#$b#Though, I wouldn't mind suc—$l#$b#Kissing! Kissing it better if you did.$h",
+    "Gift.Sebastian.GiftReaction.Married.Obsidian.0": "You ever hear about the old wives' tale about how obsidian \"draws out mental stress and tension\"?#$b#Well, I know of a few other ways I can give that effect back to you, if you're interested.$l",
+    "Gift.Sebastian.GiftReaction.Married.Obsidian.1": "Y'know, I've felt real spoiled lately with all these gifts you've been giving me.$l#$b#How about I give you a rock back in exchange for this one?[74]$h",
+
+    "Gift.Sebastian.GiftReaction.PumpkinSoup.0": "Are you doing research on me or something?$h#$b#Because man, this stuff seriously brings back some memories... It's one of my favorites.$7#$b#Thanks, @. The nostalgia here really made my day.$h",
+    "Gift.Sebastian.GiftReaction.PumpkinSoup.1": "Huh... I didn't know you cooked.$7#$b#My favorite meal at that.$h#$b#Ah, well I guess you could've bought it too.$s#$b#Well, thanks anyways, @.$h",
+    "Gift.Sebastian.GiftReaction.Married.PumpkinSoup.0": "I swear, sometimes you really make me want to renew our vows so soon...$l#$b#Thanks for the meal, {{LPetName}}.$h",
+    "Gift.Sebastian.GiftReaction.Married.PumpkinSoup.1": "Thanks {{LPetName}}, but shouldn't I be the one taking care of you and cooking us food?$7",
+
+    "Gift.Sebastian.GiftReaction.Sashimi.0": "Ugh, I haven't had a good plate of these in a while.$h#$b#The last few times had some... questionable pieces of fish to say the least.$s#$b#Anyways, thanks {{LPetName}}.$h",
+    "Gift.Sebastian.GiftReaction.Sashimi.1": "Damn, trying to get me to put something raw in my mouth already?$l#$b#Oh please, don't look at me like that. I was just kidding.$h#$b#Thanks, @.$l",
+    "Gift.Sebastian.GiftReaction.Married.Sashimi.0": "Y'know, there's just something about putting something raw in your mouth that just makes eating these worth it.$h#$b#Wouldn't you agree, @?$l",
+    "Gift.Sebastian.GiftReaction.Married.Sashimi.1": "Hmm... Are you trying to bribe me with this, {{LPetName}}?$h#$b#Cause it might be working...$l",
+
+    "Gift.Sebastian.GiftReaction.StarDropTea": "Oh wow... Last time I drank one of these was with my dad before he...$7#$b#Ah, sorry. It's a bit of a depressing story.$s#$b#Thanks for this, @. Seriously.$7",
+
+    "Gift.Sebastian.GiftReaction.RabbitsFoot": "Huh... Do you get these often on your farm?$7#$b#Anyways, thanks for sharing the luck, @.$h",
+    "Gift.Sebastian.GiftReaction.Married.RabbitsFoot": "What's this for?$7#$b#You know I don't need the extra luck when I have you, {{LPetName}}.$l",
+
+    "Gift.Sebastian.GiftReaction.PrismaticShard": "Whoa, where'd you find one of these?!$7#$b#I might just have to display this one...$h#$b#Thanks, @.",
+    "Gift.Sebastian.GiftReaction.Married.PrismaticShard": "Is this for me?$h#$b#Thanks, but you know that we're married I'd much rather look at the {{LDescript}} little thing standing in front of me.$l",
+
+    // Birthdays
+    "Gift.Sebastian.GiftReaction.Positive.Birthday": "Damn, and here I thought you couldn't get anymore {{LDescript}}.$7#$b#Thanks for the birthday gift, {{LPetName}}.$h",
+    "Gift.Sebastian.GiftReaction.Positive.Married.Birthday": "Oh shit, I guess it is my birthday, huh?$h#$b#Thanks for the gift, but being around you is plenty for me, {{LPetName}}.$l",
+    "Gift.Sebastian.GiftReaction.Negative.Birthday": "...$s#$b#I mean, you're lucky you're {{LDescript}}, @. Cause this gift is...$s",
+    "Gift.Sebastian.GiftReaction.Negative.Married.Birthday": "...$s#$b#We're married and you thought this was okay to give me on my birthday?$s#$b#Do you even know me, @...?$s",
+
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █   █  ███  █   █ █████ █████       ████  █████  ███  █      ███   ████ █   █ █████ 
+    ██ ██ █   █ █   █   █   █           █   █   █   █   █ █     █   █ █     █   █ █     
+    █ █ █ █   █  █ █    █   ████        █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █   █ █   █  █ █    █   █           █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █   █  ███    █   █████ █████       ████  █████ █   █ █████  ███   ███  █████ █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    "Movie.Sebastian.BeforeMovie.Love": "I heard this movie's pretty grim.$7#$b#Don't worry, {{LPetName}}. If you get too scared you can always jump onto my lap.$h",
+    "Movie.Sebastian.DuringMovie.Love.1": "The cinematography in this film is unreal.$h",
+    "Movie.Sebastian.DuringMovie.Love.2": "Though Sebastian's focused on the film, you feel a hand run up your thigh.",
+    "Movie.Sebastian.AfterMovie.Love": "%Sebastian stretches, groaning a bit as he does.#$b#Yoba, that was one of the best movies I've seen in a while.$h#$b#You should take me out more often, {{LPetName}}.$7",
+    "Movie.Sebastian.BeforeMovie.Like": "The poster for this movie looked pretty cool.#$b#You think they'll let me take it home after the last showing?$7",
+    "Movie.Sebastian.AfterMovie.Like": "I had a pretty good time tonight, thanks for inviting me, @.$7#$b#Though, how about next time we go out, we go see a horror film instead?$h#$b#I'd love the chance to see you frightened and jumping onto my lap.$l",
+    "Movie.Sebastian.BeforeMovie.Dislike": "I hope you know I'll be more focused on you than this movie.$s",
+    "Movie.Sebastian.AfterMovie.Dislike": "Huh? What'd I think about the film?#$b#Err...$s#$b#How about we talk about how {{LDescript}} you look tonight, {{LPetName}}?",
+
+    "Movie.Sebastian.Invite.Spouse": "Aww look at you, {{LPetName}}. Planning little dates for us.$h#$b#But sure, I'll meet you there.$7",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ █████ █████ █████ █   █  ███  █         ████  █████  ███  █      ███   ████ █   █ █████ 
+    █     █     █       █     █   █   █ █   █ █         █   █   █   █   █ █     █   █ █     █   █ █     
+    ████  ████  █████   █     █    █ █  █████ █         █   █   █   █████ █     █   █ █  ██ █   █ ████  
+    █     █         █   █     █    █ █  █   █ █         █   █   █   █   █ █     █   █ █   █ █   █ █     
+    █     █████ █████   █   █████   █   █   █ █████     ████  █████ █   █ █████  ███   ███  █████ █████ 
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    /* Big thank you to the following users who helped with this section:
+    - ShiloCaptor 
+    - danny, ma bitch
+    */
+
+    // Egg Festival
+    "Festival.Sebastian.spring13.false.1": "Don't you get enough of eggs being that you own a farm and all?#$b#Though, it is nice to see you here.$7",
+    "Festival.Sebastian.spring13.false.2": "Hey, you're doing the egg hunt, right?$7#$b#$y 'Well, maybe if you beg a little I'll give you a hint._Beg._Yoba, when you put it like that, {{LPetName}}... Sam always keeps one behind his house.$l_Don't beg._No? That's too bad. I was really looking forward to seeing you desperate for me.$h",
+    "Festival.Sebastian.spring13.true.1": "Well, don't you look {{LDescript}} today, hm?$h#$b#Say, why don't you try winning the hunt and I'll see if I can come up with a nice little reward for you?$l",
+    "Festival.Sebastian.spring13.true.2": "Hmm... @?$7#$b#If I join this year's hunt, d'you think I could get a reward from you if I win?$l#$b#Aww... You're no fun.$s",
+
+    // Flower Dance
+    "Festival.Sebastian.spring24.false.1": "Oh, hey @.$7#$b#Interested in dancing with me later?#$b#Actually—$l#$b#How about I make you beg for that dance, hm?$l",
+    "Festival.Sebastian.spring24.false.2": "Yoba, I hate coming here every year. The suit I'm forced into is always so tight and itchy.$s#$b#Though...$l#$b#Maybe if I was dancing with someone as {{LDescript}} as you, I wouldn't mind so much.$h",
+    "Festival.Sebastian.spring24.true.1": "Well, don't you look {{LDescript}} in that outfit?$h#$b#Makes me wonder just how... versatile it is.$l#$b#...$l#$b#Sorry, got a bit distracted there. Is there something you want to ask me?$h",
+    "Festival.Sebastian.spring24.true.2": "I was hoping we wouldn't dance this year...#$b#But, with how {{LDescript}} you look in that outfit...$l#$b#Please, ask me to dance with you, {{LPetName}}.$l",
+    "Festival.Sebastian.DanceAccept": "You think I'd really pass up a chance to put my hands all over someone as {{LDescript}} as you? And in public at that?$h#$b#Of course I'll dance with you, @.$l",
+    "Festival.Sebastian.DanceAccept.Spouse": "Of course I'll dance with you, {{LPetName}}. Nothing could make me happier right now.$l",
+    "Festival.Sebastian.DanceDeny": "Sorry, {{LPetName}}. I'm just not feeling the conviction in your voice when you ask.$h#$b#I'm gonna have to decline this once.$7#$b#Though, don't worry. I'll still have my eyes on you the entire time.$l",
+
+    // Luau 
+    "Festival.Sebastian.summer11.false.1": "Hey, how about you grab yourself a bowl and swing back over here so I can add a little...$7#$b#\"Something\" to it to help you relax a bit.$h#$b#C'mon, I bet that farm work must get real tiring, especially when you know you have to come to events like this.$l",
+    "Festival.Sebastian.summer11.false.2": "Yoba, it's hot out here...$s#$b#Say, why don't we go cool off in Willy's shack, just the two of us?$l#$b#I'm sure the old man wouldn't mind.$h",
+    "Festival.Sebastian.summer11.true.1": "It's nice catching up with Sam and Abi at events like this but...#$b#Damn, does it have to be so hot out today?$s#$b#Please tell me we can go home soon, {{LPetName}}.",
+    "Festival.Sebastian.summer11.true.2": "Ugh... It's so hot out here.$s#$b#Hey, do you think anyone would notice if we just snuck back home earlier than normal?$7#$b#I'm just itching to take these clothes off in order to f—$l#$b#Sorry, I meant cool down.$h",
+
+    // Desert Festival
+    "Festival.Sebastian.Desert": "Ugh, it's way too fucking hot out here.#$b#Is this what you feel on your farm during the summer?#$b#Poor you...$s",
+    "Festival.Sebastian.Desert.Married": "Have you seen Emily's makeshift tent? Apparently she's offering some free clothes.#$b#When you go over there, let me know so I can help you change.$l",
+    "Festival.Sebastian.Desert.Shop": "I hope you know that every cent you spend here is going straight into some new cameras for your room, @.",
+
+    // Moonlight Jellies 
+    "Festival.Sebastian.summer28.false.1": "Doesn't the water here look so pretty at night?$7#$b#I could sit here all night, especially if you're here with me to enjoy the view.$l",
+    "Festival.Sebastian.summer28.false.2": "Damn...$l#$b#Fuck, I'm almost jealous how everyone can see just how {{LDescript}} you look under the moonlight here.$7#$b#How about me and you...$l#$b#Actually, I'll save that for another time.$h",
+    "Festival.Sebastian.summer28.true.1": "I find it so cute how excited you get over festivals like these.$7#$b#Y'know, even with how pretty these jellyfish are, they could never compare to how {{LDescript}} you are, {{LPetName}}.$l",
+    "Festival.Sebastian.summer28.true.2": "It sure does get dark during summer, doesn't it?$7#$b#Hmm... Do you think anyone would notice if me and you just slipped out and...$l#$b#Well, I guess you'll just have to agree to find out what.$h",
+
+    // Fair
+    "Festival.Sebastian.fall16.false.1": "Are you making a display this year, @?#$b#Shit—Maybe if the prize was you all wrapped or tied up maybe I'd actually compete.$l",
+    "Festival.Sebastian.fall16.false.2": "Oh hey, why don't you come get your fortune read with me?$7#$b#Sam's still kind of spooked about his last one.$h#$b#Plus, I'd love to hear what she says about our relationship.$l",
+    "Festival.Sebastian.fall16.true.1": "Hey, I brought some wine to help you out on the display this year but...#$b#I don't know, I'm just so bad at reading the stars so I'm unsure if this even is the right one.[348]$s#$e#Well, even if you don't use it, good luck, {{LPetName}}.$h",
+    "Festival.Sebastian.fall16.true.2": "There you are, {{LPetName}}.$h#$b#I was honestly starting to get bored without you here.#$b#Now, how about you go pick a game and I'll meet you there?$h",
+
+    // Spirit's Eve
+    "Festival.Sebastian.fall27.false.1": "They say Spirit's Eve is one of the most religious days of the year.$7#$b#I don't know, something about it being the day where we're closest to the dead and all...#$e#Hey, why don't we go do a little worship and maybe sing a few prayers over in the chapel?$l#$b#I'm sure I could find the keys to Pierre's somewhere...$h",
+    "Festival.Sebastian.fall27.false.2": "Damn, {{LPetName}}... You look really {{LDescript}} in that outfit.$l#$b#I wonder just how easily I could use my teeth to ri—$l#$b#I mean—Good luck in that maze, @.$h",
+    "Festival.Sebastian.fall27.true.1": "Aww, did you not see the outfit I left for you on the bed before you left?$s#$b#I was really hoping we could match costumes this year.",
+    "Festival.Sebastian.fall27.true.2": "Yoba, {{LPetName}}...$l#$b#I don't know about letting you walk around here in a costume like that.$7#$b#I might just drag you back home and have you strip it off for me...$l",
+
+    // Ice Festival
+    "Festival.Sebastian.winter8.false.1": "Hey, be sure you're extra careful walking on the ice. I don't want you slipping and falling in.#$b#Though I'd absolutely love to see you soaking wet...$l#$b#I really don't like the idea of Harvey getting the chance to put his hands on you even more.$a",
+    "Festival.Sebastian.winter8.false.2": "Y'know, if you need help during the competition, I wouldn't mind holding your waist so you don't fall in.$l#$b#C'mon, wouldn't having me whisper sweet nothings into your ear be real... motivating?$h",
+    "Festival.Sebastian.winter8.true.1": "What a shame...$s#$b#This lake would've been the perfect spot for ice skating before Lewis cut some holes in it.$a#$b#Hey— That'd actually be a cute date, huh?#$b#I'll have to find us a better spot after this.$h",
+    "Festival.Sebastian.winter8.true.2": "Aww, your face is all red, {{LPetName}}.$h#$b#Be sure you stay warm during the fishing part of the event.#$b#Actually— Do you need my jacket?$h",
+
+    // Winter Star
+    "Festival.Sebastian.winter28.false.1": "I'm normally not this sentimental but...$7#$b#I'm really glad you moved down here, @.$l#$b#Here— I wanted to gift you something before any of the actual gift-giving starts.[74]$7",
+    "Festival.Sebastian.winter28.false.2": "...$l#$b#Y'know {{LPetName}}, I can't help but think of how {{LDescript}} you'd look in red.$h#$b#You're not allergic to silk ribbons, right?$l",
+    "Festival.Sebastian.winter28.true.1": "I swear I won't get too jealous in case I'm not your secret friend this year.#$b#Just—Promise me you'll give me a present later, yeah?$7#$b#I have some extra ribbons I could tie you up with if you can't think of anything.$l",
+    "Festival.Sebastian.winter28.true.2": "I'm really grateful for the time we've spent together this year, {{LPetName}}.$l#$b#I don't know where I'd be without you, honestly.$h#$b#I love you.$l",
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █████ ████  █████ █   █  ████ █████ 
+    █       █   █   █   █   ██  █ █     █     
+    █████   █   ████    █   █ █ █ █  ██ █████ 
+        █   █   █   █   █   █  ██ █   █     █ 
+    █████   █   █   █ █████ █   █  ███  █████  
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    // thank u pixie & peach for helpin wif the followin section
+
+    "Strings.SebastianRoom.2": "Huh, that looks like it really puts the 'Graphic' in 'Graphic Novel'...#Did he have to leave this on the floor?",
+    "Strings.SebastianRoom.3": "Part of the map reads '%farm Fields'... Is that a coincidence?",
+    
+    "Strings.SebastianRoomAD.1.No Smoking": "The vase looks oddly clean despite it seeming like it has other purposes.",
+    "Strings.SebastianRoomAD.1.Joints": "The vase looks clean despite it smelling like... weed?",
+    "Strings.SebastianRoomAD.1.Cigarettes": "The vase looks oddly clean despite it seeming like it has other purposes.",
+    "Strings.SebastianRoomAD.2.0": "Looks like there's day old coffee in one of the mugs.",
+    "Strings.SebastianRoomAD.2.1": "There's remnants of what looks like to be coffee at the bottom of one of the mugs.",
+    "Strings.SebastianRoomAD.3": "Sebastian's and...#Huh, are those your initials carved into the base of the guitar?",
+    "Strings.SebastianRoomAD.4": "There's a note on the edge of the board with words scratched out.#You think you can barely make out your name on the first line.",
+    "Strings.SebastianRoomAD.5": "These look like black market energy drinks.#What does he even need the energy for?",
+
+    "Strings.Sebastian.Pool.1": "Yoba, would Sam stop flirting and just take the damn shot already?$s",
+    "Strings.Sebastian.Pool.2": "You think Sam's pool skills would improve if a date with you was on the line?$h#$b#Actually, I don't know if I'm comfortable taking that risk...$s",
+    "Strings.Sebastian.Pool.3": "Ugh, he always takes so long when it's his turn and he rarely makes a shot.$s#$b#You'd think a guitar player would be better with his hands.",
+
+    "Strings.Sebastian.Summer4.000": "I hate that Harvey's the only doctor nearby.$s#$b#These yearly checkups are a real pain in the ass when you know of his-$s#$b#Ah, wait.$7#$b#I can't go spoiling that surprise, now can I?",
+    "Strings.Sebastian.Summer4.001": "Hey, what the hell? I could've been naked!$a#$b#Though, I bet a pervert like you'd've really enjoyed the view, huh?$h",
+
+    "Strings.Sebastian.Marriage.Fri.000": "Hey, why don't you stay and watch us play for a bit?$7#$b#I always do better when you're around.$l",
+    "Strings.Sebastian.Marriage.Fri.001": "I'm gonna go hang out with Sam and Abigail later.$7#$b#How about you swing by and hang out with us, hm?$7#$b#You know I love when you follow me around town like the little stalker you are.$l",
+
+    "Strings.Sebastian.Marriage.Mon.000.No Smoking": "Standing up here really makes me want to show you more places with views like this.$7#$b#One of these days you're gonna have to let me take you for a ride on my motorcycle again.$h",
+    "Strings.Sebastian.Marriage.Mon.000.Joints": "Standing up here really makes me want to roll a joint.#$b#Care to join me?$7",
+    "Strings.Sebastian.Marriage.Mon.000.Cigarettes": "Standing up here really makes me want to smoke a cig.#$b#Care to join me?$7",
+    "Strings.Sebastian.Marriage.Mon.001": "What are you doing here?$7#$b#Don't tell me you're worried about me, {{LPetName}}?$h#$e#Well, now that you're here, my mom's been meaning to catch up with you.$7#$b#Maybe we should visit more often.$s",
+
+    "Strings.Sebastian.Rain.000": "I've always thought the ocean was best viewed when it rains.#$b#What do you...#$e#Actually, now that I'm actually getting a good look at you...$h#$b#I think you're also best viewed when it rains.$l",
+    "Strings.Sebastian.Winter16.000": "Oh hey, glad you're here.$7#$b#This market's probably one of the few festive things I enjoy about this town.#$b#There's just something about the vibe of it all, y'know?$7#$e#Hm... Say, @?#$b#Actually, never mind.$s"
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    █████ █   █ █████ █   █ █████ █████ 
+    █     █   █ █     ██  █   █   █     
+    ████   █ █  ████  █ █ █   █   █████ 
+    █      █ █  █     █  ██   █       █ 
+    █████   █   █████ █   █   █   █████
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+}
