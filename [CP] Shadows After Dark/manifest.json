@@ -1,0 +1,11 @@
+{
+    "Name": "[CP] After Dark Series - ???",
+    "Author": "loshionbottle",
+    "Description": "Adds an NPC for Losh to use in their other After Dark packs.",
+    "Version": "1.0.0",
+    "UniqueID": "loshionbottle.shadowsafterdark",
+    "UpdateKeys": [ "Nexus:29185" ],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

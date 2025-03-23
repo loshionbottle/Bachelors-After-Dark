@@ -1,0 +1,31 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        // Audio Files
+        {
+            "LogName": "Include Audio Files",
+            "Action": "Include",
+            "FromFile": "Data/Audio/audio.json"
+        },
+        // ??? NPC
+        {
+            "LogName": "???'s Manifestation",
+            "Action": "Include",
+            "FromFile": "Data/Shadow/disposition.json"
+        },
+
+        // Appearance
+        {
+            "LogName": "???'s Sprite Sheet",
+            "Action": "Load",
+            "Target": "Characters/Shadow",
+            "FromFile": "Data/Shadow/shadow_sprite.png"
+        },
+        {
+            "LogName": "Shadow Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Shadow",
+            "FromFile": "Data/Shadow/shadow_hooded.png"
+        }
+    ]
+}

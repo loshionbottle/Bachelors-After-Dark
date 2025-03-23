@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+            "LogName": "Breathing Audios",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "Shadow_Breath1": {
+                    "ID": "Shadow_Breath1",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: Data/Audio/breath.wav}}"
+                    ]
+                },
+                "Shadow_Breath2": {
+                    "ID": "Shadow_Breath2",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: Data/Audio/breath2.wav}}"
+                    ]
+                },
+                "Shadow_Breath3": {
+                    "ID": "Shadow_Breath3",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: Data/Audio/breath3.wav}}"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "LogName": "Shadow's Disposition",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Shadow": {
+          "DisplayName": "???",
+          "CanSocialize": false,
+          "CanReceiveGifts": false,
+          "CanGreetNearbyCharacters": false,
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "PerfectionScore": false,
+          "IntroductionsQuest": false,
+          "EndSlideShow": "Hidden",
+          "FlowerDanceCanDance": false,
+          "SpawnIfMissing": false,
+          "Home": [
+            {
+                "Id": "Default",
+                "Location": "Town",
+                "Tile": {
+                "X": -1000,
+                "Y": -1000
+                }
+            }
+        ]
+        }
+      }
+    }
+  ]
+}
