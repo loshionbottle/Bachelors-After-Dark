@@ -1,0 +1,15 @@
+// mail used for the new 10 heart
+{
+    "Changes": [
+        {
+            "LogName": "Sam's Mail",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "afterSamShow": "{{i18n:AD.Sam.Events.8HeartMail.1}}^^{{i18n:AD.Sam.Events.8HeartMail.2}}^^^{{i18n:AD.Sam.Events.8HeartMail.3}}[#]Sam's Thank-you Note",
+                // thank you denny for the drawn hearts idea
+                "samMessage": "{{i18n:AD.Sam.Events.10HeartMail.1 ||PetName={{PetName}}}}^^{{i18n:AD.Sam.Events.10HeartMail.2}}^^{{i18n:AD.Sam.Events.10HeartMail.3}}^^^^{{i18n:AD.Sam.Events.10HeartMail.4}}[#]???'s Note"
+            }
+        }
+    ]
+}

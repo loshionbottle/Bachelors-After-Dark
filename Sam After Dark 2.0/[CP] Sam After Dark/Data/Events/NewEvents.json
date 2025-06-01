@@ -1,0 +1,58 @@
+{
+    "Changes": [
+        // 1 Heart - Wet Dream
+        {
+            "LogName": "Sam's Wet Dream",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "SamADWetDream/f Sam 250/w sunny/t 1500 1700": "none/-1000 -1000/Sam 24 97 3 Sebastian -100 -100 2 farmer -100 -100 2/showFrame Sam  16/skippable/viewport 24 97 true/pause 500/animate Sam false true 1000 16 17 18 19 16 17 18 19 16 17 18 19 16 17 18 19/pause 2500/stopAnimation Sam/showFrame Sam 12/pause 800/faceDirection Sam 0/pause 400/emote Sam 28/pause 500/speak Sam \"{{i18n:AD.Sam.Events.WetDream.1}}\"/pause 200/faceDirection Sam 3/pause 500/emote Sam 40/speak Sam \"{{i18n:AD.Sam.Events.WetDream.2}}\"/pause 300/emote Sam 32/pause 400/speak Sam \"{{i18n:AD.Sam.Events.WetDream.3 |LPPN1={{LPPN1}}}}\"/pause 500/globalFade/viewport -1000 -1000/pause 900/message \"{{i18n:AD.Sam.Events.WetDream.4}}\"/pause 1000/message \"{{i18n:AD.Sam.Events.WetDream.5}}\"/pause 200/message \"{{i18n:AD.Sam.Events.WetDream.6}}\"/pause 400/changeLocation Forest/warp farmer 34 25/message \"{{i18n:AD.Sam.Events.WetDream.7}}\"/faceDirection farmer 2/warp Sam 34 16/faceDirection Sam 2/glow 0 0 255 true/viewport 34 25 clamp true/pause 400/message \"{{i18n:AD.Sam.Events.WetDream.8}}\"/pause 800/move Sam 0 5 2/pause 400/emote Sam 32/pause 350/message \"{{i18n:AD.Sam.Events.WetDream.9}}\"/pause 200/move Sam 0 4 2/pause 200/emote farmer 20/pause 400/speak Sam \"{{i18n:AD.Sam.Events.WetDream.10 |LPetName={{LPetName}}}}\"/pause 200/message \"{{i18n:AD.Sam.Events.WetDream.11}}\"/eyes 4 -100000 true/pause 200/message \"{{i18n:AD.Sam.Events.WetDream.12}}\"/pause 200/speak Sam \"{{i18n:AD.Sam.Events.WetDream.13}}\"/pause 200/message \"{{i18n:AD.Sam.Events.WetDream.14}}\"/pause 200/speak Sam \"{{i18n:AD.Sam.Events.WetDream.15 |LPetName={{LPetName}}}}\"/pause 200/globalFade/viewport -1000 -1000 true/eyes 0 -100/stopGlowing/pause 400/message \"{{i18n:AD.Sam.Events.WetDream.16}}\"/changeLocation Town/warp farmer -100 -100/speak Sebastian \"{{i18n:AD.Sam.Events.WetDream.17}}\"/warp Sam 24 97/faceDirection Sam 3/warp Sebastian 23 96/faceDirection Sebastian 2/pause 200/speak Sebastian \"{{i18n:AD.Sam.Events.WetDream.18}}\"/pause 200/viewport 24 97/pause 1000/emote Sam 40/pause 400/speak Sam \"{{i18n:AD.Sam.Events.WetDream.19}}\"/pause 200/emote Sebastian 28/pause 500/speak Sebastian \"{{i18n:AD.Sam.Events.WetDream.20}}\"/pause 200/speak Sam \"{{i18n:AD.Sam.Events.WetDream.21}}\"/pause 200/speak Sebastian \"{{i18n:AD.Sam.Events.WetDream.22}}\"/pause 200/message \"{{i18n:AD.Sam.Events.WetDream.23}}\"/pause 200/emote Sam 16/pause 500/emote Sam 4/pause 500/emote Sebastian 28 true/pause 1500/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        // 1.5 Heart - Breaks into ur house; slightly rewritten to encorp NPC
+        {
+            "LogName": "Shadow Breaks in",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "SamADBreakIn/f Sam 250/o Sam/e SamADWetDream/t 2000 2400": "continue/-2000 -2000/Shadow 64 15 0 farmer -100 -100 0/pause 500/warp farmer -100 -100/pause 200/skippable/viewport 64 15 true/pause 1000/faceDirection Shadow 3/pause 100/faceDirection Shadow 0/pause 100/faceDirection Shadow 1/pause 100/faceDirection Shadow 0/pause 200/emote Shadow 32/pause 350/speak Shadow \"{{i18n:AD.Sam.Events.BreakIn.1}}\"/move Shadow 0 -2 0/warp Shadow -100 -100/playSound doorClose/pause 200/globalFade/viewport -1000 -1000/pause 400/speak Shadow \"{{i18n:AD.Sam.Events.BreakIn.2 |LPPN1={{LPPN1}} |LPPN2={{LPPN2}}}}\"/pause 500/speak Shadow \"{{i18n:AD.Sam.Events.BreakIn.3}}\"/pause 500/playSound clank/pause 400/playSound clank/pause 400/playSound clank/pause 400/playSound clank/pause 1500/playSound cameraNoise/pause 1500/end"
+            }
+        },
+        // 3 Heart - Bathhouse, Non-CNC & No Sex; slightly rewritten to encorp NPC
+        {
+            "LogName": "Sam in da Bathhouse - No Sex",
+            "Action": "EditData",
+            "Target": "Data/Events/Bathhouse_Pool",
+            "Entries": {
+                "SamADBathhouse/f Sam 750/e SamADBreakIn/t 1700 2100": "pool_ambient/-1000 -1000/farmer 14 29 2 Shadow -2000 -2000 0/swimming farmer/skippable/pause 1500/viewport 14 29 true/message \"{{i18n:AD.Sam.Events.Bathhouse.1}}\"/pause 1500/emote farmer 32/pause 500/move farmer 0 3 2/pause 200/faceDirection farmer 0/pause 200/playSound slosh/pause 1500/playSound clank/pause 400/playSound clank/pause 400/playSound clubhit/viewport -1000 -1000/pause 500/message \"{{i18n:AD.Sam.Events.Bathhouse.2}}\"/pause 3500/message \"{{i18n:AD.Sam.Events.Bathhouse.3}}\"/pause 500/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/message \"{{i18n:AD.Sam.Events.Bathhouse.4}}\"/pause 200/playSound Shadow_Breath1/pause 2000/message \"{{i18n:AD.Sam.Events.Bathhouse.5}}\"/pause 400/speak Shadow \"{{i18n:AD.Sam.Events.Bathhouse.6 |LPetName={{LPetName}}}}\"/pause 800/message \"{{i18n:AD.Sam.Events.Bathhouse.7}}\"/pause 400/speak Shadow \"{{i18n:AD.Sam.Events.Bathhouse.8}}\"/pause 800/message \"{{i18n:AD.Sam.Events.Bathhouse.9}}\"/pause 400/message \"{{i18n:AD.Sam.Events.Bathhouse.10}}\"/pause 400/speak Shadow \"{{i18n:AD.Sam.Events.Bathhouse.11 |LPetName={{LPetName}}}}\"/pause 400/message \"{{i18n:AD.Sam.Events.Bathhouse.12}}\"/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.Bathhouse.13}}\"/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 800/playSound clank/pause 400/playSound clank/pause 400/playSound clubhit/faceDirection farmer 2/viewport 14 29/pause 1250/emote farmer 28/pause 400/message \"{{i18n:AD.Sam.Events.Bathhouse.14}}\"/pause 200/end warpOut"
+            }
+        },
+        // 5 Heart - Wet Dream but IRL
+        {
+            "LogName": "Sam's Trippin Fr (Dream IRL)",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "SamADTrippin/e SamADWetDream/f Sam 1250/t 1700 2000": "fall1/-1000 -1000/farmer 34 25 2 Sam 34 16 2/faceDirection Sam 2/skippable/viewport 34 25 clamp true/pause 400/move Sam 0 5 2/pause 200/emote Sam 40/pause 400/textAboveHead Sam \"{{i18n:AD.Sam.Events.SamTrippin.1}}\"/pause 400/faceDirection farmer 0/pause 400/emote farmer 8/speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.2}}\"/pause 200/move Sam 0 2 2/pause 200/speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.3}}\"/pause 200/quickQuestion #{{i18n:AD.Sam.Events.SamTrippin.4}}#{{i18n:AD.Sam.Events.SamTrippin.5}}(break)speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.6}}\"(break)speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.7}}\"/pause 200/emote farmer 32/pause 400/move Sam 1 0 1 true/faceDirection farmer 2/move Sam 0 2 2/pause 400/animate Sam true true 100 1 2/positionOffset Sam 0 12/pause 100/positionOffset Sam -4 0/pause 100/positionOffset Sam -4 0/pause 100/positionOffset Sam -4 0/pause 100/stopAnimation Sam/positionOffset Sam -4 0/pause 200/message \"{{i18n:AD.Sam.Events.SamTrippin.8}}\"/pause 200/emote Sam 32/pause 400/speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.9}}\"/pause 200/emote farmer 8/pause 400/speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.10}}\"/pause 200/emote farmer 60/pause 400/speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.11}}\"/pause 200/quickQuestion #{{i18n:AD.Sam.Events.SamTrippin.12}}#{{i18n:AD.Sam.Events.SamTrippin.13}}(break)faceDirection Sam 3\\pause 200\\faceDirection farmer 1\\pause 200\\speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.14}}\"\\pause 200\\emote farmer 32\\pause 400\\faceDirection Sam 2\\pause 200\\speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.15}}\"\\pause 200\\emote farmer 12\\pause 400\\faceDirection farmer 2(break)pause 200\\emote Sam 40\\message \"{{i18n:AD.Sam.Events.SamTrippin.16}}\"\\pause 200\\speak Sam \"{{i18n:AD.Sam.Events.SamTrippin.17}}\"\\pause 600\\message \"...\"\\pause 200\\message \"{{i18n:AD.Sam.Events.SamTrippin.18}}\"\\pause 200\\emote farmer 40/pause 400/end dialogueWarpOut Sam \"{{i18n:AD.Sam.Events.SamTrippin.19}}\""
+            }
+        },
+        // 7 Heart - Chapel, Non-CNC but no sex; slightly rewritten to encorp NPC
+        {
+            "LogName": "Horny in da Chapel",
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "SamADChapel/f Sam 1750/e SamADBathhouse/t 1700 2000": "continue/-1000 -1000/farmer 37 19 0 Shadow -100 -100 0/skippable/showFrame farmer 113/viewport 37 19 true/pause 1000/emote farmer 28/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.1}}\"/pause 1000/viewport -1000 -1000/pause 500/message \"{{i18n:AD.Sam.Events.Chapel.2}}\"/pause 400/glow 100 100 100 true/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.3}}\"/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.Chapel.4 |LPetName={{LPetName}}}}\"/pause 200/message \"{{i18n:AD.Sam.Events.Chapel.5}}\"/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.6}}\"/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.7}}\"/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.8}}\"/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.9}}\"/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.Chapel.10 ||LGoodName={{LGoodName}}}}\"/pause 200/message \"{{i18n:AD.Sam.Events.Chapel.11}}\"/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.Chapel.12 |LPetName={{LPetName}}}}\"/pause 200/message \"{{i18n:AD.Sam.Events.Chapel.13}}\"/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.Chapel.14 |LGoodName={{LGoodName}}}}\"/pause 200/message \"{{i18n:AD.Sam.Events.Chapel.15}}\"/speak Shadow \"{{i18n:AD.Sam.Events.Chapel.16 |LPetName={{LPetName}}}}\"/pause 200/playSound doorClose/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/playSound stoneStep/pause 400/message \"{{i18n:AD.Sam.Events.Chapel.17}}\"/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.Chapel.18 |LPetName={{LPetName}}}}\"/pause 200/message \"{{i18n:AD.Sam.Events.Chapel.19}}\"/pause 1000/message \"{{i18n:AD.Sam.Events.Chapel.20}}\"/pause 1000/end"
+            }
+        },
+        // 9 Heart - Back to the forest AGAIN but rewritten majorly to encorp NPC
+        {
+            "LogName": "9 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "SamADFigureTease/e SamADChapel/f Sam 2250/t 2000 2400": "fall1/-1000 -1000/farmer 34 25 2 Shadow 34 16 2/faceDirection Shadow 2/skippable/viewport 34 25 clamp true/pause 400/move Shadow 0 5 2/pause 200/emote Shadow 32/pause 400/textAboveHead Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.1}}\"/pause 600/emote farmer 16/pause 400/faceDirection farmer 0/pause 200/move Shadow 0 2 2/pause 200/speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.2}}\"/pause 200/emote farmer 8/pause 400/speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.3}}\"/pause 200/move Shadow 0 1 2/pause 400/speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.4}}\"/pause 200/emote farmer 28/pause 350/quickQuestion #{{i18n:AD.Sam.Events.FigureTeasin.5}}#{{i18n:AD.Sam.Events.FigureTeasin.6}}(break)speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.7}}\"\\pause 200\\move Shadow 0 1 2\\pause 200\\speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.8}}\"\\pause 200\\message \"{{i18n:AD.Sam.Events.FigureTeasin.9}}\"\\pause 200\\speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.10}}\"(break)message \"{{i18n:AD.Sam.Events.FigureTeasin.11}}\"\\pause 200\\move Shadow 0 1 2\\pause 200\\speak Shadow \"{{i18n:AD.Sam.Events.FigureTeasin.12}}\"/pause 200/emote Shadow 32/pause 350/faceDirection Shadow 0/move Shadow 0 -1 0/emote farmer 40 true/move Shadow 0 -8 0/end"
+            }
+        }
+    ]
+}

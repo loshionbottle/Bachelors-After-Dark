@@ -1,0 +1,17 @@
+{
+    "Name": "[CP] After Dark Series - Sam",
+    "Author": "loshionbottle",
+    "Description": "Adds over 450 lines of dialogue and cute little yandere-esque events for Sam.",
+    "Version": "4.2.2",
+    "UniqueID": "loshionbottle.samafterdark",
+    "UpdateKeys": [ "Nexus:30615" ],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+      {
+        "UniqueID": "loshionbottle.shadowsafterdark",
+        "IsRequired": true
+      }
+    ]
+}

@@ -1,0 +1,72 @@
+// Gifting Dialogue 
+{
+    "Changes": [
+        // Unmarried/Not Dating/Not Engaged
+        {
+            "LogName": "Sam's Basic Gift Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                // Cactus Fruit
+                "AcceptGift_(O)90": "{{i18n:Gift.Sam.GiftReaction.CactusFruit.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Maple Bar
+                "AcceptGift_(O)731": "{{i18n:Gift.Sam.GiftReaction.MapleBar.{{Random:{{Range: 1, 2}}}}}}",
+                // Pizza
+                "AcceptGift_(O)206": "{{i18n:Gift.Sam.GiftReaction.Pizza.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Tigers Eye
+                "AcceptGift_(O)562": "{{i18n:Gift.Sam.GiftReaction.TigerEye.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Joja Cola
+                "AcceptGift_(O)167": "{{i18n:Gift.Sam.GiftReaction.JojaCola.{{Random:{{Range: 1, 2}}}}}}",
+                // Stardrop Tea
+                "AcceptGift_(O)StardropTea": "{{i18n:Gift.Sam.GiftReaction.StarDropTea}}",
+                // Rabbits Foot
+                "AcceptGift_(O)446": "{{i18n:Gift.Sam.GiftReaction.RabbitsFoot}}",
+                // Prismatic Shard
+                "AcceptGift_(O)74": "{{i18n:Gift.Sam.GiftReaction.PrismaticShard}}",
+                // Cooking
+                "AcceptGift_category_cooking": "{{i18n:Gift.Sam.GiftReaction.Cooking.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Flowers
+                "AcceptGift_category_flowers": "{{i18n:Gift.Sam.GiftReaction.Flowers.{{Random:{{Range: 1, 2}}}}}}",
+                
+                // Birthday Universals
+                "AcceptBirthdayGift_Positive": "{{i18n:Gift.Sam.GiftReaction.Positive.Birthday}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:Gift.Sam.GiftReaction.Negative.Birthday}}"
+            }
+        },
+        // Married/Engaged/Dating
+        {
+            "LogName": "Sam's Engaged & Marriage Gift Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "When": {
+                "Relationship:Sam": "Dating, Engaged, Married"
+            },
+            "Entries": {
+                // Cactus Fruit
+                "AcceptGift_(O)90": "{{i18n:Gift.Sam.GiftReaction.Married.CactusFruit.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Maple Bar
+                "AcceptGift_(O)731": "{{i18n:Gift.Sam.GiftReaction.Married.MapleBar.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Pizza
+                "AcceptGift_(O)206": "{{i18n:Gift.Sam.GiftReaction.Married.Pizza.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Tigers Eye
+                "AcceptGift_(O)562": "{{i18n:Gift.Sam.GiftReaction.Married.TigerEye.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Joja Cola
+                "AcceptGift_(O)167": "{{i18n:Gift.Sam.GiftReaction.Married.JojaCola.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Stardrop Tea
+                "AcceptGift_(O)StardropTea": "{{i18n:Gift.Sam.GiftReaction.Married.StarDropTea}}",
+                // Rabbits Foot
+                "AcceptGift_(O)446": "{{i18n:Gift.Sam.GiftReaction.Married.RabbitsFoot |LPetName={{LPetName}}}}",
+                // Prismatic Shard
+                "AcceptGift_(O)74": "{{i18n:Gift.Sam.GiftReaction.Married.PrismaticShard |PetName={{PetName}}}}",
+                // Cooking
+                "AcceptGift_category_cooking": "{{i18n:Gift.Sam.GiftReaction.Married.Cooking.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}}}}",
+                // Flowers
+                "AcceptGift_category_flowers": "{{i18n:Gift.Sam.GiftReaction.Married.Flowers.{{Random:{{Range: 1, 2}}}} |PetName={{PetName}}}}",
+                
+                // Birthday Universals
+                "AcceptBirthdayGift_Positive": "{{i18n:Gift.Sam.GiftReaction.Positive.Married.Birthday}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:Gift.Sam.GiftReaction.Negative.Married.Birthday}}"
+            }
+        }
+    ]
+}
