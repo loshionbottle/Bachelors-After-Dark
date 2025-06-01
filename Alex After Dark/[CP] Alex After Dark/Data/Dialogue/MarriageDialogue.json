@@ -35,7 +35,7 @@
                 "summer_1": "{{i18n:Marriage.Alex.Summer1}}",
                 "summer_8": "{{i18n:Marriage.Alex.Summer8 |LDescript={{LDescript}}}}",
                 "summer_10": "{{i18n:Marriage.Alex.Summer10}}",
-                "summer_15": "{{i18n:Marriage.Alex.Summer16}}",
+                "summer_15": "{{i18n:Marriage.Alex.Summer15}}",
                 "summer_27": "{{i18n:Marriage.Alex.Summer27}}",
                 
                 // Special Dates - Fall
@@ -63,7 +63,7 @@
                 "Rainy_Day_3": "{{i18n:Marriage.Alex.Rainy.Day.3}}",
                 "Rainy_Day_4": "{{i18n:Marriage.Alex.Rainy.Day.4}}",
                 "Rainy_Day_5": "{{i18n:Marriage.Alex.Rainy.Day.5}}",
-                "Rainy_Night_Alex": "{{i18n:Marriage.Alex.Rainy.Night.Alex |LPetName={{LPetName}}}}",
+                "Rainy_Night_Alex": "{{i18n:Marriage.Alex.Rainy.Night.Alex |PetName={{PetName}}}}",
                 "Rainy_Night_0": "{{i18n:Marriage.Alex.Rainy.Night.0 |LPetName={{LPetName}}}}",
                 "Rainy_Night_1": "{{i18n:Marriage.Alex.Rainy.Night.1 |LPetName={{LPetName}}}}",
                 "Rainy_Night_2": "{{i18n:Marriage.Alex.Rainy.Night.2 |LPetName={{LPetName}}}}",
@@ -102,7 +102,7 @@
                 "TwoKids_3": "{{i18n:Marriage.Alex.TwoKids.3 |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
 
                 // affection
-                "Good_0": "{{i18n:Marriage.Alex.Good.0 |LPetName={{LPetName}} |LUnderwear={{LUnderwear}}}}",
+                "Good_0": "{{i18n:Marriage.Alex.Good.0 |LPetName={{LPetName}} |LAccessory={{LAccessory}}}}",
                 "Good_1": "{{i18n:Marriage.Alex.Good.1 |LDescript={{LDescript}}}}",
                 "Good_2": "{{i18n:Marriage.Alex.Good.2 |LDescript={{LDescript}}}}",
                 "Good_3": "{{i18n:Marriage.Alex.Good.3 |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
@@ -110,7 +110,7 @@
                 "Good_5": "{{i18n:Marriage.Alex.Good.5 |LPetName={{LPetName}}}}",
                 "Good_6": "{{i18n:Marriage.Alex.Good.6}}",
                 "Good_7": "{{i18n:Marriage.Alex.Good.7}}",
-                "Good_8": "{{i18n:Marriage.Alex.Good.8 |LUnderwear={{LUnderwear}}}}",
+                "Good_8": "{{i18n:Marriage.Alex.Good.8 |LAccessory={{LAccessory}}}}",
                 "Good_9": "{{i18n:Marriage.Alex.Good.9 |LDescript={{LDescript}}}}",
                 "Neutral_0": "{{i18n:Marriage.Alex.Neutral.0 |LPetName={{LPetName}}}}",
                 "Neutral_1": "{{i18n:Marriage.Alex.Neutral.1 |LPetName={{LPetName}}}}",

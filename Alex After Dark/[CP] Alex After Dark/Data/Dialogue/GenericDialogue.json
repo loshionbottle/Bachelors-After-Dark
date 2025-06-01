@@ -7,7 +7,7 @@
             "Target": "Characters/Dialogue/Alex",
             "Entries": {
                 // Intro 
-                "Introduction": "{{i18n:Core.Alex.Introduction |LDescript={{LDescript}}}}",
+                "Introduction": "{{i18n:Core.Alex.Introduction |Descript={{Descript}}}}",
 
                 // Rando Lines
                 "cc_Bridge": "{{i18n:Core.Alex.cc.Bridge}}",
@@ -69,7 +69,7 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/rainy",
             "Entries": {
-                "Alex": "{{i18n:Core.Alex.Rain}}"
+                "Alex": "{{i18n:Core.Alex.Rain.{{Random:{{Range: 1, 3}}}}}}"
             }
         },
         {
@@ -96,15 +96,15 @@
 
                 // Early Hearts
                 "{{WeekDay}}": "{{i18n:Core.Alex.0Heart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}}}}",
-                "{{WeekDay}}2": "{{i18n:Core.Alex.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 10}}}} |LPetName={{LPetName}} |PetName={{PetName}}}}",
+                "{{WeekDay}}2": "{{i18n:Core.Alex.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 11}}}} |LPetName={{LPetName}} |PetName={{PetName}}}}",
                 "{{season}}_{{WeekDay}}": "{{i18n:Core.Alex.0Heart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}}}}",
-                "{{season}}_{{WeekDay}}2": "{{i18n:Core.Alex.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 10}}}} |LPetName={{LPetName}} |PetName={{PetName}}}}",
+                "{{season}}_{{WeekDay}}2": "{{i18n:Core.Alex.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 11}}}} |LPetName={{LPetName}} |PetName={{PetName}}}}",
 
                 // Mid Hearts
-                "{{WeekDay}}4": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
-                "{{WeekDay}}6": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
-                "{{season}}_{{WeekDay}}4": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
-                "{{season}}_{{WeekDay}}6": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "{{WeekDay}}4": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}} |PetName={{PetName}}}}",
+                "{{WeekDay}}6": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}} |PetName={{PetName}}}}",
+                "{{season}}_{{WeekDay}}4": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}} |PetName={{PetName}}}}",
+                "{{season}}_{{WeekDay}}6": "{{i18n:Core.Alex.{{Season}}.MidHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |LDescript={{LDescript}} |PetName={{PetName}}}}",
 
                 // Late Hearts
                 "{{WeekDay}}8": "{{i18n:Core.Alex.{{Season}}.LateHeart.{{Random:{{Range: 1, 12}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",

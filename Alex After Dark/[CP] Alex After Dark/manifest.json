@@ -1,9 +1,10 @@
 {
-    "Name": "Alex After Dark",
+    "Name": "[CP] After Dark Series - Alex",
     "Author": "loshionbottle",
-    "Description": "Adds over 500 lines of cute dialogue and tsundere-esque events for Alex.",
-    "Version": "1.0.1",
+    "Description": "Adds roughly 400ish lines of cute dialogue and tsundere-esque events for Alex.",
+    "Version": "1.1.2",
     "UniqueID": "loshionbottle.alexafterdark",
+    "UpdateKeys": [ "Nexus:28267" ],
     "ContentPackFor": {
       "UniqueID": "Pathoschild.ContentPatcher"
     }
