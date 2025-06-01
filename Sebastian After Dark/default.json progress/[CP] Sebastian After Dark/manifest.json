@@ -1,0 +1,27 @@
+{
+  "Name": "[CP] After Dark Series - Sebby Beta 3.1",
+  "Author": "loshionbottle & caterpixies",
+  "Description": "why tf this shit in ur mod folder, this ain't even do shit",
+  "Version": "3.1.0",
+  "UniqueID": "caterbottle.sebafterdark",
+  "UpdateKeys": [
+    "Nexus:"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "loshionbottle.samafterdark",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "caterbottle.shadowsafterdark",
+      "IsRequired": true
+    }
+  ]
+}

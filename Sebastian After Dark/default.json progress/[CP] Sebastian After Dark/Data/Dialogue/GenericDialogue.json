@@ -1,0 +1,200 @@
+// Beefy part of tha mod
+{
+    "Changes": [
+        {
+            "LogName": "Sebastian's Rando Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                // Intro 
+                "Introduction": "{{i18n:Core.Sebastian.Introduction.030402 |LPetName={{LPetName}}}}",
+
+                // Rando Lines
+                "firstVisit_Railroad": "{{i18n:Core.Sebastian.FirstVisit.RailRoad}}",
+                "eventSeen_4081148": "{{i18n:Core.Sebastian.SamConcertReaction}}",
+                "HitBySlingshot": "{{i18n:Core.Sebastian.Slingshot |LPetName={{LPetName}}}}",
+                "Saloon": "{{i18n:Core.Sebastian.Saloon.{{Random:{{Range: 1, 3}}}}}}",
+                "GreenRain": "{{i18n:Core.Sebastian.GreenRain}}",
+                "GreenRain_2": "{{i18n:Core.Sebastian.GreenRain2}}",
+
+                // Jealousy Lines
+                "dating_Alex": "{{i18n:Core.Sebastian.Jealous.Dating.Alex}}",
+                "married_Alex": "{{i18n:Core.Sebastian.Jealous.Married.Alex}}",
+                "dating_Shane": "{{i18n:Core.Sebastian.Jealous.Dating.Shane |PetName={{PetName}}}}",
+                "married_Shane": "{{i18n:Core.Sebastian.Jealous.Married.Shane |LPetName={{LPetName}}}}",
+                "dating_Harvey": "{{i18n:Core.Sebastian.Jealous.Dating.Harvey}}",
+                "married_Harvey": "{{i18n:Core.Sebastian.Jealous.Married.Harvey |LPetName={{LPetName}}}}",
+                "dating_Elliott": "{{i18n:Core.Sebastian.Jealous.Dating.Elliott |LPetName={{LPetName}}}}",
+                "married_Elliott": "{{i18n:Core.Sebastian.Jealous.Married.Elliott |LPetName={{LPetName}}}}",
+                "dating_Sam": "{{i18n:Core.Sebastian.Jealous.Dating.Sam}}",
+                "married_Sam": "{{i18n:Core.Sebastian.Jealous.Married.Sam |LPetName={{LPetName}}}}",
+                "dating_Abigail": "{{i18n:Core.Sebastian.Jealous.Dating.Abigail}}",
+
+                // Flower Dance
+                "FlowerDance_Accept": "{{i18n:Festival.Sebastian.DanceAccept |LDescript={{LDescript}}}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Festival.Sebastian.DanceAccept.Spouse |LPetName={{LPetName}}}}",
+                "FlowerDance_Decline": "{{i18n:Festival.Sebastian.DanceDeny |LPetName={{LPetName}}}}",
+                "danceRejection": "{{i18n:Festival.Sebastian.DanceDeny |LPetName={{LPetName}}}}",
+
+                // Romance
+                "AcceptBouquet": "{{i18n:Core.Sebastian.AcceptBouquet |PetName={{PetName}}}}",
+                "SpouseStardrop": "{{i18n:Core.Sebastian.StarDrop}}",
+                "dating_Sebastian": "{{i18n:Core.Sebastian.Dating |LPetName={{LPetName}}}}",
+                "dating_Sebastian_memory_oneday": "{{i18n:Core.Sebastian.Dating.Memory.Day}}",
+                "dating_Sebastian_memory_oneyear": "{{i18n:Core.Sebastian.Dating.Memory.Year}}",
+
+                // Git Rejected Binch
+                "RejectBouquet": "{{i18n:Core.Sebastian.RejectBouquet |LPetName={{LPetName}}}}",
+                "RejectMermaidPendant": "{{i18n:Core.Sebastian.RejectPendant |LPetName={{LPetName}}}}",
+                "RejectGift_Divorced": "{{i18n:Core.Sebastian.RejectGift.Divorced}}",
+                "divorced": "{{i18n:Core.Sebastian.Divorced}}",
+                "breakUp": "{{i18n:Core.Sebastian.BreakUp |LPetName={{LPetName}}}}",
+                "dumped_Guys": "{{i18n:Core.Sebastian.DumpedGuys}}",
+                "secondChance_Guys": "{{i18n:Core.Sebastian.SecondChanceGuys |LPetName={{LPetName}}}}",
+
+                // Resort
+                "Resort_Entering": "{{i18n:Core.Sebastian.Resort.Entering}}",
+                "Resort_Leaving": "{{i18n:Core.Sebastian.Resort.Leaving}}",
+                "Resort_Wander": "{{i18n:Core.Sebastian.Resort.Wander.1}}",
+                "Resort_Wander_2": "{{i18n:Core.Sebastian.Resort.Wander.2}}",
+                "Resort_Shore": "{{i18n:Core.Sebastian.Resort.Shore}}",
+                "Resort_Towel": "{{i18n:Core.Sebastian.Resort.Towel |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Resort_Bar": "{{i18n:Core.Sebastian.Resort.Resort.Bar}}",
+                "Resort": "{{i18n:Core.Sebastian.Resort}}"
+            }
+        },
+        {
+            "LogName": "Sebastian Schedule Specific Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                // Location
+                "Mountain_47_23": "{{i18n:Core.Sebastian.Mountain.4723}}",
+                "summer_Mountain_58_35": "{{i18n:Core.Sebastian.Mountain.Summer.5835}}",
+                "fall_Mountain_42_13": "{{i18n:Core.Sebastian.Mountain.Fall.4213.{{Addiction Status}}}}",
+                "sat_Town_10_94": "{{i18n:Core.Sebastian.Town.Sat.1094.{{Addiction Status}}}}",
+                "thu_RailRoad_32_47": "{{i18n:Core.Sebastian.RailRoad.Thu.3247.{{Addiction Status}}}}",
+                "spring_Mountain_58_35": "{{i18n:Core.Sebastian.Mountain.Spring.5835.{{Addiction Status}}}}"
+            }
+        },
+        // SVE SUPPORT
+        {
+            "LogName": "Sebastian's SVE Schedule Support",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
+            "Entries": {
+                "spring_Mountain_48_26": "{{i18n:Core.Sebastian.Mountain.Spring.4826.{{Addiction Status}}}}",
+                "thu_RailRoad_28_47": "{{i18n:Core.Sebastian.RailRoad.Thu.2847.{{Addiction Status}}}}"
+            }
+        },
+        {
+            "LogName": "Sebastian Rainy Day Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Sebastian": "{{i18n:Core.Sebastian.Rain.{{Random:1++2++3|inputSeparator=++}}}}"
+            }
+        },
+        {
+            "LogName": "Sebastian's Summit Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_Sebastian": "{{i18n:Extra.Sebastian.Summit}}"
+            }
+        },
+        {
+            "LogName": "Sebastian Core Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                // specific - gen
+                "spring_12": "{{i18n:Core.Sebastian.Spring.12}}",
+                "spring_23": "{{i18n:Core.Sebastian.Spring.23}}",
+                "summer_10": "{{i18n:Core.Sebastian.Summer.10}}",
+                "summer_27": "{{i18n:Core.Sebastian.Summer.27}}",
+                "fall_20": "{{i18n:Core.Sebastian.Fall.20}}",
+                "fall_26": "{{i18n:Core.Sebastian.Fall.26}}",
+                "winter_24": "{{i18n:Core.Sebastian.Winter.24}}",
+
+                // specific - questions
+                "Fri_old": "{{i18n:Core.Sebastian.Spring.Fri.old}}",
+                "Fri_good": "{{i18n:Core.Sebastian.Spring.Fri.good |LPetName={{LPetName}}}}",
+                "Fri_bad": "{{i18n:Core.Sebastian.Spring.Fri.bad |LPetName={{LPetName}}}}",
+                "Fri_realbad": "{{i18n:Core.Sebastian.Spring.Fri.worse}}",
+                
+                "fall_Fri_old": "{{i18n:Core.Sebastian.Fall.Fri.old}}",
+                "fall_Fri_good": "{{i18n:Core.Sebastian.Fall.Fri.good}}",
+                "fall_Fri_bad": "{{i18n:Core.Sebastian.Fall.Fri.bad}}",
+                "fall_Fri_realbad": "{{i18n:Core.Sebastian.Fall.Fri.realbad}}",
+
+                // specific - smoking
+                "spring_10:": "{{i18n:Core.Sebastian.Spring.10.{{Addiction Status}}}}",
+                "summer_16": "{{i18n:Core.Sebastian.Summer.16.{{Addiction Status}}}}",
+                "fall_6": "{{i18n:Core.Sebastian.Fall.6.{{Addiction Status}} |LPetName={{LPetName}}}}",
+                "winter_18": "{{i18n:Core.Sebastian.Winter.18.{{Addiction Status}}}}",
+                // Early Hearts
+                "{{WeekDay}}": "{{i18n:Core.Sebastian.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{WeekDay}}2": "{{i18n:Core.Sebastian.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{season}}_{{WeekDay}}": "{{i18n:Core.Sebastian.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{season}}_{{WeekDay}}2": "{{i18n:Core.Sebastian.{{Season}}.EarlyHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                // Mid Hearts
+                "{{WeekDay}}4": "{{i18n:Core.Sebastian.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{WeekDay}}6": "{{i18n:Core.Sebastian.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{season}}_{{WeekDay}}4": "{{i18n:Core.Sebastian.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{season}}_{{WeekDay}}6": "{{i18n:Core.Sebastian.{{Season}}.MidHeart.{{Random:{{Range: 1, 14}}}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                // Late Hearts
+                "{{WeekDay}}8": "{{i18n:Core.Sebastian.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LGoodName={{LGoodName}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{WeekDay}}10": "{{i18n:Core.Sebastian.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LGoodName={{LGoodName}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{season}}_{{WeekDay}}8": "{{i18n:Core.Sebastian.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LGoodName={{LGoodName}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                "{{season}}_{{WeekDay}}10": "{{i18n:Core.Sebastian.{{Season}}.LateHeart.{{Random:{{Range: 1, 14}}}} |LGoodName={{LGoodName}} |LPetName={{LPetName}} |PetName={{PetName}} |LDescript={{LDescript}}}}",
+                // Birthday
+                "winter_10": "{{i18n:Core.Sebastian.Birthday.EarlyHeart |LPetName={{LPetName}}}}",
+                "winter4_10": "{{i18n:Core.Sebastian.Birthday.MidHeart}}",
+                "winter8_10": "{{i18n:Core.Sebastian.Birthday.LateHeart |LGoodName={{LGoodName}}}}"
+            }
+        },
+        {
+            "LogName": "Sebastian's Movie Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/MovieReactions",
+            "Entries": {
+                "Sebastian_love_BeforeMovie": "{{i18n:Movie.Sebastian.BeforeMovie.Love |LPetName={{LPetName}}}}",
+                "Sebastian_love_DuringMovie": "{{i18n:Movie.Sebastian.DuringMovie.Love.1}}",
+                "Sebastian_love_DuringMovie_2": "{{i18n:Movie.Sebastian.DuringMovie.Love.2}}",
+                "Sebastian_love_AfterMovie": "{{i18n:Movie.Sebastian.AfterMovie.Love |LPetName={{LPetName}}}}",
+                "Sebastian_like_BeforeMovie": "{{i18n:Movie.Sebastian.BeforeMovie.Like}}",
+                "Sebastian_like_AfterMovie": "{{i18n:Movie.Sebastian.AfterMovie.Like}}",
+                "Sebastian_dislike_BeforeMovie": "{{i18n:Movie.Sebastian.BeforeMovie.Dislike}}",
+                "Sebastian_dislike_AfterMovie": "{{i18n:Movie.Sebastian.AfterMovie.Dislike |LPetName={{LPetName}} |LDescript={{LDescript}}}}"
+            }
+        },
+        {
+            "LogName": "Sebastian's Spouse Movie Invite",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_Sebastian": "{{i18n:Movie.Sebastian.Invite.Spouse |LPetName={{LPetName}}}}"
+            }
+        },
+        {
+            "LogName": "Other Random Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sebastian",
+            "Entries": {
+                "summer_4.000": "{{i18n:Strings.Sebastian.Summer4.000}}",
+                "summer_4.001": "{{i18n:Strings.Sebastian.Summer4.001}}",
+                "Fri.000": "{{i18n:Strings.Sebastian.Pool.{{Random:{{Range: 1, 3}}}}}}",
+                "marriage_Fri.000": "{{i18n:Strings.Sebastian.Marriage.Fri.000}}",
+                "marriage_Fri.001": "{{i18n:Strings.Sebastian.Marriage.Fri.001}}",
+                "marriage_Mon.000": "{{i18n:Strings.Sebastian.Marriage.Mon.000.{{Addiction Status}}}}",
+                "marriage_Mon.001": "{{i18n:Strings.Sebastian.Marriage.Mon.001 |LPetName={{LPetName}}}}",
+                "rain.000": "{{i18n:Strings.Sebastian.Rain.000}}",
+                "winter_16.000": "{{i18n:Strings.Sebastian.Winter16.000}}"
+            }
+        }
+    ]
+}
