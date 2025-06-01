@@ -1,0 +1,26 @@
+// Festival Dialogue 
+{
+    "Changes": [
+        {
+            "LogName": "Sebastian's Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/winter8, Data/Festivals/winter25",
+            "Entries": {
+                "Sebastian": "{{i18n:Festival.Sebastian.{{TargetWithoutPath}}.{{Relationship:Sebastian |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Sebastian_y2": "{{i18n:Festival.Sebastian.{{TargetWithoutPath}}.{{Relationship:Sebastian |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Sebastian_spouse": "{{i18n:Festival.Sebastian.{{TargetWithoutPath}}.{{Relationship:Sebastian |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}",
+                "Sebastian_spouse_y2": "{{i18n:Festival.Sebastian.{{TargetWithoutPath}}.{{Relationship:Sebastian |contains=Married}}.{{Random:{{Range: 1, 2}}}} |LPetName={{LPetName}} |LDescript={{LDescript}}}}"
+            }
+        },
+        {
+            "LogName": "Sebastian's Desert Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/1_6_Strings",
+            "Entries": {
+                "DesertFestival_Sebastian": "{{i18n:Festival.Sebastian.Desert}}",
+                "DesertFestival_Sebastian_marriage": "{{i18n:Festival.Sebastian.Desert.Married}}",
+                "Shop_Sebastian": "{{i18n:Festival.Sebastian.Desert.Shop}}"
+            }
+        }
+    ]
+}

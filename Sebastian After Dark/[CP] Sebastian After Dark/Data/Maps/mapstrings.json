@@ -1,0 +1,20 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                // Vanilla
+                "SebastianRoom.2": "{{i18n:Strings.SebastianRoom.2}}",
+                "SebastianRoom.3": "{{i18n:Strings.SebastianRoom.3}}",
+
+                // AD Map Edits
+                "SebastianRoomAD.1": "{{i18n:Strings.SebastianRoomAD.1.{{Addiction Status}}}}",
+                "SebastianRoomAD.2": "{{i18n:Strings.SebastianRoomAD.2.{{Random:{{Range: 1, 2}}}}}}",
+                "SebastianRoomAD.3": "{{i18n:Strings.SebastianRoomAD.3}}",
+                "SebastianRoomAD.4": "{{i18n:Strings.SebastianRoomAD.4}}",
+                "SebastianRoomAD.5": "{{i18n:Strings.SebastianRoomAD.5}}"
+            }
+        }
+    ]
+}
